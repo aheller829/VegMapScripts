@@ -62,7 +62,7 @@ unique(autocrosswalk$DomSp2)
 unique(autocrosswalk$DomSp3)
 unique(autocrosswalk$Subdom1)
 unique(autocrosswalk$Subdom2)
-atributetab1928 <- attributetab1928 %>%
+attributetab1928 <- attributetab1928 %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "Aristida spp.", "ARIST"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "Black grama", "BOER4"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "Broom snakeweed", "GUSA2"))) %>%
@@ -122,6 +122,7 @@ attributetab2020 <- attributetab2020 %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "EPTO", "EPHEDRA"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "OPENE", "OPUNT"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "EPTR", "EPHEDRA"))) %>%
+  dplyr::mutate_all(funs(stringr::str_replace(., "ATCA4", "ATCA2"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "Aristida", "ARIST")))
 
 
@@ -160,6 +161,8 @@ speciesjoin <- dplyr::distinct(speciesjoin)
 # Write to csv
 write.csv(speciesjoin, "speciesjoin.csv")
 
+# Read edited sheet in
+fglist <- read.csv("speciesjoin_fg.csv")
 
 
 
