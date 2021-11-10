@@ -12,8 +12,12 @@ library(tidyr)
 # Read in site/state table
 autocrosswalk <- read.csv("autocrosswalk.csv")
 
+# Add rownumber
+autocrosswalk <- dplyr::mutate(autocrosswalk, ID = row_number())
+
 # Read in plant functional group table
 fglist <- read.csv("speciesjoin_fg.csv")
+fglist <- dplyr::distinct(fglist)
 
 # Add functional group columns to crosswalk table
 Dom1_fg <- dplyr::select(fglist, DomSp1 = Code, Dom1FG = FG)
@@ -22,15 +26,16 @@ Dom2_fg <- dplyr::select(fglist, DomSp2 = Code, Dom2FG = FG)
 autocrosswalk <- dplyr::left_join(autocrosswalk, Dom2_fg, by = "DomSp2")
 Dom3_fg <- dplyr::select(fglist, DomSp3 = Code, Dom3FG = FG)
 autocrosswalk <- dplyr::left_join(autocrosswalk, Dom3_fg, by = "DomSp3")
-
-
-
-
+# Remove intermediary dfs
+rm(Dom1_fg)
+rm(Dom2_fg)
+rm(Dom3_fg)
 
 
 
 # Bring in generalized states from 2021
 attributetab2021 <- read.csv("attributetab2020.csv")
+
 # Convert statecode to strings
 attributetab2021$state_code <- as.character(attributetab2021$state_code)
 # Split state codes
@@ -68,11 +73,11 @@ attributetab2021 <- attributetab2021 %>%
 # Add functional group columns to crosswalk table
 # First, convert species codes to standards
 # Codes from 2020
-names(attributetab2021)
-unique(attributetab2021$dom1)
-unique(attributetab2021$dom2)
-unique(attributetab2021$dom3)
-unique(attributetab2021$dom4)
+# names(attributetab2021)
+# unique(attributetab2021$dom1)
+# unique(attributetab2021$dom2)
+# unique(attributetab2021$dom3)
+# unique(attributetab2021$dom4)
 
 attributetab2021 <- attributetab2021 %>%
   dplyr::mutate(dom1 = sub("\\ -.*", "", dom1)) %>%
@@ -86,12 +91,19 @@ attributetab2021 <- attributetab2021 %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "ATCA4", "ATCA2"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "Aristida", "ARIST")))
 
+
+# Join FG codes
 Dom1_fg <- dplyr::select(fglist, dom1 = Code, Dom1FG = FG)
 attributetab2021 <- dplyr::left_join(attributetab2021, Dom1_fg, by = "dom1")
 Dom2_fg <- dplyr::select(fglist, dom2 = Code, Dom2FG = FG)
 attributetab2021 <- dplyr::left_join(attributetab2021, Dom2_fg, by = "dom2")
 Dom3_fg <- dplyr::select(fglist, dom3 = Code, Dom3FG = FG)
 attributetab2021 <- dplyr::left_join(attributetab2021, Dom3_fg, by = "dom3")
+attributetab2021 <- dplyr::distinct(attributetab2021)
+# Remove intermediary dfs
+rm(Dom1_fg)
+rm(Dom2_fg)
+rm(Dom3_fg)
 
 
 # Create FG assemblages by state
@@ -129,6 +141,201 @@ fgassemblages <- rbind(fgassemblages, fgassemblages3)
 fgassemblages <- fgassemblages[!grepl("NA,NA", fgassemblages$FGString), ]
 
 fgassemblages <- dplyr::distinct(fgassemblages)
+# Remove intermediary dfs
+rm(fgassemblages2)
+rm(fgassemblages3)
+
+# Create string vector of dominant FGs in crosswalk 
+autocrosswalk <- tidyr::unite(autocrosswalk, FGUnite, Dom1FG:Dom3FG, na.rm = FALSE, remove = FALSE, sep = ",")
+# Create string vector of dominant FGs in attributetable
+attributetab2021 <- attributetab2021 %>%
+ mutate(dom1 = ifelse(dom1 == "<Null>" | dom1 == " ", NA, dom1))
+
+attributetab2021 <- attributetab2021 %>%
+  dplyr::mutate_at(vars(c("dom1", "dom2", "dom3", "dom4")), ~ifelse( . == "<Null>" | . == " ", NA, .)) %>%
+  tidyr::unite(DomVeg, dom1:dom4, na.rm = FALSE, remove = FALSE, sep = ",")
+
+
+# Match FGs between 2021 and autocrosswalk
+match_list <- apply(X = attributetab2021,
+                    vegmap = autocrosswalk,
+                    MARGIN = 1,
+                    FUN = function(X, vegmap){
+                      current_row <- X
+                      current_veg1 <- current_row[["FGString"]]
+                      
+                      veg_matches <- sapply(X = vegmap$FGUnite,
+                                            current_veg1 = current_veg1,
+                                            
+                                            FUN = function(X, current_veg1) {
+                                              
+                                              vegs <- X
+                                              
+                                              any(vegs %in% current_veg1)
+                                            })
+                      
+                      data.frame(OBJECTID2021 = current_row[["OBJECTID.."]],
+                                 FGString2021 = current_row[["FGString"]],
+                                 StateChar2021 = current_row[["State1Char"]],
+                                 esite = current_row[["esite"]],
+                                 OBJECTIDautoc = vegmap$ID,
+                                 autocFGString = vegmap$FGUnite,
+                                 Site = vegmap$Site,
+                                 SiteName = vegmap$SiteName,
+                                 StateName = vegmap$StateName,
+                                 matches = as.integer(veg_matches),
+                                 DomVeg_2021 = current_row[["DomVeg"]],
+                                 VegUniteAC = vegmap$VegUnite,
+                                 stringsAsFactors = FALSE)
+                    })
+
+
+results <- do.call(rbind,
+                   match_list)
+
+
+# Filter results
+FGresults <- results %>%
+  dplyr::filter(matches > 0) %>%
+  dplyr::filter(FGString2021 != "NA,NA,NA")
+
+
+
+str(results)
+
+
+
+
+
+
+# Join 2021 and autocrosswalk at species level
+# Look for T/F matches
+match_list <- apply(X = autocrosswalk,
+                    vegmap = attributetab2021,
+                    MARGIN = 1,
+                    FUN = function(X, vegmap){
+                      current_row <- X
+                      current_veg1 <- current_row[["DomSp1"]]
+                      
+                      veg_matches <- sapply(X = vegmap$DomVeg,
+                                            current_veg1 = current_veg1,
+                                            
+                                            FUN = function(X, current_veg1) {
+                                              
+                                              vegs <- trimws(unlist(stringr::str_split(X, pattern = ",")))
+                                              
+                                              any(vegs %in% current_veg1)
+                                            })
+                      data.frame(Species = current_row[["DomSp1"]],
+                                 StateName = current_row[["StateName"]],
+                                 StateVegUnite = current_row[["VegUnite"]],
+                                 DOMVEG2021 = vegmap$DomVeg,
+                                 matches1 = as.integer(veg_matches),
+                                 Site = current_row[["Site"]],
+                                 SiteName = current_row[["SiteName"]],
+                                 esite = vegmap$esite,
+                                 StateChar = vegmap$StateChar1,
+                                 stringsAsFactors = FALSE)
+                    })
+
+
+results <- do.call(rbind,
+                   match_list)
+
+# 2nd Dom
+match_list2 <- apply(X = autocrosswalk,
+                     vegmap = attributetab2021,
+                     MARGIN = 1,
+                     FUN = function(X, vegmap){
+                       current_row <- X
+                       current_veg2 <- current_row[["DomSp2"]]
+                       
+                       veg_matches <- sapply(X = vegmap$DomVeg,
+                                             current_veg2 = current_veg2,
+                                             
+                                             FUN = function(X, current_veg2) {
+                                               
+                                               vegs <- trimws(unlist(stringr::str_split(X, pattern = ",")))
+                                               
+                                               any(vegs %in% current_veg2)
+                                             })
+                       data.frame(Species2 = current_row[["DomSp2"]],
+                                  StateName = current_row[["StateName"]],
+                                  StateVegUnite = current_row[["VegUnite"]],
+                                  DOMVEG2021 = vegmap$DomVeg,
+                                  matches2 = as.integer(veg_matches),
+                                  Site = current_row[["Site"]],
+                                  SiteName = current_row[["SiteName"]],
+                                  esite = vegmap$esite,
+                                  StateChar = vegmap$StateChar1,
+                                  stringsAsFactors = FALSE)
+                     })
+
+
+results2 <- do.call(rbind,
+                    match_list2)
+
+
+# 3rd Dom
+match_list3 <- apply(X = autocrosswalk,
+                     vegmap = attributetab2021,
+                     MARGIN = 1,
+                     FUN = function(X, vegmap){
+                       current_row <- X
+                       current_veg3 <- current_row[["DomSp3"]]
+                       
+                       veg_matches <- sapply(X = vegmap$DomVeg,
+                                             current_veg3 = current_veg3,
+                                             
+                                             FUN = function(X, current_veg3) {
+                                               
+                                               vegs <- trimws(unlist(stringr::str_split(X, pattern = ",")))
+                                               
+                                               any(vegs %in% current_veg3)
+                                             })
+                       data.frame(Species3 = current_row[["DomSp3"]],
+                                  StateName = current_row[["StateName"]],
+                                  StateVegUnite = current_row[["VegUnite"]],
+                                  DOMVEG2021 = vegmap$DomVeg,
+                                  matches3 = as.integer(veg_matches),
+                                  Site = current_row[["Site"]],
+                                  SiteName = current_row[["SiteName"]],
+                                  esite = vegmap$esite,
+                                  StateChar = vegmap$StateChar1,
+                                  stringsAsFactors = FALSE)
+                     })
+
+
+results3 <- do.call(rbind,
+                    match_list3)
+
+
+
+# Join results tables
+results$ID <- 1:nrow(results)
+results2$ID <- 1:nrow(results2)
+results3$ID <- 1:nrow(results3)
+fullresults <- results %>%
+  dplyr::left_join(results2) %>%
+  dplyr::left_join(results3)
+fullresults <- dplyr::select(fullresults, Site, SiteName, StateName, StateVegUnite, DOMVEG2021, esite, StateChar, matches1, matches2, matches3)
+
+
+# Count matches
+fullresults <- dplyr::mutate(fullresults, Tally = matches1 + matches2 + matches3)
+fullresults <- dplyr::distinct(fullresults)
+fullresults <- dplyr::filter(fullresults, Tally > 0)
+fullresults <- fullresults[, c(1, 2, 3, 4, 5, 6, 10)]
+
+
+
+
+
+
+
+
+
+
 
 
 
