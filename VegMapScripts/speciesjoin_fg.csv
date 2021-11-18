@@ -1,51 +1,64 @@
-"Code","Species","CommonName","FG"
-"ANHA","Andropogon hallii","sand bluestem","PG"
-"ARFI2","Artemisia filifolia","sand sage","shrub"
-"ARIST","Aristida","aristida grasses","PG"
-"Aristida spp.","Aristida","aristida grasses","PG"
-"ARPU9","Aristida","aristida grasses","PG"
-"ATCA2","Atriplex canescens","saltbush","shrub"
-"ATCA2","Atriplex canescens","saltbush","shrub"
-"BOBA3","Bothriochloa barbinodis","cane bluestem","PG"
-"BOCU","Bouteloua curtipendula","sideoats grama","PG"
-"BOER4","Bouteloua eriopoda","black grama","PG"
-"BOGR2","Bouteloua gracilis","blue grama","PG"
-"CYIMI","Cylindropuntia imbricata","tree cholla","succ"
-"DAPU7","Dasychloa pulchella ","fluffgrass/low woollygrass","PG"
-"ENDE","Enneapogon desvauxii","nineawn pappusgrass","PG"
-"EPHEDRA","Ephedra","ephedra","succ"
-"EPHspp","Ephedra","ephedra","succ"
-"ERLE","Eragrostis lehmanniana","Lehmann lovegrass","Inv"
-"FLCE","Flourensia cernua","tarbush","shrub"
-"FOSP2","Fouquieria splendens","ocotillo","succ"
-"GUSA2","Gutierrezia sarothrae","broom snakeweed","subshrub"
-"HIMU","Pleuraphis mutica","tobosa","PG"
-"KOSP","Koeberlinia spinosa","crown of thorns","shrub"
-"LATR2","Larrea tridetata","creosote","shrub"
-"LYBE","Lycium berlandieri","wolfberry","shrub"
-"MUAR","Muhlenbergia arenacea","ear muhly","PG"
-"MUPO2","Muhlenbergia porteri","bush muhly","PG"
-"NOMI","Nolina microcarpa","sacahuista","succulent"
-"OPUNT","Opuntia","prickly pear","succulent"
-"PAIN2","Parthenium incancum","mariola","shrub"
-"PLMU3","Pleuraphis mutica","tobosa","PG"
-"PRGL2","Prosopis glandulosa","mesquite","shrub"
-"PRGL2","Prosopis glandulosa","mesquite","shrub"
-"PRGL2","Prosopis glandulosa","mesquite","shrub"
-"PSSC6","Psorothamnus scoparius","broom dalea","shrub"
-"QUHA3","Quercus havardii","Havard oak","shrub"
-"RHMI3","Rhus microphylla","littleleaf sumac","shrub"
-"SCBR2","Scleropogon brevifolius","burrograss","PG"
-"SCBR2","Scleropogon brevifolius","burrograss","PG"
-"SELE6","Setaria leucopila","streambed bristlegrass","PG"
-"SPAI","Sporobolus airoides","alkali sacaton","PG"
-"SPCO4","Sporobolus contractus","spike dropseed","PG"
-"SPFL2","Sporobolus flexuosus","mesa dropseed","PG"
-"SPGI","Sporobolus giganteus","giant dropseed","PG"
-"SPORO","Sporobolus","sporobolus","PG"
-"Sporobolus spp.","Sporobolus","sporobolus","PG"
-"SPORspp","Sporobolus","sporobolus","PG"
-"SPWR2","Sporobolus wrightii","giant sacaton","PG"
-"YUCCA","Yucca","yucca","succulent"
-"YUEL","Yucca","yucca","succulent"
-"YUGL","Yucca","yucca","succulent"
+Code,Species,CommonName,FG
+ANHA,Andropogon hallii,sand bluestem,PG
+ARFI2,Artemisia filifolia,sand sage,shrub
+ARIST,Aristida,aristida grasses,PG
+Aristida spp.,Aristida,aristida grasses,PG
+ARPU9,Aristida,aristida grasses,PG
+ATCA2,Atriplex canescens,saltbush,shrub
+ATCA2,Atriplex canescens,saltbush,shrub
+BOBA3,Bothriochloa barbinodis,cane bluestem,PG
+BOCU,Bouteloua curtipendula,sideoats grama,PG
+BOER4,Bouteloua eriopoda,black grama,PG
+BOGR2,Bouteloua gracilis,blue grama,PG
+CYIMI,Cylindropuntia imbricata,tree cholla,succulent
+DAPU7,Dasychloa pulchella ,fluffgrass/low woollygrass,PG
+ENDE,Enneapogon desvauxii,nineawn pappusgrass,PG
+EPHEDRA,Ephedra,ephedra,succulent
+EPHspp,Ephedra,ephedra,succulent
+ERLE,Eragrostis lehmanniana,Lehmann lovegrass,Inv
+FLCE,Flourensia cernua,tarbush,shrub
+FOSP2,Fouquieria splendens,ocotillo,succulent
+GUSA2,Gutierrezia sarothrae,broom snakeweed,subshrub
+HIMU,Pleuraphis mutica,tobosa,PG
+KOSP,Koeberlinia spinosa,crown of thorns,shrub
+LATR2,Larrea tridetata,creosote,shrub
+LYBE,Lycium berlandieri,wolfberry,shrub
+MUAR,Muhlenbergia arenacea,ear muhly,PG
+MUPO2,Muhlenbergia porteri,bush muhly,PG
+NOMI,Nolina microcarpa,sacahuista,succulent
+OPUNT,Opuntia,prickly pear,succulent
+PAIN2,Parthenium incancum,mariola,shrub
+PLMU3,Pleuraphis mutica,tobosa,PG
+PRGL2,Prosopis glandulosa,mesquite,shrub
+PRGL2,Prosopis glandulosa,mesquite,shrub
+PRGL2,Prosopis glandulosa,mesquite,shrub
+PSSC6,Psorothamnus scoparius,broom dalea,shrub
+QUHA3,Quercus havardii,Havard oak,shrub
+RHMI3,Rhus microphylla,littleleaf sumac,shrub
+SCBR2,Scleropogon brevifolius,burrograss,PG
+SCBR2,Scleropogon brevifolius,burrograss,PG
+SELE6,Setaria leucopila,streambed bristlegrass,PG
+SPAI,Sporobolus airoides,alkali sacaton,PG
+SPCO4,Sporobolus contractus,spike dropseed,PG
+SPFL2,Sporobolus flexuosus,mesa dropseed,PG
+SPGI,Sporobolus giganteus,giant dropseed,PG
+SPORO,Sporobolus,sporobolus,PG
+Sporobolus spp.,Sporobolus,sporobolus,PG
+SPORspp,Sporobolus,sporobolus,PG
+SPWR2,Sporobolus wrightii,giant sacaton,PG
+YUCCA,Yucca,yucca,succulent
+YUEL,Yucca,yucca,succulent
+YUGL,Yucca,yucca,succulent
+Other shrubs,NA,NA,shrub
+Other grasses,NA,NA,PG
+Bare,NA,NA,Bare
+QUERCUS,Quercus,Quercus,shrub
+shrub,NA,NA,shrub
+PG,NA,NA,PG
+AG,NA,NA,AG
+annuals,NA,NA,annuals
+PF,NA,NA,PF
+COWA,Condalia wornockii,Warnock's snakewood,shrub
+THAC,Thymophylla acerosa,pricklyleaf dogweed,forb
+DAFO,Dalea formosa,featherplume,shrub
+HOFFspp.,Hoffmannseggia,rushpea,forb
