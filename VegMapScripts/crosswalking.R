@@ -153,16 +153,21 @@ x <- attributetab2021 %>%
   gather(SiteName, ecosite) %>%
   select(-SiteName) %>%
   distinct() %>%
-  filter(!is.na(ecosite) & ecosite != "<Null>" & ecosite != "No ecosite" & ecosite != " " & ecosite != "")
+  filter(!is.na(ecosite) & ecosite != "<Null>" & ecosite != "No ecosite" & ecosite != " " & ecosite != "") %>%
+  arrange(by = ecosite) %>%
+  mutate(id = row_number())
 y <- as.data.frame(attributetab2021$esite)
-y <- select(y, ecosite = 1)
+y <- select(y, esite = 1)
 y <- distinct(y)
+y <- arrange(y, by = esite)
+y$id <- row_number(y)
 z <- autocrosswalk %>%
-  select(ecosite = SiteName) %>%
+  select(SiteName) %>%
   distinct() %>%
-  full_join(y) %>%
-  full_join(x)
-
+  arrange(by = SiteName) %>%
+  mutate(id = row_number()) %>%
+  full_join(x) %>%
+  full_join(y)
 
 
 
