@@ -34,7 +34,7 @@ EDIT,R042XB016NM,Draw,5,AnnualDominated,annuals,NA,NA,NA,NA
 EDIT,R042XB021NM,Limestone Hills,1,Grassland/succulent,BOER4,NA,NA,MUPO2,BOGR2
 EDIT,R042XB021NM,Limestone Hills,2,Shrub-succulent,FOSP2,NOMI,YUCCA,GUSA2,NA
 EDIT,R042XB014NM,Loamy,1,BlackGrama-TobosaGrassland,BOER4,NA,NA,PLMU3,NA
-EDIT,R042XB014NM,Loamy,2,Burrograss-Tobosa-ThreeawnGrassland,SCRB2,NA,NA,PLMU3,NA
+EDIT,R042XB014NM,Loamy,2,Burrograss-Tobosa-ThreeawnGrassland,SCBR2,NA,NA,PLMU3,NA
 EDIT,R042XB014NM,Loamy,3,Shrub-invadedGrassland,PRGL2,FLCE,LATR2,PLMU3,ARIST
 EDIT,R042XB014NM,Loamy,4,Shrub-Dominated,PRGL2,FLCE,LATR2,NA,NA
 EDIT,R042XC022NM,Sandhills,1,Grass/ShrubMix,ANHA,SPGI,SPCO4,QUHA3,YUGL
