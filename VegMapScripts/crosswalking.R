@@ -5,169 +5,14 @@ library(dplyr)
 library(stringr)
 library(tidyr)
 
-
-# Convert statecode to strings
-attributetab2021$state_code <- as.character(attributetab2021$state_code)
-# Split state codes
-attributetab2021 <- attributetab2021 %>%
-  tidyr::separate(state_code, into = c("State1", "State2"), sep = 1, remove = FALSE, convert = TRUE) %>%
-  tidyr::separate(State2, into = c("State2", "State3"), sep = 1, remove = TRUE, convert = TRUE)
-attributetab2021$state_code <- as.integer(attributetab2021$state_code)
-# Add name
-attributetab2021 <- attributetab2021 %>%
-  dplyr::mutate(State1Char = ifelse(State1 == 1, "Grassland",
-                                                ifelse(State1 == 2, "AlteredGrassland/Savanna",
-                                                ifelse(State1 == 3, "ShrubGrassMix",
-                                                ifelse(State1 == 4, "ShrubInvadedGrassland",
-                                                ifelse(State1 == 5, "ShrubDominated",
-                                                ifelse(State1 == 6, "Shrubland",
-                                                ifelse(State1 == 7, "Bare/Annuals",
-                                                ifelse(State1 == 9, "ExoticInvaded", NA))))))))) %>%
-  dplyr::mutate(State2Char = ifelse(State2 == 1, "Grassland",
-                                    ifelse(State2 == 2, "AlteredGrassland/Savanna",
-                                           ifelse(State2 == 3, "ShrubGrassMix",
-                                                  ifelse(State2 == 4, "ShrubInvadedGrassland",
-                                                         ifelse(State2 == 5, "ShrubDominated",
-                                                                ifelse(State2 == 6, "Shrubland",
-                                                                       ifelse(State2 == 7, "Bare/Annuals",
-                                                                              ifelse(State2 == 9, "ExoticInvaded", NA))))))))) %>%
-  dplyr::mutate(State3Char = ifelse(State3 == 1, "Grassland",
-                                    ifelse(State3 == 2, "AlteredGrassland/Savanna",
-                                           ifelse(State3 == 3, "ShrubGrassMix",
-                                                  ifelse(State3 == 4, "ShrubInvadedGrassland",
-                                                         ifelse(State3 == 5, "ShrubDominated",
-                                                                ifelse(State3 == 6, "Shrubland",
-                                                                       ifelse(State3 == 7, "Bare/Annuals",
-                                                                              ifelse(State3 == 9, "ExoticInvaded", NA)))))))))
+# Read in clean datasheets
+attributetab1915 <- read.csv("at1915_clean.csv")
+attributetab1928 <- read.csv("at1928_clean.csv")
+attributetab1998 <- read.csv("at1998_clean.csv")
+attributetab2021 <- read.csv("at2021_clean.csv")
 
 
 
-# Create FG assemblages by state
-# First, unite FGs
-attributetab2021 <- tidyr::unite(attributetab2021, FGString, Dom1FG:Dom3FG, sep = ",", remove = FALSE, na.rm = FALSE)
-
-# Check matches
-x <- select(attributetab2021, state_code, State1Char, State2Char, State3Char, dom1, dom2, dom3, Dom1FG, Dom2FG, Dom3FG, FGString)
-
-# Repeat across states to capture all combinations
-fgassemblages <- attributetab2021 %>%
-  dplyr::group_by(State1, FGString) %>%
-  dplyr::summarise(Count = n()) %>%
-  dplyr::select(-Count) %>%
-  dplyr::filter(FGString != "NA,NA,NA")
-
-fgassemblages2 <- attributetab2021 %>%
-  dplyr::group_by(State2, FGString) %>%
-  dplyr::summarise(Count = n()) %>%
-  dplyr::select(-Count) %>%
-  dplyr::filter(FGString != "NA,NA,NA") %>%
-  dplyr::rename(State1 = State2)
-
-fgassemblages3 <- attributetab2021 %>%
-  dplyr::group_by(State3, FGString) %>%
-  dplyr::summarise(Count = n()) %>%
-  dplyr::select(-Count) %>%
-  dplyr::filter(FGString != "NA,NA,NA") %>%
-  dplyr::rename(State1 = State3)
-
-# Bind together, remove double NA, remove duplicates
-fgassemblages <- rbind(fgassemblages, fgassemblages2)
-fgassemblages <- rbind(fgassemblages, fgassemblages3)
-
-fgassemblages <- fgassemblages[!grepl("NA,NA", fgassemblages$FGString), ]
-
-fgassemblages <- dplyr::distinct(fgassemblages)
-# Remove intermediary dfs
-rm(fgassemblages2)
-rm(fgassemblages3)
-
-# Create string vector of dominant FGs in crosswalk 
-autocrosswalk <- tidyr::unite(autocrosswalk, FGUnite, Dom1FG:Dom3FG, na.rm = FALSE, remove = FALSE, sep = ",")
-# Create string vector of dominant FGs in attributetable
-attributetab2021 <- attributetab2021 %>%
- mutate(dom1 = ifelse(dom1 == "<Null>" | dom1 == " ", NA, dom1)) # Make all NA codes the same
-
-attributetab2021 <- attributetab2021 %>%
-  dplyr::mutate_at(vars(c("dom1", "dom2", "dom3", "dom4")), ~ifelse( . == "<Null>" | . == " ", NA, .)) %>%
-  tidyr::unite(DomVeg, dom1:dom4, na.rm = FALSE, remove = FALSE, sep = ",") # Unite codes at species level
-
-# Unite autocrosswalk codes at species level
-autocrosswalk <- tidyr::unite(autocrosswalk, VegUnite, DomSp1:Subdom2, na.rm = TRUE, remove = FALSE, sep = ",")
-
-
-# Match FGs between 2021 and autocrosswalk
-match_list <- apply(X = attributetab2021,
-                    vegmap = autocrosswalk,
-                    MARGIN = 1,
-                    FUN = function(X, vegmap){
-                      current_row <- X
-                      current_veg1 <- current_row[["FGString"]]
-                      
-                      veg_matches <- sapply(X = vegmap$FGUnite,
-                                            current_veg1 = current_veg1,
-                                            
-                                            FUN = function(X, current_veg1) {
-                                              
-                                              vegs <- X
-                                              
-                                              any(vegs %in% current_veg1)
-                                            })
-                      
-                      data.frame(OBJECTID2021 = current_row[["OBJECTID.."]],
-                                 FGString2021 = current_row[["FGString"]],
-                                 StateChar2021 = current_row[["State1Char"]],
-                                 esite = current_row[["esite"]],
-                                 OBJECTIDautoc = vegmap$ID,
-                                 autocFGString = vegmap$FGUnite,
-                                 Site = vegmap$Site,
-                                 SiteName = vegmap$SiteName,
-                                 StateName = vegmap$StateName,
-                                 matches = as.integer(veg_matches),
-                                 DomVeg_2021 = current_row[["DomVeg"]],
-                                 VegUniteAC = vegmap$VegUnite,
-                                 stringsAsFactors = FALSE)
-                    })
-
-
-results <- do.call(rbind,
-                   match_list)
-
-
-# Filter results
-FGresults <- results %>%
-  dplyr::filter(matches == 1) %>%
-  dplyr::filter(FGString2021 != "NA,NA,NA" | FGString2021 != "NA,NA,NA,NA,NA")
-
-
-
-str(results)
-
-# Look at esite and site names...2021 site names differ from autocrosswalk
-unique(FGresults$esite)
-unique(attributetab2021$ecosite1)
-unique(autocrosswalk$SiteName)
-# Write to csv to compare
-names(attributetab2021)
-x <- attributetab2021 %>%
-  select(ecosite1, ecosite2, ecosite3) %>%
-  gather(SiteName, ecosite) %>%
-  select(-SiteName) %>%
-  distinct() %>%
-  filter(!is.na(ecosite) & ecosite != "<Null>" & ecosite != "No ecosite" & ecosite != " " & ecosite != "") %>%
-  arrange(by = ecosite) %>%
-  mutate(id = row_number())
-y <- as.data.frame(attributetab2021$esite)
-y <- select(y, esite = 1)
-y <- distinct(y)
-y <- arrange(y, by = esite)
-y$id <- row_number(y)
-z <- autocrosswalk %>%
-  select(SiteName) %>%
-  distinct() %>%
-  arrange(by = SiteName) %>%
-  mutate(id = row_number()) %>%
-  full_join(x) %>%
-  full_join(y)
 
 
 
@@ -198,7 +43,7 @@ match_list <- apply(X = autocrosswalk,
                                  Site = current_row[["Site"]],
                                  SiteName = current_row[["SiteName"]],
                                  esite = vegmap$esite,
-                                 StateChar = vegmap$StateChar1,
+                                 StateChar = vegmap$State1Char,
                                  stringsAsFactors = FALSE)
                     })
 
@@ -231,7 +76,7 @@ match_list2 <- apply(X = autocrosswalk,
                                   Site = current_row[["Site"]],
                                   SiteName = current_row[["SiteName"]],
                                   esite = vegmap$esite,
-                                  StateChar = vegmap$StateChar1,
+                                  StateChar = vegmap$State1Char,
                                   stringsAsFactors = FALSE)
                      })
 
@@ -265,7 +110,7 @@ match_list3 <- apply(X = autocrosswalk,
                                   Site = current_row[["Site"]],
                                   SiteName = current_row[["SiteName"]],
                                   esite = vegmap$esite,
-                                  StateChar = vegmap$StateChar1,
+                                  StateChar = vegmap$State1Char,
                                   stringsAsFactors = FALSE)
                      })
 
@@ -279,17 +124,89 @@ results3 <- do.call(rbind,
 results$ID <- 1:nrow(results)
 results2$ID <- 1:nrow(results2)
 results3$ID <- 1:nrow(results3)
-fullresults <- results %>%
+fullresults2021 <- results %>%
   dplyr::left_join(results2) %>%
   dplyr::left_join(results3)
-fullresults <- dplyr::select(fullresults, Site, SiteName, StateName, StateVegUnite, DOMVEG2021, esite, StateChar, matches1, matches2, matches3)
+fullresults2021 <- dplyr::select(fullresults2021, Site, SiteName, StateName, StateVegUnite, DOMVEG2021, esite, StateChar, matches1, matches2, matches3)
 
 
 # Count matches
-fullresults <- dplyr::mutate(fullresults, Tally = matches1 + matches2 + matches3)
-fullresults <- dplyr::distinct(fullresults)
-fullresults <- dplyr::filter(fullresults, Tally > 0)
-fullresults <- fullresults[, c(1, 2, 3, 4, 5, 6, 10)]
+fullresults2021 <- dplyr::mutate(fullresults2021, Tally = matches1 + matches2 + matches3)
+fullresults2021 <- dplyr::distinct(fullresults2021)
+fullresults2021 <- dplyr::filter(fullresults2021, Tally > 0)
+fullresults2021 <- fullresults2021[, c(1, 2, 3, 4, 5, 6, 7, 11)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Match FGs between 1915 and autocrosswalk
+# Create string vector of dominant species
+attributetab1915 <- tidyr::unite(attributetab1915, DomVeg, ZST_DOM:ZRD_DOM, remove = FALSE, sep = ",")
+attributetab1915 <- tidyr::unite(attributetab1915, FGString, Dom1FG:Dom3FG, na.rm = TRUE, remove = FALSE, sep = ",")
+
+match_list <- apply(X = attributetab1915,
+                    vegmap = autocrosswalk,
+                    MARGIN = 1,
+                    FUN = function(X, vegmap){
+                      current_row <- X
+                      current_veg1 <- current_row[["FGString"]]
+                      
+                      veg_matches <- sapply(X = vegmap$FGUnite,
+                                            current_veg1 = current_veg1,
+                                            
+                                            FUN = function(X, current_veg1) {
+                                              
+                                              vegs <- X
+                                              
+                                              any(vegs %in% current_veg1)
+                                            })
+                      
+                      data.frame(FID1915 = current_row[["FID"]],
+                                 FGString1915 = current_row[["FGString"]],
+                                 esite = current_row[["ecosite1"]],
+                                 autocFGString = vegmap$FGUnite,
+                                 Site = vegmap$Site,
+                                 SiteName = vegmap$SiteName,
+                                 StateName = vegmap$StateName,
+                                 matches = as.integer(veg_matches),
+                                 DomVeg_2021 = current_row[["DomVeg"]],
+                                 VegUniteAC = vegmap$VegUnite,
+                                 stringsAsFactors = FALSE)
+                    })
+
+
+results <- do.call(rbind,
+                   match_list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

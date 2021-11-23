@@ -213,6 +213,51 @@ rm(Dom2_fg)
 rm(Dom3_fg)
 
 
+# Convert statecode to strings
+attributetab2021$state_code <- as.character(attributetab2021$state_code)
+# Split state codes
+attributetab2021 <- attributetab2021 %>%
+  tidyr::separate(state_code, into = c("State1", "State2"), sep = 1, remove = FALSE, convert = TRUE) %>%
+  tidyr::separate(State2, into = c("State2", "State3"), sep = 1, remove = TRUE, convert = TRUE)
+attributetab2021$state_code <- as.integer(attributetab2021$state_code)
+# Add name
+attributetab2021 <- attributetab2021 %>%
+  dplyr::mutate(State1Char = ifelse(State1 == 1, "Grassland",
+                                    ifelse(State1 == 2, "AlteredGrassland/Savanna",
+                                           ifelse(State1 == 3, "ShrubGrassMix",
+                                                  ifelse(State1 == 4, "ShrubInvadedGrassland",
+                                                         ifelse(State1 == 5, "ShrubDominated",
+                                                                ifelse(State1 == 6, "Shrubland",
+                                                                       ifelse(State1 == 7, "Bare/Annuals",
+                                                                              ifelse(State1 == 9, "ExoticInvaded", NA))))))))) %>%
+  dplyr::mutate(State2Char = ifelse(State2 == 1, "Grassland",
+                                    ifelse(State2 == 2, "AlteredGrassland/Savanna",
+                                           ifelse(State2 == 3, "ShrubGrassMix",
+                                                  ifelse(State2 == 4, "ShrubInvadedGrassland",
+                                                         ifelse(State2 == 5, "ShrubDominated",
+                                                                ifelse(State2 == 6, "Shrubland",
+                                                                       ifelse(State2 == 7, "Bare/Annuals",
+                                                                              ifelse(State2 == 9, "ExoticInvaded", NA))))))))) %>%
+  dplyr::mutate(State3Char = ifelse(State3 == 1, "Grassland",
+                                    ifelse(State3 == 2, "AlteredGrassland/Savanna",
+                                           ifelse(State3 == 3, "ShrubGrassMix",
+                                                  ifelse(State3 == 4, "ShrubInvadedGrassland",
+                                                         ifelse(State3 == 5, "ShrubDominated",
+                                                                ifelse(State3 == 6, "Shrubland",
+                                                                       ifelse(State3 == 7, "Bare/Annuals",
+                                                                              ifelse(State3 == 9, "ExoticInvaded", NA)))))))))
+
+
+
+
+
+
+
+
+
+
+
+
 # QC: what is left unclassified?
 # x <- dplyr::filter(attributetab1915, is.na(Dom1FG))
 # x <- dplyr::filter(attributetab1928, is.na(Dom1FG))
@@ -220,6 +265,9 @@ rm(Dom3_fg)
 # x <- dplyr::filter(attributetab2021, is.na(Dom1FG))
 # unique(x$dom1)
 
-
-
-
+# Save cleaned csvs
+write.csv(autocrosswalk, "autocrosswalk_clean.csv", row.names = FALSE)
+write.csv(attributetab1915, "at1915_clean.csv", row.names = FALSE)
+write.csv(attributetab1928, "at1928_clean.csv", row.names = FALSE)
+write.csv(attributetab1998, "at1998_clean.csv", row.names = FALSE)
+write.csv(attributetab2021, "at2021_clean.csv", row.names = FALSE)
