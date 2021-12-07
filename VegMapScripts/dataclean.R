@@ -27,6 +27,9 @@ autocrosswalk <- dplyr::left_join(autocrosswalk, Dom3_fg, by = "DomSp3")
 rm(Dom1_fg)
 rm(Dom2_fg)
 rm(Dom3_fg)
+# Unite species and functional groups to single column each
+autocrosswalk <- tidyr::unite(autocrosswalk, VegUnite, DomSp1:DomSp3, na.rm = TRUE, remove = FALSE, sep = ",")
+autocrosswalk <- tidyr::unite(autocrosswalk, FGUnite, Dom1FG:Dom3FG, na.rm = TRUE, remove = FALSE, sep = ",")
 
 
 
@@ -51,6 +54,10 @@ attributetab1915 <- read.csv("attributetab1915.csv")
 # unique(autocrosswalk$Subdom1)
 # unique(autocrosswalk$Subdom2)
 
+# trim ws
+attributetab1915$ZST_DOM <- trimws(attributetab1915$ZST_DOM)
+attributetab1915$ZND_DOM <- trimws(attributetab1915$ZND_DOM)
+attributetab1915$ZRD_DOM <- trimws(attributetab1915$ZRD_DOM)
 
 attributetab1915 <- attributetab1915 %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "ARFI", "ARFI2"))) %>%
@@ -64,7 +71,7 @@ attributetab1915 <- attributetab1915 %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "PRGL2.", "PRGL2"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "PSSC", "PSSC6"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "SCBR", "SCBR2"))) %>%
-  dplyr::mutate_all(funs(stringr::str_replace(., "SPORssp", "SPORO"))) %>%
+  dplyr::mutate_all(funs(stringr::str_replace(., "SPORspp", "SPORO"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "MUARE", "MUAR"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "DAPU", "DAPU7"))) %>%
   dplyr::mutate_all(funs(stringr::str_replace(., "ATCA", "ATCA2"))) %>%
@@ -85,8 +92,9 @@ attributetab1915 <- dplyr::distinct(attributetab1915)
 rm(Dom1_fg)
 rm(Dom2_fg)
 rm(Dom3_fg)
-
-
+# Unite species and functional groups to single column each
+attributetab1915 <- tidyr::unite(attributetab1915, VegUnite, ZST_DOM:ZRD_DOM, na.rm = TRUE, remove = FALSE, sep = ",")
+attributetab1915 <- tidyr::unite(attributetab1915, FGUnite, Dom1FG:Dom3FG, na.rm = TRUE, remove = FALSE, sep = ",")
 
 
 # Clean 1928 data
@@ -118,6 +126,7 @@ attributetab1928 <- dplyr::left_join(attributetab1928, Dom1_fg, by = "Name")
 attributetab1928 <- dplyr::distinct(attributetab1928)
 # Remove intermediary dfs
 rm(Dom1_fg)
+# Only one species present, nothing to unite
 
 
 
@@ -170,6 +179,9 @@ attributetab1998 <- dplyr::distinct(attributetab1998)
 rm(Dom1_fg)
 rm(Dom2_fg)
 rm(Dom3_fg)
+# Unite species and functional groups to single column each
+attributetab1998 <- tidyr::unite(attributetab1998, VegUnite, DOM1:DOM3, na.rm = TRUE, remove = FALSE, sep = ",")
+attributetab1998 <- tidyr::unite(attributetab1998, FGUnite, Dom1FG:Dom3FG, na.rm = TRUE, remove = FALSE, sep = ",")
 
 
 
@@ -229,6 +241,7 @@ attributetab2021 <- attributetab2021 %>%
                                                          ifelse(State1 == 5, "ShrubDominated",
                                                                 ifelse(State1 == 6, "Shrubland",
                                                                        ifelse(State1 == 7, "Bare/Annuals",
+                                                                              
                                                                               ifelse(State1 == 9, "ExoticInvaded", NA))))))))) %>%
   dplyr::mutate(State2Char = ifelse(State2 == 1, "Grassland",
                                     ifelse(State2 == 2, "AlteredGrassland/Savanna",
@@ -246,11 +259,15 @@ attributetab2021 <- attributetab2021 %>%
                                                                 ifelse(State3 == 6, "Shrubland",
                                                                        ifelse(State3 == 7, "Bare/Annuals",
                                                                               ifelse(State3 == 9, "ExoticInvaded", NA)))))))))
-
-
-
-
-
+# Unite species and functional groups to single column each
+# Create string vector of dominant FGs in attributetable
+attributetab2021 <- attributetab2021 %>%
+  mutate(dom1 = ifelse(dom1 == "<Null>" | dom1 == " ", NA, dom1)) # Make all NA codes the same
+attributetab2021 <- attributetab2021 %>%
+  dplyr::mutate_at(vars(c("dom1", "dom2", "dom3", "dom4")), ~ifelse( . == "<Null>" | . == " ", NA, .)) %>%
+  tidyr::unite(DomVeg, dom1:dom3, na.rm = FALSE, remove = FALSE, sep = ",") # Unite codes at species level
+attributetab2021 <- attributetab2021 %>%
+  tidyr::unite(FGString, Dom1FG:Dom3FG, na.rm = TRUE, remove = FALSE, sep = ",")
 
 
 
