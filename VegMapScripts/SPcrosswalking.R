@@ -10,8 +10,7 @@ attributetab1915 <- read.csv("at1915_clean.csv")
 attributetab1928 <- read.csv("at1928_clean.csv")
 attributetab1998 <- read.csv("at1998_clean.csv")
 attributetab2021 <- read.csv("at2021_clean.csv")
-
-
+autocrosswalk <- read.csv("autocrosswalk_clean.csv")
 
 
 
