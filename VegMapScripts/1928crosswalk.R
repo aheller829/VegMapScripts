@@ -29,7 +29,7 @@ match_list <- apply(X = autocrosswalk,
                      MARGIN = 1,
                      FUN = function(X, vegmap){
                        current_row <- X
-                       current_veg1 <- current_row[["VegUnite"]]
+                       current_veg1 <- current_row[["DomSp1"]]
                        
                        veg_matches <- sapply(X = vegmap$Name,
                                              current_veg1 = current_veg1,
@@ -63,4 +63,5 @@ results1928 <- do.call(rbind,
                     match_list)
 
 # Site match
-results1928 <- dplyr::filter(results1928, matches > 0 & esite == SiteName)
+results1928 <- dplyr::filter(results1928, matches > 0 & esite == SiteName | 
+                               FG1928 == GeneralizedStateName)

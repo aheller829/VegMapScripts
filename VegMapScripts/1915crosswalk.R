@@ -11,11 +11,6 @@ attributetab1915 <- read.csv("at1915_clean.csv")
 
 
 
-
-
-
-
-
 # How many functional group equivalents are there?
 functionalgrouptab_site <- autocrosswalk %>%
   dplyr::group_by(Site, SiteName, StateName, FGUnite) %>%
@@ -76,7 +71,7 @@ results1915 <- attributetab1915 %>%
 names(results1915)
 # Second join on species? Or match on species?
 # Species join, dom1
-match_list4 <- apply(X = autocrosswalk,
+match_list <- apply(X = autocrosswalk,
                      vegmap = results1915,
                      MARGIN = 1,
                      FUN = function(X, vegmap){
@@ -106,17 +101,17 @@ match_list4 <- apply(X = autocrosswalk,
                                   FG_GSName = vegmap$FG_GSName,
                                   FG_GSNum = vegmap$FG_GSNum,
                                   OBJECTID1915 = vegmap$OBJECTID,
-                                  matches4 = as.integer(veg_matches),
+                                  matches1 = as.integer(veg_matches),
                                   stringsAsFactors = FALSE)
                      })
 
 
-results4 <- do.call(rbind,
-                    match_list4)
+results <- do.call(rbind,
+                    match_list)
 
 
 # Species join, dom2
-match_list5 <- apply(X = autocrosswalk,
+match_list2 <- apply(X = autocrosswalk,
                      vegmap = results1915,
                      MARGIN = 1,
                      FUN = function(X, vegmap){
@@ -141,19 +136,58 @@ match_list5 <- apply(X = autocrosswalk,
                                   OBJECTID1915 = vegmap$OBJECTID1915,
                                   FG_GSName = vegmap$FG_GSName,
                                   FG_GSNum = vegmap$FG_GSNum,
-                                  matches5 = as.integer(veg_matches),
+                                  matches2 = as.integer(veg_matches),
                                   stringsAsFactors = FALSE)
                      })
 
 
-results5 <- do.call(rbind,
-                    match_list5)
+results2 <- do.call(rbind,
+                    match_list2)
+
+
+# Species join, dom3
+match_list3 <- apply(X = autocrosswalk,
+                     vegmap = results1915,
+                     MARGIN = 1,
+                     FUN = function(X, vegmap){
+                       current_row <- X
+                       current_veg1 <- current_row[["DomSp3"]]
+                       
+                       veg_matches <- sapply(X = vegmap$VegUnite1915,
+                                             current_veg1 = current_veg1,
+                                             
+                                             FUN = function(X, current_veg1) {
+                                               
+                                               
+                                               vegs <- trimws(unlist(stringr::str_split(X, pattern = ",")))
+                                               
+                                               
+                                               
+                                               any(vegs %in% current_veg1)
+                                             })
+                       data.frame(Site = current_row[["Site"]],
+                                  SiteName = current_row[["SiteName"]],
+                                  StateName = current_row[["StateName"]],
+                                  OBJECTID1915 = vegmap$OBJECTID1915,
+                                  FG_GSName = vegmap$FG_GSName,
+                                  FG_GSNum = vegmap$FG_GSNum,
+                                  matches3 = as.integer(veg_matches),
+                                  stringsAsFactors = FALSE)
+                     })
+
+
+results3 <- do.call(rbind,
+                    match_list3)
+
+
+
 # Join results tables
-SPmatch1915 <- results4 %>%
-  dplyr::left_join(results5) 
+SPmatch1915 <- results %>%
+  dplyr::left_join(results2) %>%
+  dplyr::left_join(results3)
 # Count matches
-SPmatch1915 <- dplyr::mutate(SPmatch1915, SPTally = matches4 + matches5)
-SPmatch1915 <- dplyr::filter(SPmatch1915, SPTally > 0)
+SPmatch1915 <- dplyr::mutate(SPmatch1915, SPTally = matches1 + matches2 + matches3)
+SPmatch1915 <- dplyr::filter(SPmatch1915, SPTally > 1)
 SPmatch1915 <- dplyr::distinct(SPmatch1915)
 # Join matches based on species with FG assemblage match
 SPmatch1915 <- dplyr::distinct(SPmatch1915)
@@ -163,25 +197,25 @@ fullresults1915 <- dplyr::select(SPmatch1915, OBJECTID1915, esite, SP1915, FG191
                                  SPTally, GeneralizedStateNum,
                              GeneralizedStateName, VegUnite, SiteName, Site)
 
-names(SPmatch1915)
 
 # Keep generalized state matches
-fullresults1915 <- dplyr::filter(fullresults1915, FG_GSNum == GeneralizedStateNum)
+# fullresults1915 <- dplyr::filter(fullresults1915, FG_GSNum == GeneralizedStateNum)
 # Keep site matches
-fullresults1915_sitematch <- dplyr::filter(fullresults1915, esite == SiteName)
+# fullresults1915_sitematch <- dplyr::filter(fullresults1915, esite == SiteName)
 # Keep two species matchse
-fullresults1915_sitematch <- dplyr::filter(fullresults1915_sitematch, SPTally > 1)
-fullresults1915_sitematch <- dplyr::distinct(fullresults1915_sitematch)
+# fullresults1915_sitematch <- dplyr::distinct(fullresults1915_sitematch)
 
 
 # How many polygons are present in 1915 attribute table?
 unique(attributetab1915$OBJECTID) # 207
-
+unique(fullresults1915$OBJECTID1915)
 # Subset to polygons not matched
-unmatched1915 <- subset(attributetab1915, !(attributetab1915$OBJECTID %in% FGresults1915$OBJECTID1915))
+unmatched1915 <- subset(attributetab1915, !(attributetab1915$OBJECTID %in% fullresults1915$OBJECTID1915))
 
 
-
-
+# Summary by objectid
+x <- fullresults1915 %>%
+  dplyr::group_by(OBJECTID1915, esite, FG_GSName) %>%
+  dplyr::summarise(Count = n())
 
 
