@@ -37,14 +37,18 @@ autocrosswalk <- tidyr::unite(autocrosswalk, FGUnite, Dom1FG:Dom3FG, na.rm = TRU
 # Clean 1915 data
 # Read in 1915 table
 attributetab1915 <- read.csv("attributetab1915.csv")
+attributetab1915MS <- read.csv("attributetab1915_multisite.csv")
+# Join with multisite table
+MS1915 <- dplyr::select(attributetab1915MS, OBJECTID, ecosite2, ecosite3)
+attributetab1915 <- dplyr::left_join(attributetab1915, MS1915)
 
 # Will need to transform species codes to match USDA PLANTS codes used in autocrosswalk
 
 # Codes from 1915 map
 # names(attributetab1915)
-# unique(attributetab1915$ZST_DOM)
-# unique(attributetab1915$ZND_DOM)
-# unique(attributetab1915$ZRD_DOM)
+unique(attributetab1915$ZST_DOM)
+unique(attributetab1915$ZND_DOM)
+unique(attributetab1915$ZRD_DOM)
 
 # Codes from site/state table
 # names(autocrosswalk)
@@ -98,7 +102,11 @@ attributetab1915 <- tidyr::unite(attributetab1915, FGUnite, Dom1FG:Dom3FG, na.rm
 
 
 # Clean 1928 data
+# In this case, can just use MS table...nothing was dropped, only added from original single site
 attributetab1928 <- read.csv("attributetab1928.csv")
+attributetab1928 <- read.csv("attributetab1928_multisite.csv")
+
+
 # Codes from 1928
 # names(attributetab1928)
 # unique(attributetab1928$Name)
@@ -132,6 +140,7 @@ rm(Dom1_fg)
 
 # Clean 1998 data
 attributetab1998 <- read.csv("attributetab1998.csv")
+attributetab1998 <- read.csv("attributetab1998_multisite.csv")
 # names(attributetab1998)
 # unique(attributetab1998$DOM1)
 # unique(attributetab1998$DOM2)

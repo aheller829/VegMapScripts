@@ -8,6 +8,7 @@ library(tidyr)
 # Read in clean datasheets
 autocrosswalk <- read.csv("autocrosswalk_clean.csv")
 attributetab1915 <- read.csv("at1915_clean.csv")
+attributetab2021 <- read.csv("at2021_clean.csv")
 
 
 
@@ -27,13 +28,17 @@ functionalgrouptab_GS <- autocrosswalk %>%
 fgassemblages <- attributetab2021 %>%
   dplyr::group_by(State1, FGString) %>%
   dplyr::summarise(Count = n()) %>%
-  dplyr::select(-Count) %>%
+  dplyr::select(-Count) 
+
+%>%
   dplyr::filter(FGString != "NA,NA,NA")
 
 fgassemblages2 <- attributetab2021 %>%
   dplyr::group_by(State2, FGString) %>%
   dplyr::summarise(Count = n()) %>%
-  dplyr::select(-Count) %>%
+  dplyr::select(-Count) 
+
+%>%
   dplyr::filter(FGString != "NA,NA,NA") %>%
   dplyr::rename(State1 = State2)
 
@@ -43,6 +48,10 @@ fgassemblages3 <- attributetab2021 %>%
   dplyr::select(-Count) %>%
   dplyr::filter(FGString != "NA,NA,NA") %>%
   dplyr::rename(State1 = State3)
+
+
+x <- dplyr::filter(attributetab2021, State1 == 3 | State2 == 3 | State3 == 3)
+
 
 # Bind together, remove double NA, remove duplicates
 fgassemblages <- rbind(fgassemblages, fgassemblages2)
@@ -66,7 +75,8 @@ rm(fgassemblages3)
 results1915 <- attributetab1915 %>%
   dplyr::left_join(functionalgrouptab_GS) %>%
   dplyr::select(FID, OBJECTID1915 = OBJECTID, VegUnite1915 = VegUnite, 
-                FGUnite1915 = FGUnite, ecosite1, FG_GSNum = GeneralizedStateNumber, 
+                FGUnite1915 = FGUnite, ecosite1, ecosite2, ecosite3,
+                FG_GSNum = GeneralizedStateNumber, 
                 FG_GSName = GeneralizedStateName)
 names(results1915)
 # Second join on species? Or match on species?
@@ -97,7 +107,9 @@ match_list <- apply(X = autocrosswalk,
                                   GeneralizedStateNum = current_row[["GeneralizedStateNumber"]],
                                   FG1915 = vegmap$FGUnite1915,
                                   SP1915 = vegmap$VegUnite1915,
-                                  esite = vegmap$ecosite1,
+                                  ecosite1 = vegmap$ecosite1,
+                                  ecosite2 = vegmap$ecosite2,
+                                  ecosite3 = vegmap$ecosite3,
                                   FG_GSName = vegmap$FG_GSName,
                                   FG_GSNum = vegmap$FG_GSNum,
                                   OBJECTID1915 = vegmap$OBJECTID,
@@ -187,35 +199,32 @@ SPmatch1915 <- results %>%
   dplyr::left_join(results3)
 # Count matches
 SPmatch1915 <- dplyr::mutate(SPmatch1915, SPTally = matches1 + matches2 + matches3)
-SPmatch1915 <- dplyr::filter(SPmatch1915, SPTally > 1)
 SPmatch1915 <- dplyr::distinct(SPmatch1915)
 # Join matches based on species with FG assemblage match
-SPmatch1915 <- dplyr::distinct(SPmatch1915)
 # Reorder variables
-fullresults1915 <- dplyr::select(SPmatch1915, OBJECTID1915, esite, SP1915, FG1915,
+names(SPmatch1915)
+fullresults1915 <- dplyr::select(SPmatch1915, OBJECTID1915, ecosite1, ecosite2,
+                                 ecosite3, SP1915, FG1915,
                                  FG_GSName, FG_GSNum,
                                  SPTally, GeneralizedStateNum,
                              GeneralizedStateName, VegUnite, SiteName, Site)
 
-
 # Keep generalized state matches
-# fullresults1915 <- dplyr::filter(fullresults1915, FG_GSNum == GeneralizedStateNum)
+fullresults1915 <- dplyr::filter(fullresults1915, FG_GSNum == GeneralizedStateNum | SPTally > 1)
 # Keep site matches
-# fullresults1915_sitematch <- dplyr::filter(fullresults1915, esite == SiteName)
-# Keep two species matchse
-# fullresults1915_sitematch <- dplyr::distinct(fullresults1915_sitematch)
+fullresults1915_sitematch <- dplyr::filter(fullresults1915, ecosite1 == SiteName |
+                                             ecosite2 == SiteName | ecosite3 == SiteName)
+
+fullresults1915_sitematch <- dplyr::distinct(fullresults1915_sitematch)
 
 
 # How many polygons are present in 1915 attribute table?
 unique(attributetab1915$OBJECTID) # 207
-unique(fullresults1915$OBJECTID1915)
+unique(fullresults1915_sitematch$OBJECTID1915)
 # Subset to polygons not matched
-unmatched1915 <- subset(attributetab1915, !(attributetab1915$OBJECTID %in% fullresults1915$OBJECTID1915))
+unmatched1915 <- subset(attributetab1915, !(attributetab1915$OBJECTID %in% fullresults1915_sitematch$OBJECTID1915))
 
-
-# Summary by objectid
-x <- fullresults1915 %>%
-  dplyr::group_by(OBJECTID1915, esite, FG_GSName) %>%
-  dplyr::summarise(Count = n())
-
+# write to csv
+write.csv(fullresults1915_sitematch, "results1915_sitematched.csv", row.names = FALSE)
+write.csv(unmatched1915, "unmatched1915.csv", row.names = FALSE)
 

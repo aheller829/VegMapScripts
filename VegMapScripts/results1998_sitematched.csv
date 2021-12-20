@@ -1,0 +1,471 @@
+OBJECTID1998,ecosite1,ecosite2,ecosite3,SP1998,FG1998,FG_GSName,FG_GSNum,SPTally,GeneralizedStateNum,GeneralizedStateName,VegUnite,SiteName,Site
+120,Gravelly,Loamy, ,"FLCE,LATR2,PLMU3","shrub,shrub,PG",ShrubDominated,5,2,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+123,Gravelly,Loamy, ,"LATR2,COWA,MUPO2","shrub,shrub,PG",ShrubDominated,5,1,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+124,Gravelly,Loamy, ,"LATR2,FLCE,PLMU3","shrub,shrub,PG",ShrubDominated,5,2,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+129,Gravelly,Loamy, ,"LATR2,SCBR2, ","shrub,PG",ShrubDominated,5,1,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+131,Gravelly,No ecosite, ,"LATR2,FLCE,PLMU3","shrub,shrub,PG",ShrubDominated,5,2,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+133,Gravelly,Shallow sandy, ,"LATR2,FLCE,MUPO2","shrub,shrub,PG",ShrubDominated,5,2,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+134,Gravelly,Shallow sandy, ,"LATR2,FLCE,PLMU3","shrub,shrub,PG",ShrubDominated,5,2,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+136,Gravelly,Shallow sandy, ,"FLCE,LATR2,PLMU3","shrub,shrub,PG",ShrubDominated,5,2,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+137,Gravelly,Shallow sandy, ,"LATR2,FLCE,MUPO2","shrub,shrub,PG",ShrubDominated,5,2,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+138,Gravelly,Shallow sandy, ,"LATR2,FLCE,PLMU3","shrub,shrub,PG",ShrubDominated,5,2,5,ShrubDominated,"LATR2,FLCE,BOER4",Gravelly,R042XB010NM
+116,Gravelly, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+121,Gravelly,Loamy, ,"FLCE,LATR2,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+126,Gravelly,Loamy, ,"LATR2,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+127,Gravelly,Loamy, ,"LATR2,PRGL2,COWA","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+128,Gravelly,Loamy, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+129,Gravelly,Loamy, ,"LATR2,SCBR2, ","shrub,PG",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+132,Gravelly,No ecosite, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+135,Gravelly,Shallow sandy, ,"FLCE,LATR2,LYBE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+139,Gravelly,Shallow sandy, ,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+140,Gravelly,Shallow sandy, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"LATR2,MUPO2",Gravelly,R042XB010NM
+116,Gravelly, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+121,Gravelly,Loamy, ,"FLCE,LATR2,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+126,Gravelly,Loamy, ,"LATR2,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+127,Gravelly,Loamy, ,"LATR2,PRGL2,COWA","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+128,Gravelly,Loamy, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+129,Gravelly,Loamy, ,"LATR2,SCBR2, ","shrub,PG",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+132,Gravelly,No ecosite, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+135,Gravelly,Shallow sandy, ,"FLCE,LATR2,LYBE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+139,Gravelly,Shallow sandy, ,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+140,Gravelly,Shallow sandy, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,LATR2,Gravelly,R042XB010NM
+241,Sandy,Deep sand, ,"SCBR2,BOER4,ARPU9","PG,PG,PG",Grassland,1,1,1,Grassland,"BOER4,SPORO,MUPO2",Sandy,R042XB012NM
+300,Sandy,Loamy,Deep sand,"BOER4,ARPU9,SPFL2","PG,PG,PG",Grassland,1,1,1,Grassland,"BOER4,SPORO,MUPO2",Sandy,R042XB012NM
+367,Sandy,Loamy,Deep sand,"SCBR2,BOER4, ","PG,PG",Grassland,1,1,1,Grassland,"BOER4,SPORO,MUPO2",Sandy,R042XB012NM
+368,Sandy,Loamy,Deep sand,"SCBR2,BOER4,ARPU9","PG,PG,PG",Grassland,1,1,1,Grassland,"BOER4,SPORO,MUPO2",Sandy,R042XB012NM
+369,Sandy,Loamy,Deep sand,"SCBR2,BOER4,PLMU3","PG,PG,PG",Grassland,1,1,1,Grassland,"BOER4,SPORO,MUPO2",Sandy,R042XB012NM
+66,Deep sand,Sandy,Shallow sandy,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+69,Deep sand,Sandy,Shallow sandy,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+71,Deep sand,Sandy,Shallow sandy,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+74,Deep sand,Sandy,Shallow sandy,"PRGL2,ARFI2,ATCA2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+75,Deep sand,Sandy,Shallow sandy,"PRGL2,ARFI2,QUERCUS","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+78,Deep sand,Sandy,Shallow sandy,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+80,Deep sand,Sandy,Shallow sandy,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+81,Deep sand,Sandy,Shallow sandy,"PRGL2,LATR2,MIACB","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+166,Sandy, , ,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+168,Sandy, , ,"PRGL2,ARPU9, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+170,Sandy, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+171,Sandy, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+174,Sandy,Deep sand, ,"ATCA2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+177,Sandy,Deep sand, ,"BOER4,SPFL2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+186,Sandy,Deep sand, ,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+188,Sandy,Deep sand, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+192,Sandy,Deep sand, ,"PLMU3,PRGL2, ","PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+195,Sandy,Deep sand, ,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+197,Sandy,Deep sand, ,"PRGL2,BOER4, ","shrub,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+198,Sandy,Deep sand, ,"PRGL2,BOER4,SPFL2","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+200,Sandy,Deep sand, ,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+201,Sandy,Deep sand, ,"PRGL2,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+202,Sandy,Deep sand, ,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+203,Sandy,Deep sand, ,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+204,Sandy,Deep sand, ,"PRGL2,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+205,Sandy,Deep sand, ,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+206,Sandy,Deep sand, ,"PRGL2,SPFL2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+213,Sandy,Deep sand, ,"PRGL2,ARPU9, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+216,Sandy,Deep sand, ,"PRGL2,ATCA2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+223,Sandy,Deep sand, ,"PRGL2,FLCE,ATCA2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+227,Sandy,Deep sand, ,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+229,Sandy,Deep sand, ,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+230,Sandy,Deep sand, ,"PRGL2,SPFL2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+238,Sandy,Deep sand, ,"PSSC6,PRGL2,ARFI2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+246,Sandy,Deep sand, ,"SCBR2,PLMU3,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+250,Sandy,Deep sand, ,"SPFL2,ARPU9,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+256,Sandy,Deep sand,Shallow sandy,"ARPU9,PLMU3,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+258,Sandy,Deep sand,Shallow sandy,"BOER4,SPFL2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+263,Sandy,Deep sand,Shallow sandy,"PRGL2,BOER4, ","shrub,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+294,Sandy,Loamy,Clayey,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+297,Sandy,Loamy,Clayey,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+314,Sandy,Loamy,Deep sand,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+315,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+316,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+323,Sandy,Loamy,Deep sand,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+325,Sandy,Loamy,Deep sand,"PLMU3,SPAI,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+327,Sandy,Loamy,Deep sand,"PRGL2,ARPU9,BOER4","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+329,Sandy,Loamy,Deep sand,"PRGL2,BOER4,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+332,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+333,Sandy,Loamy,Deep sand,"PRGL2,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+334,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+335,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+336,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+338,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+339,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+346,Sandy,Loamy,Deep sand,"PRGL2,ARPU9, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+353,Sandy,Loamy,Deep sand,"PRGL2,FLCE,ATCA2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+354,Sandy,Loamy,Deep sand,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+356,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+358,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+378,Sandy,Loamy,Deep sand,"SCBR2,PLMU3,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+379,Sandy,Loamy,Deep sand,"SCBR2,PRGL2, ","PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+384,Sandy,Loamy,Deep sand,"SCBR2,SPAI,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+393,Sandy,Shallow sandy, ,"BOER4,SPFL2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+400,Sandy,Shallow sandy, ,"PRGL2,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+413,Sandy,Shallow sandy, ,"SPFL2,ARPU9,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+418,Shallow sandy,Sandy, ,"BOER4,SPFL2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+419,Shallow sandy,Sandy, ,"PRGL2,BOER4, ","shrub,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+420,Shallow sandy,Sandy, ,"PRGL2,BOER4,SPFL2","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+429,Shallow sandy,Sandy, ,"PRGL2,SPFL2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"BOER4,PRGL2",Sandy,R042XB012NM
+66,Deep sand,Sandy,Shallow sandy,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+69,Deep sand,Sandy,Shallow sandy,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+70,Deep sand,Sandy,Shallow sandy,"LATR2,PRGL2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+71,Deep sand,Sandy,Shallow sandy,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+73,Deep sand,Sandy,Shallow sandy,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+74,Deep sand,Sandy,Shallow sandy,"PRGL2,ARFI2,ATCA2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+75,Deep sand,Sandy,Shallow sandy,"PRGL2,ARFI2,QUERCUS","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+78,Deep sand,Sandy,Shallow sandy,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+79,Deep sand,Sandy,Shallow sandy,"PRGL2,LATR2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+80,Deep sand,Sandy,Shallow sandy,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+81,Deep sand,Sandy,Shallow sandy,"PRGL2,LATR2,MIACB","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+82,Deep sand,Sandy,Shallow sandy,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+83,Deep sand,Sandy,Shallow sandy,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+166,Sandy, , ,"PRGL2,PLMU3,SPAI","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+168,Sandy, , ,"PRGL2,ARPU9, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+170,Sandy, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+171,Sandy, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+174,Sandy,Deep sand, ,"ATCA2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+186,Sandy,Deep sand, ,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+187,Sandy,Deep sand, ,"LATR2,PRGL2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+188,Sandy,Deep sand, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+197,Sandy,Deep sand, ,"PRGL2,BOER4, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+198,Sandy,Deep sand, ,"PRGL2,BOER4,SPFL2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+200,Sandy,Deep sand, ,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+201,Sandy,Deep sand, ,"PRGL2,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+202,Sandy,Deep sand, ,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+203,Sandy,Deep sand, ,"PRGL2,PLMU3,SPAI","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+204,Sandy,Deep sand, ,"PRGL2,SCBR2, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+205,Sandy,Deep sand, ,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+206,Sandy,Deep sand, ,"PRGL2,SPFL2, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+212,Sandy,Deep sand, ,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+213,Sandy,Deep sand, ,"PRGL2,ARPU9, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+215,Sandy,Deep sand, ,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+216,Sandy,Deep sand, ,"PRGL2,ATCA2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+223,Sandy,Deep sand, ,"PRGL2,FLCE,ATCA2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+226,Sandy,Deep sand, ,"PRGL2,LATR2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+227,Sandy,Deep sand, ,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+228,Sandy,Deep sand, ,"PRGL2,PSSC6, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+229,Sandy,Deep sand, ,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+230,Sandy,Deep sand, ,"PRGL2,SPFL2, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+235,Sandy,Deep sand, ,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+236,Sandy,Deep sand, ,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+238,Sandy,Deep sand, ,"PSSC6,PRGL2,ARFI2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+263,Sandy,Deep sand,Shallow sandy,"PRGL2,BOER4, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+271,Sandy,Deep sand,Shallow sandy,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+273,Sandy,Deep sand,Shallow sandy,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+294,Sandy,Loamy,Clayey,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+314,Sandy,Loamy,Deep sand,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+315,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+316,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+327,Sandy,Loamy,Deep sand,"PRGL2,ARPU9,BOER4","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+329,Sandy,Loamy,Deep sand,"PRGL2,BOER4,ARPU9","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+332,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+333,Sandy,Loamy,Deep sand,"PRGL2,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+334,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,ARPU9","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+335,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+336,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SPAI","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+338,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,ARPU9","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+339,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+345,Sandy,Loamy,Deep sand,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+346,Sandy,Loamy,Deep sand,"PRGL2,ARPU9, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+347,Sandy,Loamy,Deep sand,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+353,Sandy,Loamy,Deep sand,"PRGL2,FLCE,ATCA2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+354,Sandy,Loamy,Deep sand,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+356,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+358,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+362,Sandy,Loamy,Deep sand,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+400,Sandy,Shallow sandy, ,"PRGL2,SCBR2, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+406,Sandy,Shallow sandy, ,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+419,Shallow sandy,Sandy, ,"PRGL2,BOER4, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+420,Shallow sandy,Sandy, ,"PRGL2,BOER4,SPFL2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+425,Shallow sandy,Sandy, ,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+426,Shallow sandy,Sandy, ,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+429,Shallow sandy,Sandy, ,"PRGL2,SPFL2, ","shrub,PG",Shrubland,6,1,6,Shrubland,PRGL2,Sandy,R042XB012NM
+66,Deep sand,Sandy,Shallow sandy,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+69,Deep sand,Sandy,Shallow sandy,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+71,Deep sand,Sandy,Shallow sandy,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+74,Deep sand,Sandy,Shallow sandy,"PRGL2,ARFI2,ATCA2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+75,Deep sand,Sandy,Shallow sandy,"PRGL2,ARFI2,QUERCUS","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+78,Deep sand,Sandy,Shallow sandy,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+80,Deep sand,Sandy,Shallow sandy,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+81,Deep sand,Sandy,Shallow sandy,"PRGL2,LATR2,MIACB","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+166,Sandy, , ,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+168,Sandy, , ,"PRGL2,ARPU9, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+170,Sandy, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+171,Sandy, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+174,Sandy,Deep sand, ,"ATCA2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+177,Sandy,Deep sand, ,"BOER4,SPFL2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+186,Sandy,Deep sand, ,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+188,Sandy,Deep sand, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+192,Sandy,Deep sand, ,"PLMU3,PRGL2, ","PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+195,Sandy,Deep sand, ,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+197,Sandy,Deep sand, ,"PRGL2,BOER4, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+198,Sandy,Deep sand, ,"PRGL2,BOER4,SPFL2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+200,Sandy,Deep sand, ,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+201,Sandy,Deep sand, ,"PRGL2,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+202,Sandy,Deep sand, ,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+203,Sandy,Deep sand, ,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+204,Sandy,Deep sand, ,"PRGL2,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+205,Sandy,Deep sand, ,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+206,Sandy,Deep sand, ,"PRGL2,SPFL2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+213,Sandy,Deep sand, ,"PRGL2,ARPU9, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+216,Sandy,Deep sand, ,"PRGL2,ATCA2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+223,Sandy,Deep sand, ,"PRGL2,FLCE,ATCA2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+227,Sandy,Deep sand, ,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+229,Sandy,Deep sand, ,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+230,Sandy,Deep sand, ,"PRGL2,SPFL2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+238,Sandy,Deep sand, ,"PSSC6,PRGL2,ARFI2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+246,Sandy,Deep sand, ,"SCBR2,PLMU3,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+250,Sandy,Deep sand, ,"SPFL2,ARPU9,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+256,Sandy,Deep sand,Shallow sandy,"ARPU9,PLMU3,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+258,Sandy,Deep sand,Shallow sandy,"BOER4,SPFL2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+263,Sandy,Deep sand,Shallow sandy,"PRGL2,BOER4, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+294,Sandy,Loamy,Clayey,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+297,Sandy,Loamy,Clayey,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+314,Sandy,Loamy,Deep sand,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+315,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+316,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+323,Sandy,Loamy,Deep sand,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+325,Sandy,Loamy,Deep sand,"PLMU3,SPAI,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+327,Sandy,Loamy,Deep sand,"PRGL2,ARPU9,BOER4","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+329,Sandy,Loamy,Deep sand,"PRGL2,BOER4,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+332,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+333,Sandy,Loamy,Deep sand,"PRGL2,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+334,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+335,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+336,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+338,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+339,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+346,Sandy,Loamy,Deep sand,"PRGL2,ARPU9, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+353,Sandy,Loamy,Deep sand,"PRGL2,FLCE,ATCA2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+354,Sandy,Loamy,Deep sand,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+356,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+358,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+378,Sandy,Loamy,Deep sand,"SCBR2,PLMU3,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+379,Sandy,Loamy,Deep sand,"SCBR2,PRGL2, ","PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+384,Sandy,Loamy,Deep sand,"SCBR2,SPAI,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+393,Sandy,Shallow sandy, ,"BOER4,SPFL2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+400,Sandy,Shallow sandy, ,"PRGL2,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+413,Sandy,Shallow sandy, ,"SPFL2,ARPU9,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+418,Shallow sandy,Sandy, ,"BOER4,SPFL2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+419,Shallow sandy,Sandy, ,"PRGL2,BOER4, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+420,Shallow sandy,Sandy, ,"PRGL2,BOER4,SPFL2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+429,Shallow sandy,Sandy, ,"PRGL2,SPFL2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",Sandy,R042XB012NM
+33,Clayey,Bottomland,Loamy,"PLMU3, , ",PG,Grassland,1,1,1,Grassland,PLMU3,Clayey,R042XB023NM
+36,Clayey,Bottomland,Loamy,"PLMU3,SCBR2, ","PG,PG",Grassland,1,1,1,Grassland,PLMU3,Clayey,R042XB023NM
+296,Sandy,Loamy,Clayey,"PLMU3,SCBR2, ","PG,PG",Grassland,1,1,1,Grassland,PLMU3,Clayey,R042XB023NM
+33,Clayey,Bottomland,Loamy,"PLMU3, , ",PG,AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3",Clayey,R042XB023NM
+36,Clayey,Bottomland,Loamy,"PLMU3,SCBR2, ","PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3",Clayey,R042XB023NM
+52,Clayey,Bottomland,Loamy,"SCBR2, , ",PG,AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3",Clayey,R042XB023NM
+296,Sandy,Loamy,Clayey,"PLMU3,SCBR2, ","PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3",Clayey,R042XB023NM
+25,Clayey,Bottomland,Loamy,"FLCE,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+26,Clayey,Bottomland,Loamy,"FLCE,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+27,Clayey,Bottomland,Loamy,"FLCE,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+28,Clayey,Bottomland,Loamy,"FLCE,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+34,Clayey,Bottomland,Loamy,"PLMU3,MUPO2,FLCE","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+37,Clayey,Bottomland,Loamy,"PLMU3,SCBR2,FLCE","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+38,Clayey,Bottomland,Loamy,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+40,Clayey,Bottomland,Loamy,"PRGL2,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+41,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+42,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+43,Clayey,Bottomland,Loamy,"PRGL2,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+44,Clayey,Bottomland,Loamy,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+286,Sandy,Loamy,Clayey,"FLCE,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+287,Sandy,Loamy,Clayey,"FLCE,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+288,Sandy,Loamy,Clayey,"FLCE,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+295,Sandy,Loamy,Clayey,"PLMU3,MUPO2,LATR2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+297,Sandy,Loamy,Clayey,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",Clayey,R042XB023NM
+25,Clayey,Bottomland,Loamy,"FLCE,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+26,Clayey,Bottomland,Loamy,"FLCE,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+27,Clayey,Bottomland,Loamy,"FLCE,SCBR2, ","shrub,PG",Shrubland,6,1,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+28,Clayey,Bottomland,Loamy,"FLCE,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+30,Clayey,Bottomland,Loamy,"LATR2,FLCE, ","shrub,shrub",Shrubland,6,2,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+283,Sandy,Loamy,Clayey,"FLCE,LATR2,LYBE","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+286,Sandy,Loamy,Clayey,"FLCE,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+287,Sandy,Loamy,Clayey,"FLCE,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+288,Sandy,Loamy,Clayey,"FLCE,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+289,Sandy,Loamy,Clayey,"LATR2, , ",shrub,Shrubland,6,1,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+290,Sandy,Loamy,Clayey,"LATR2,FLCE, ","shrub,shrub",Shrubland,6,2,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+294,Sandy,Loamy,Clayey,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"FLCE,LATR2,PRGL2",Clayey,R042XB023NM
+55,Clayey,Bottomland,Loamy,"SPAI, , ",PG,Grassland,1,1,1,Grassland,"SPAI,SPWR2,PAOB",Bottomland,R042XB018NM
+15,Bottomland,Limy,Salt Flats,"PLMU3,SCBR2, ","PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"PLMU3,SCBR2,SPAI",Bottomland,R042XB018NM
+33,Clayey,Bottomland,Loamy,"PLMU3, , ",PG,AlteredGrassland,2,1,2,AlteredGrassland,"PLMU3,SCBR2,SPAI",Bottomland,R042XB018NM
+36,Clayey,Bottomland,Loamy,"PLMU3,SCBR2, ","PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"PLMU3,SCBR2,SPAI",Bottomland,R042XB018NM
+52,Clayey,Bottomland,Loamy,"SCBR2, , ",PG,AlteredGrassland,2,1,2,AlteredGrassland,"PLMU3,SCBR2,SPAI",Bottomland,R042XB018NM
+5,Bottomland,Limy,Salt Flats,"FLCE,LATR2,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+11,Bottomland,Limy,Salt Flats,"LATR2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+12,Bottomland,Limy,Salt Flats,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+13,Bottomland,Limy,Salt Flats,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+16,Bottomland,Limy,Salt Flats,"PLMU3,SCBR2,LATR2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+17,Bottomland,Limy,Salt Flats,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+19,Bottomland,Limy,Salt Flats,"PRGL2,PLMU3,MUPO2","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+20,Bottomland,Limy,Salt Flats,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+21,Bottomland,Limy,Salt Flats,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+25,Clayey,Bottomland,Loamy,"FLCE,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+26,Clayey,Bottomland,Loamy,"FLCE,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+28,Clayey,Bottomland,Loamy,"FLCE,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+34,Clayey,Bottomland,Loamy,"PLMU3,MUPO2,FLCE","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+37,Clayey,Bottomland,Loamy,"PLMU3,SCBR2,FLCE","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+38,Clayey,Bottomland,Loamy,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+40,Clayey,Bottomland,Loamy,"PRGL2,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+41,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+42,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+43,Clayey,Bottomland,Loamy,"PRGL2,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+44,Clayey,Bottomland,Loamy,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",Bottomland,R042XB018NM
+11,Bottomland,Limy,Salt Flats,"LATR2,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+15,Bottomland,Limy,Salt Flats,"PLMU3,SCBR2, ","PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+19,Bottomland,Limy,Salt Flats,"PRGL2,PLMU3,MUPO2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+25,Clayey,Bottomland,Loamy,"FLCE,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+26,Clayey,Bottomland,Loamy,"FLCE,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+28,Clayey,Bottomland,Loamy,"FLCE,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+36,Clayey,Bottomland,Loamy,"PLMU3,SCBR2, ","PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+40,Clayey,Bottomland,Loamy,"PRGL2,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+41,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+42,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SPAI","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+44,Clayey,Bottomland,Loamy,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",Bottomland,R042XB018NM
+103,Draw,No ecosite, ,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3",Draw,R042XB016NM
+105,Draw,No ecosite, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3",Draw,R042XB016NM
+107,Draw,No ecosite, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3",Draw,R042XB016NM
+110,Draw,No ecosite, ,"PRGL2,ARFI2,ATCA2","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3",Draw,R042XB016NM
+111,Draw,No ecosite, ,"PRGL2,ARFI2,QUERCUS","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3",Draw,R042XB016NM
+115,Draw,Shallow sandy, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,PLMU3",Draw,R042XB016NM
+103,Draw,No ecosite, ,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+105,Draw,No ecosite, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+106,Draw,No ecosite, ,"LATR2,PRGL2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+107,Draw,No ecosite, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+109,Draw,No ecosite, ,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+110,Draw,No ecosite, ,"PRGL2,ARFI2,ATCA2","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+111,Draw,No ecosite, ,"PRGL2,ARFI2,QUERCUS","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+113,Draw,No ecosite, ,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+115,Draw,Shallow sandy, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,SCBR2",Draw,R042XB016NM
+33,Clayey,Bottomland,Loamy,"PLMU3, , ",PG,Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+36,Clayey,Bottomland,Loamy,"PLMU3,SCBR2, ","PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+296,Sandy,Loamy,Clayey,"PLMU3,SCBR2, ","PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+300,Sandy,Loamy,Deep sand,"BOER4,ARPU9,SPFL2","PG,PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+317,Sandy,Loamy,Deep sand,"PLMU3, , ",PG,Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+320,Sandy,Loamy,Deep sand,"PLMU3,SCBR2, ","PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+326,Sandy,Loamy,Deep sand,"PLMU3,SPAI,SCBR2","PG,PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+367,Sandy,Loamy,Deep sand,"SCBR2,BOER4, ","PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+368,Sandy,Loamy,Deep sand,"SCBR2,BOER4,ARPU9","PG,PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+369,Sandy,Loamy,Deep sand,"SCBR2,BOER4,PLMU3","PG,PG,PG",Grassland,1,2,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+375,Sandy,Loamy,Deep sand,"SCBR2,PLMU3, ","PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+383,Sandy,Loamy,Deep sand,"SCBR2,SPAI,PLMU3","PG,PG,PG",Grassland,1,1,1,Grassland,"BOER4,PLMU3,ARIST",Loamy,R042XB014NM
+33,Clayey,Bottomland,Loamy,"PLMU3, , ",PG,AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+36,Clayey,Bottomland,Loamy,"PLMU3,SCBR2, ","PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+52,Clayey,Bottomland,Loamy,"SCBR2, , ",PG,AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+296,Sandy,Loamy,Clayey,"PLMU3,SCBR2, ","PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+317,Sandy,Loamy,Deep sand,"PLMU3, , ",PG,AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+320,Sandy,Loamy,Deep sand,"PLMU3,SCBR2, ","PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+326,Sandy,Loamy,Deep sand,"PLMU3,SPAI,SCBR2","PG,PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+326,Sandy,Loamy,Deep sand,"PLMU3,SPAI,SCBR2","PG,PG,PG",AlteredSavanna,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+366,Sandy,Loamy,Deep sand,"SCBR2, , ",PG,AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+367,Sandy,Loamy,Deep sand,"SCBR2,BOER4, ","PG,PG",AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+368,Sandy,Loamy,Deep sand,"SCBR2,BOER4,ARPU9","PG,PG,PG",AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+368,Sandy,Loamy,Deep sand,"SCBR2,BOER4,ARPU9","PG,PG,PG",AlteredSavanna,2,1,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+369,Sandy,Loamy,Deep sand,"SCBR2,BOER4,PLMU3","PG,PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+369,Sandy,Loamy,Deep sand,"SCBR2,BOER4,PLMU3","PG,PG,PG",AlteredSavanna,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+375,Sandy,Loamy,Deep sand,"SCBR2,PLMU3, ","PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+382,Sandy,Loamy,Deep sand,"SCBR2,SPAI, ","PG,PG",AlteredGrassland,2,1,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+383,Sandy,Loamy,Deep sand,"SCBR2,SPAI,PLMU3","PG,PG,PG",AlteredGrassland,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+383,Sandy,Loamy,Deep sand,"SCBR2,SPAI,PLMU3","PG,PG,PG",AlteredSavanna,2,2,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",Loamy,R042XB014NM
+25,Clayey,Bottomland,Loamy,"FLCE,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+26,Clayey,Bottomland,Loamy,"FLCE,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+27,Clayey,Bottomland,Loamy,"FLCE,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+28,Clayey,Bottomland,Loamy,"FLCE,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+34,Clayey,Bottomland,Loamy,"PLMU3,MUPO2,FLCE","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+37,Clayey,Bottomland,Loamy,"PLMU3,SCBR2,FLCE","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+38,Clayey,Bottomland,Loamy,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+40,Clayey,Bottomland,Loamy,"PRGL2,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+41,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+42,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+43,Clayey,Bottomland,Loamy,"PRGL2,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+44,Clayey,Bottomland,Loamy,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+121,Gravelly,Loamy, ,"FLCE,LATR2,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+127,Gravelly,Loamy, ,"LATR2,PRGL2,COWA","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+128,Gravelly,Loamy, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+130,Gravelly,Loamy, ,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+161,Loamy, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+164,Loamy, , ,"PRGL2,PLMU3,MUPO2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+283,Sandy,Loamy,Clayey,"FLCE,LATR2,LYBE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+286,Sandy,Loamy,Clayey,"FLCE,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+287,Sandy,Loamy,Clayey,"FLCE,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+288,Sandy,Loamy,Clayey,"FLCE,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+294,Sandy,Loamy,Clayey,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+297,Sandy,Loamy,Clayey,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+304,Sandy,Loamy,Deep sand,"FLCE,CELA,LYBE","shrub,shrub,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+307,Sandy,Loamy,Deep sand,"FLCE,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+308,Sandy,Loamy,Deep sand,"FLCE,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+310,Sandy,Loamy,Deep sand,"FLCE,SCBR2, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+311,Sandy,Loamy,Deep sand,"FLCE,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+312,Sandy,Loamy,Deep sand,"FLCE,SPAI,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+314,Sandy,Loamy,Deep sand,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+315,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+316,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+321,Sandy,Loamy,Deep sand,"PLMU3,SCBR2,FLCE","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+323,Sandy,Loamy,Deep sand,"PLMU3,SCBR2,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+325,Sandy,Loamy,Deep sand,"PLMU3,SPAI,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+327,Sandy,Loamy,Deep sand,"PRGL2,ARPU9,BOER4","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+329,Sandy,Loamy,Deep sand,"PRGL2,BOER4,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+332,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+333,Sandy,Loamy,Deep sand,"PRGL2,PLMU3, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+334,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+335,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+336,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SPAI","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+338,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,ARPU9","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+339,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+346,Sandy,Loamy,Deep sand,"PRGL2,ARPU9, ","shrub,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+353,Sandy,Loamy,Deep sand,"PRGL2,FLCE,ATCA2","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+354,Sandy,Loamy,Deep sand,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+356,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",ShrubInvadedGrassland,4,2,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+358,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+370,Sandy,Loamy,Deep sand,"SCBR2,FLCE, ","PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+376,Sandy,Loamy,Deep sand,"SCBR2,PLMU3,FLCE","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+378,Sandy,Loamy,Deep sand,"SCBR2,PLMU3,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+379,Sandy,Loamy,Deep sand,"SCBR2,PRGL2, ","PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+384,Sandy,Loamy,Deep sand,"SCBR2,SPAI,PRGL2","PG,PG,shrub",ShrubInvadedGrassland,4,1,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+25,Clayey,Bottomland,Loamy,"FLCE,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+26,Clayey,Bottomland,Loamy,"FLCE,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+27,Clayey,Bottomland,Loamy,"FLCE,SCBR2, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+28,Clayey,Bottomland,Loamy,"FLCE,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+30,Clayey,Bottomland,Loamy,"LATR2,FLCE, ","shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+40,Clayey,Bottomland,Loamy,"PRGL2,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+41,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+42,Clayey,Bottomland,Loamy,"PRGL2,PLMU3,SPAI","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+43,Clayey,Bottomland,Loamy,"PRGL2,SCBR2, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+44,Clayey,Bottomland,Loamy,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+46,Clayey,Bottomland,Loamy,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+121,Gravelly,Loamy, ,"FLCE,LATR2,PRGL2","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+127,Gravelly,Loamy, ,"LATR2,PRGL2,COWA","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+128,Gravelly,Loamy, ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+161,Loamy, , ,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+164,Loamy, , ,"PRGL2,PLMU3,MUPO2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+283,Sandy,Loamy,Clayey,"FLCE,LATR2,LYBE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+286,Sandy,Loamy,Clayey,"FLCE,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+287,Sandy,Loamy,Clayey,"FLCE,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+288,Sandy,Loamy,Clayey,"FLCE,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+290,Sandy,Loamy,Clayey,"LATR2,FLCE, ","shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+294,Sandy,Loamy,Clayey,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+303,Sandy,Loamy,Deep sand,"FLCE,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+304,Sandy,Loamy,Deep sand,"FLCE,CELA,LYBE","shrub,shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+307,Sandy,Loamy,Deep sand,"FLCE,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+308,Sandy,Loamy,Deep sand,"FLCE,PLMU3,SPAI","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+310,Sandy,Loamy,Deep sand,"FLCE,SCBR2, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+311,Sandy,Loamy,Deep sand,"FLCE,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+312,Sandy,Loamy,Deep sand,"FLCE,SPAI,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+314,Sandy,Loamy,Deep sand,"LATR2,FLCE,PRGL2","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+315,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+316,Sandy,Loamy,Deep sand,"LATR2,PRGL2,FLCE","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+327,Sandy,Loamy,Deep sand,"PRGL2,ARPU9,BOER4","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+329,Sandy,Loamy,Deep sand,"PRGL2,BOER4,ARPU9","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+332,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+333,Sandy,Loamy,Deep sand,"PRGL2,PLMU3, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+334,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,ARPU9","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+335,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SCBR2","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+336,Sandy,Loamy,Deep sand,"PRGL2,PLMU3,SPAI","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+338,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,ARPU9","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+339,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+345,Sandy,Loamy,Deep sand,"PRGL2, , ",shrub,Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+346,Sandy,Loamy,Deep sand,"PRGL2,ARPU9, ","shrub,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+347,Sandy,Loamy,Deep sand,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+353,Sandy,Loamy,Deep sand,"PRGL2,FLCE,ATCA2","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+354,Sandy,Loamy,Deep sand,"PRGL2,FLCE,LATR2","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+356,Sandy,Loamy,Deep sand,"PRGL2,LATR2,FLCE","shrub,shrub,shrub",Shrubland,6,2,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+358,Sandy,Loamy,Deep sand,"PRGL2,SCBR2,PLMU3","shrub,PG,PG",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM
+362,Sandy,Loamy,Deep sand,"PRGL2,ATCA2, ","shrub,shrub",Shrubland,6,1,6,Shrubland,"PRGL2,FLCE,LATR2",Loamy,R042XB014NM

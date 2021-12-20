@@ -1,0 +1,120 @@
+FID,Shape *,OBJECTID,FID_Jornad,ecosite1,ecosite2,ecosite3,SUM_Shape_,FID_Polygo,Name,SUM_Shape1,Shape_Leng,Shape_Area
+0,Polygon ZM,1,1, , , ,3529.60461,6,Creosotebush,0.007919,409.257718,3496.239905
+1,Polygon ZM,2,2,Bottomland,Limy,Salt Flats,35299777.56,3,Black grama,0.010776,12889.3265,413138.008
+2,Polygon ZM,3,2,Bottomland,Limy,Salt Flats,35299777.56,5,Burrograss,0.004418,58267.55499,7160912.932
+3,Polygon ZM,4,2,Bottomland,Limy,Salt Flats,35299777.56,6,Creosotebush,0.007919,230362.9852,15633392.03
+4,Polygon ZM,5,2,Bottomland,Limy,Salt Flats,35299777.56,7,Mesquite,0.01881,2716.151612,205246.5048
+5,Polygon ZM,6,2,Bottomland,Limy,Salt Flats,35299777.56,11,Tarbush,0.006261,54038.05289,5610530.543
+6,Polygon ZM,7,2,Bottomland,Limy,Salt Flats,35299777.56,12,Tobosa,0.002308,40231.31614,2424236.131
+7,Polygon ZM,8,3,Clayey,Bottomland,Loamy,13244532.45,1,Aristida spp.,0.001539,3932.18918,167715.659
+8,Polygon ZM,9,3,Clayey,Bottomland,Loamy,13244532.45,2,Bare,0.000058,3096.279989,513131.6741
+9,Polygon ZM,10,3,Clayey,Bottomland,Loamy,13244532.45,3,Black grama,0.010776,2386.515501,56066.26417
+10,Polygon ZM,11,3,Clayey,Bottomland,Loamy,13244532.45,4,Broom snakeweed,0.002123,2870.432857,215667.9706
+11,Polygon ZM,12,3,Clayey,Bottomland,Loamy,13244532.45,5,Burrograss,0.004418,14669.33825,1907110.828
+12,Polygon ZM,13,3,Clayey,Bottomland,Loamy,13244532.45,7,Mesquite,0.01881,4291.991616,806981.5979
+13,Polygon ZM,14,3,Clayey,Bottomland,Loamy,13244532.45,8,Other grasses,0.00016,3218.314897,392383.467
+14,Polygon ZM,15,3,Clayey,Bottomland,Loamy,13244532.45,9,Other shrubs,0.000743,613.996989,18580.08396
+15,Polygon ZM,16,3,Clayey,Bottomland,Loamy,13244532.45,10,Sporobolus spp.,0.000909,2998.105642,178184.4335
+16,Polygon ZM,17,3,Clayey,Bottomland,Loamy,13244532.45,11,Tarbush,0.006261,19544.31144,3940356.867
+17,Polygon ZM,18,3,Clayey,Bottomland,Loamy,13244532.45,12,Tobosa,0.002308,35449.93033,4750287.288
+18,Polygon ZM,19,4,Deep sand, , ,2729747.304,7,Mesquite,0.01881,14698.81181,1913475.193
+19,Polygon ZM,20,5,Deep sand,Sandy,Shallow sandy,89212440.7,3,Black grama,0.010776,8453.856036,1312265.044
+20,Polygon ZM,21,5,Deep sand,Sandy,Shallow sandy,89212440.7,4,Broom snakeweed,0.002123,1809.834686,204756.5492
+21,Polygon ZM,22,5,Deep sand,Sandy,Shallow sandy,89212440.7,5,Burrograss,0.004418,10531.17201,347864.2887
+22,Polygon ZM,23,5,Deep sand,Sandy,Shallow sandy,89212440.7,6,Creosotebush,0.007919,68535.80996,17740586.92
+23,Polygon ZM,24,5,Deep sand,Sandy,Shallow sandy,89212440.7,7,Mesquite,0.01881,123202.0863,59351106.82
+24,Polygon ZM,25,5,Deep sand,Sandy,Shallow sandy,89212440.7,9,Other shrubs,0.000743,2823.407378,213804.515
+25,Polygon ZM,26,5,Deep sand,Sandy,Shallow sandy,89212440.7,11,Tarbush,0.006261,15393.86913,1535657.603
+26,Polygon ZM,27,5,Deep sand,Sandy,Shallow sandy,89212440.7,12,Tobosa,0.002308,10741.11898,504905.5619
+27,Polygon ZM,28,6,Deep sand,Shallow sandy, ,27251884.96,1,Aristida spp.,0.001539,15245.33657,1551261.795
+28,Polygon ZM,29,6,Deep sand,Shallow sandy, ,27251884.96,3,Black grama,0.010776,19213.57617,4447923.083
+29,Polygon ZM,30,6,Deep sand,Shallow sandy, ,27251884.96,4,Broom snakeweed,0.002123,37072.71809,5858813.36
+30,Polygon ZM,31,6,Deep sand,Shallow sandy, ,27251884.96,7,Mesquite,0.01881,40250.59891,15278700.17
+31,Polygon ZM,32,7,Deep sand,Shallow sandy,Deep sand,16796.14723,1,Aristida spp.,0.001539,776.241592,16796.14723
+32,Polygon ZM,33,8,Deep sand,Shallow sandy,Shallow sandy,490190.8801,1,Aristida spp.,0.001539,5932.710091,353044.8485
+33,Polygon ZM,34,8,Deep sand,Shallow sandy,Shallow sandy,490190.8801,4,Broom snakeweed,0.002123,4033.826551,111064.3228
+34,Polygon ZM,35,8,Deep sand,Shallow sandy,Shallow sandy,490190.8801,7,Mesquite,0.01881,728.870463,26081.70898
+35,Polygon ZM,36,10,Draw,No ecosite, ,5763852.348,5,Burrograss,0.004418,713.813373,12337.68897
+36,Polygon ZM,37,10,Draw,No ecosite, ,5763852.348,6,Creosotebush,0.007919,11926.2108,480092.3035
+37,Polygon ZM,38,10,Draw,No ecosite, ,5763852.348,7,Mesquite,0.01881,42969.49519,2198691.452
+38,Polygon ZM,39,10,Draw,No ecosite, ,5763852.348,9,Other shrubs,0.000743,55.15886,35.73506
+39,Polygon ZM,40,10,Draw,No ecosite, ,5763852.348,12,Tobosa,0.002308,27.409395,23.125666
+40,Polygon ZM,41,11,Draw,Shallow sandy, ,151870.5168,6,Creosotebush,0.007919,5051.354569,125438.7496
+41,Polygon ZM,42,12,Gravelly, , ,13255713.34,6,Creosotebush,0.007919,4041.405105,354389.233
+42,Polygon ZM,43,12,Gravelly, , ,13255713.34,7,Mesquite,0.01881,6582.923225,413566.9306
+43,Polygon ZM,44,13,Gravelly,Loamy, ,25616949.89,3,Black grama,0.010776,4054.60671,396161.9345
+44,Polygon ZM,45,13,Gravelly,Loamy, ,25616949.89,5,Burrograss,0.004418,13304.28274,382158.2943
+45,Polygon ZM,46,13,Gravelly,Loamy, ,25616949.89,6,Creosotebush,0.007919,61264.65187,11986655.39
+46,Polygon ZM,47,13,Gravelly,Loamy, ,25616949.89,11,Tarbush,0.006261,602.945961,18178.93087
+47,Polygon ZM,48,13,Gravelly,Loamy, ,25616949.89,12,Tobosa,0.002308,4558.753735,116208.6187
+48,Polygon ZM,49,14,Gravelly,No ecosite, ,3691543.348,6,Creosotebush,0.007919,2914.138296,133036.5757
+49,Polygon ZM,50,14,Gravelly,No ecosite, ,3691543.348,11,Tarbush,0.006261,141.660911,1033.536528
+50,Polygon ZM,51,15,Gravelly,Shallow sandy, ,145211.3922,11,Tarbush,0.006261,4220.748205,57988.74109
+51,Polygon ZM,52,16,Gravelly,Shallow sandy, ,10817908.26,6,Creosotebush,0.007919,19864.71536,2749376.689
+52,Polygon ZM,53,16,Gravelly,Shallow sandy, ,10817908.26,8,Other grasses,0.00016,967.860821,35735.47195
+53,Polygon ZM,54,16,Gravelly,Shallow sandy, ,10817908.26,10,Sporobolus spp.,0.000909,1250.744486,39225.13493
+54,Polygon ZM,55,16,Gravelly,Shallow sandy, ,10817908.26,11,Tarbush,0.006261,13596.44404,3537137.138
+55,Polygon ZM,56,16,Gravelly,Shallow sandy, ,10817908.26,12,Tobosa,0.002308,908.597042,12690.58252
+56,Polygon ZM,57,18,Limestone hills,No ecosite, ,125520706.8,3,Black grama,0.010776,980.702541,22818.10227
+57,Polygon ZM,58,18,Limestone hills,No ecosite, ,125520706.8,6,Creosotebush,0.007919,17961.24886,1741581.769
+58,Polygon ZM,59,18,Limestone hills,No ecosite, ,125520706.8,7,Mesquite,0.01881,14625.59812,841267.711
+59,Polygon ZM,60,18,Limestone hills,No ecosite, ,125520706.8,9,Other shrubs,0.000743,1350.415706,54380.70786
+60,Polygon ZM,61,19,Loamy, , ,15362815.09,3,Black grama,0.010776,3685.699221,158149.1937
+61,Polygon ZM,62,19,Loamy, , ,15362815.09,5,Burrograss,0.004418,17623.17868,618107.4907
+62,Polygon ZM,63,19,Loamy, , ,15362815.09,6,Creosotebush,0.007919,139681.4166,13556383.01
+63,Polygon ZM,64,19,Loamy, , ,15362815.09,11,Tarbush,0.006261,21929.71414,770888.4488
+64,Polygon ZM,65,19,Loamy, , ,15362815.09,12,Tobosa,0.002308,10137.80254,188984.3831
+65,Polygon ZM,66,22,Sandy, , ,326489.6776,1,Aristida spp.,0.001539,4095.665097,149904.544
+66,Polygon ZM,67,22,Sandy, , ,326489.6776,3,Black grama,0.010776,3845.758808,146339.0269
+67,Polygon ZM,68,22,Sandy, , ,326489.6776,5,Burrograss,0.004418,1594.178722,30246.1035
+68,Polygon ZM,69,23,Sandy, , ,3315708.291,5,Burrograss,0.004418,4215.610087,215551.9902
+69,Polygon ZM,70,23,Sandy, , ,3315708.291,6,Creosotebush,0.007919,18004.62273,2484546.551
+70,Polygon ZM,71,23,Sandy, , ,3315708.291,7,Mesquite,0.01881,1821.779781,82376.56467
+71,Polygon ZM,72,23,Sandy, , ,3315708.291,11,Tarbush,0.006261,1867.571136,165076.4091
+72,Polygon ZM,73,23,Sandy, , ,3315708.291,12,Tobosa,0.002308,8404.099405,368156.7729
+73,Polygon ZM,74,24,Sandy,Deep sand, ,151764991,1,Aristida spp.,0.001539,28613.27277,4460032.973
+74,Polygon ZM,75,24,Sandy,Deep sand, ,151764991,3,Black grama,0.010776,114124.9244,33720591.03
+75,Polygon ZM,76,24,Sandy,Deep sand, ,151764991,4,Broom snakeweed,0.002123,52490.39919,7553615.964
+76,Polygon ZM,77,24,Sandy,Deep sand, ,151764991,5,Burrograss,0.004418,40638.84001,4413596.047
+77,Polygon ZM,78,24,Sandy,Deep sand, ,151764991,6,Creosotebush,0.007919,29284.05359,5066930.702
+78,Polygon ZM,79,24,Sandy,Deep sand, ,151764991,7,Mesquite,0.01881,180152.515,84895546.23
+79,Polygon ZM,80,24,Sandy,Deep sand, ,151764991,8,Other grasses,0.00016,7458.984405,763223.0627
+80,Polygon ZM,81,24,Sandy,Deep sand, ,151764991,9,Other shrubs,0.000743,17688.75872,3604584.323
+81,Polygon ZM,82,24,Sandy,Deep sand, ,151764991,10,Sporobolus spp.,0.000909,21402.7786,2614286.579
+82,Polygon ZM,83,24,Sandy,Deep sand, ,151764991,11,Tarbush,0.006261,11632.05009,599071.6489
+83,Polygon ZM,84,24,Sandy,Deep sand, ,151764991,12,Tobosa,0.002308,31319.66404,2980564.945
+84,Polygon ZM,85,25,Sandy,Deep sand,Shallow sandy,36229137.91,1,Aristida spp.,0.001539,14294.49744,1960296.545
+85,Polygon ZM,86,25,Sandy,Deep sand,Shallow sandy,36229137.91,3,Black grama,0.010776,55524.94431,14639212.69
+86,Polygon ZM,87,25,Sandy,Deep sand,Shallow sandy,36229137.91,4,Broom snakeweed,0.002123,27046.61317,3425044.09
+87,Polygon ZM,88,25,Sandy,Deep sand,Shallow sandy,36229137.91,7,Mesquite,0.01881,40055.31568,13228625.95
+88,Polygon ZM,89,25,Sandy,Deep sand,Shallow sandy,36229137.91,10,Sporobolus spp.,0.000909,8690.261764,559058.4343
+89,Polygon ZM,90,25,Sandy,Deep sand,Shallow sandy,36229137.91,11,Tarbush,0.006261,833.466306,28644.47797
+90,Polygon ZM,91,25,Sandy,Deep sand,Shallow sandy,36229137.91,12,Tobosa,0.002308,8032.12365,273778.4559
+91,Polygon ZM,92,26,Sandy,Loamy,Clayey,6504750.434,5,Burrograss,0.004418,234.385236,1966.762591
+92,Polygon ZM,93,26,Sandy,Loamy,Clayey,6504750.434,6,Creosotebush,0.007919,317.45831,3307.685458
+93,Polygon ZM,94,26,Sandy,Loamy,Clayey,6504750.434,8,Other grasses,0.00016,1224.105292,99986.26673
+94,Polygon ZM,95,26,Sandy,Loamy,Clayey,6504750.434,11,Tarbush,0.006261,17520.19189,4564767.933
+95,Polygon ZM,96,26,Sandy,Loamy,Clayey,6504750.434,12,Tobosa,0.002308,7126.878395,1360733.066
+96,Polygon ZM,97,27,Sandy,Loamy,Deep sand,154795964.8,1,Aristida spp.,0.001539,34974.92696,7273283.36
+97,Polygon ZM,98,27,Sandy,Loamy,Deep sand,154795964.8,2,Bare,0.000058,2139.65161,93216.32678
+98,Polygon ZM,99,27,Sandy,Loamy,Deep sand,154795964.8,3,Black grama,0.010776,127591.9027,26440243.39
+99,Polygon ZM,100,27,Sandy,Loamy,Deep sand,154795964.8,4,Broom snakeweed,0.002123,31205.7301,3382865.378
+100,Polygon ZM,101,27,Sandy,Loamy,Deep sand,154795964.8,5,Burrograss,0.004418,199978.3664,28399365.28
+101,Polygon ZM,102,27,Sandy,Loamy,Deep sand,154795964.8,6,Creosotebush,0.007919,57235.70358,10343166.44
+102,Polygon ZM,103,27,Sandy,Loamy,Deep sand,154795964.8,7,Mesquite,0.01881,86149.79408,12076342.23
+103,Polygon ZM,104,27,Sandy,Loamy,Deep sand,154795964.8,8,Other grasses,0.00016,4919.983456,373937.7512
+104,Polygon ZM,105,27,Sandy,Loamy,Deep sand,154795964.8,9,Other shrubs,0.000743,29942.56383,3832992.708
+105,Polygon ZM,106,27,Sandy,Loamy,Deep sand,154795964.8,10,Sporobolus spp.,0.000909,40709.49416,6065288.833
+106,Polygon ZM,107,27,Sandy,Loamy,Deep sand,154795964.8,11,Tarbush,0.006261,139655.6525,44107044.19
+107,Polygon ZM,108,27,Sandy,Loamy,Deep sand,154795964.8,12,Tobosa,0.002308,60490.80216,10844175.76
+108,Polygon ZM,109,28,Sandy,Shallow sandy, ,15174053.53,1,Aristida spp.,0.001539,1630.549748,78420.59059
+109,Polygon ZM,110,28,Sandy,Shallow sandy, ,15174053.53,3,Black grama,0.010776,43042.05142,9491460.561
+110,Polygon ZM,111,28,Sandy,Shallow sandy, ,15174053.53,4,Broom snakeweed,0.002123,3723.748057,710359.4866
+111,Polygon ZM,112,28,Sandy,Shallow sandy, ,15174053.53,5,Burrograss,0.004418,15640.62019,2017445.972
+112,Polygon ZM,113,28,Sandy,Shallow sandy, ,15174053.53,7,Mesquite,0.01881,7752.331762,1781412.145
+113,Polygon ZM,114,28,Sandy,Shallow sandy, ,15174053.53,11,Tarbush,0.006261,5637.047131,196506.4672
+114,Polygon ZM,115,28,Sandy,Shallow sandy, ,15174053.53,12,Tobosa,0.002308,3251.113342,174626.6497
+115,Polygon ZM,116,30,Shallow sandy,Deep sand, ,7013.853676,7,Mesquite,0.01881,423.901023,7013.853676
+116,Polygon ZM,117,31,Shallow sandy,Sandy, ,25419663.04,3,Black grama,0.010776,44266.51463,20917354.37
+117,Polygon ZM,118,31,Shallow sandy,Sandy, ,25419663.04,4,Broom snakeweed,0.002123,4332.394458,627774.2106
+118,Polygon ZM,119,31,Shallow sandy,Sandy, ,25419663.04,7,Mesquite,0.01881,18483.44182,2426803.683

@@ -9,6 +9,7 @@ library(tidyr)
 autocrosswalk <- read.csv("autocrosswalk_clean.csv")
 attributetab1915 <- read.csv("at1998_clean.csv")
 
+str(attributetab1915)
 
 # How many functional group equivalents are there?
 functionalgrouptab_site <- autocrosswalk %>%
@@ -25,7 +26,7 @@ functionalgrouptab_GS <- autocrosswalk %>%
 results1998 <- attributetab1998 %>%
   dplyr::left_join(functionalgrouptab_GS) %>%
   dplyr::select(FID, OBJECTID1998 = OBJECTID, VegUnite1998 = VegUnite, 
-                FGUnite1998 = FGUnite, ecosite1, FG_GSNum = GeneralizedStateNumber, 
+                FGUnite1998 = FGUnite, ecosite1, ecosite2, ecosite3, FG_GSNum = GeneralizedStateNumber, 
                 FG_GSName = GeneralizedStateName)
 names(results1998)
 # Second join on species? Or match on species?
@@ -56,7 +57,9 @@ match_list <- apply(X = autocrosswalk,
                                   GeneralizedStateNum = current_row[["GeneralizedStateNumber"]],
                                   FG1998 = vegmap$FGUnite1998,
                                   SP1998 = vegmap$VegUnite1998,
-                                  esite = vegmap$ecosite1,
+                                  ecosite1 = vegmap$ecosite1,
+                                  ecosite2 = vegmap$ecosite2,
+                                  ecosite3 = vegmap$ecosite3,
                                   FG_GSName = vegmap$FG_GSName,
                                   FG_GSNum = vegmap$FG_GSNum,
                                   OBJECTID1998 = vegmap$OBJECTID,
@@ -112,30 +115,36 @@ SPmatch1998 <- dplyr::distinct(SPmatch1998)
 # Join matches based on species with FG assemblage match
 SPmatch1998 <- dplyr::distinct(SPmatch1998)
 # Reorder variables
-fullresults1998 <- dplyr::select(SPmatch1998, OBJECTID1998, esite, SP1998, FG1998,
+fullresults1998 <- dplyr::select(SPmatch1998, OBJECTID1998, ecosite1, ecosite2,
+                                 ecosite3, SP1998, FG1998,
                                  FG_GSName, FG_GSNum,
                                  SPTally, GeneralizedStateNum,
                                  GeneralizedStateName, VegUnite, SiteName, Site)
+
+
+
+
+
 
 names(SPmatch1998)
 
 # Keep generalized state matches
 fullresults1998 <- dplyr::filter(fullresults1998, FG_GSNum == GeneralizedStateNum)
 # Keep site matches
-fullresults1998_sitematch <- dplyr::filter(fullresults1998, esite == SiteName)
-# Keep two species matchse
-fullresults1998_sitematch <- dplyr::filter(fullresults1998_sitematch, SPTally > 1)
-fullresults1998_sitematch <- dplyr::distinct(fullresults1998_sitematch)
+fullresults1998_sitematch <- dplyr::filter(fullresults1998, ecosite1 == SiteName |
+                                             ecosite2 == SiteName | ecosite3 == SiteName)
 
 
 # How many polygons are present in 1915 attribute table?
 unique(attributetab1998$OBJECTID) # 304
-unique(fullresults1998$OBJECTID1998)
+unique(fullresults1998_sitematch$OBJECTID1998)
 
 # Subset to polygons not matched
-unmatched1998 <- subset(attributetab1998, !(attributetab1998$OBJECTID %in% FGresults1998$OBJECTID1998))
+unmatched1998 <- subset(attributetab1998, !(attributetab1998$OBJECTID %in% fullresults1998_sitematch$OBJECTID1998))
 
-
+# write to csv
+write.csv(fullresults1998_sitematch, "results1998_sitematched.csv", row.names = FALSE)
+write.csv(unmatched1998, "unmatched1998.csv", row.names = FALSE)
 
 
 
