@@ -297,3 +297,132 @@ write.csv(attributetab1915, "at1915_clean.csv", row.names = FALSE)
 write.csv(attributetab1928, "at1928_clean.csv", row.names = FALSE)
 write.csv(attributetab1998, "at1998_clean.csv", row.names = FALSE)
 write.csv(attributetab2021, "at2021_clean.csv", row.names = FALSE)
+
+
+
+
+
+
+# Build reference functional group and species assemblages from autocrosswalk
+# and 2021 data
+# How many functional group equivalents are there?
+functionalgrouptab_site <- autocrosswalk %>%
+  dplyr::group_by(Site, SiteName, StateName, FGUnite) %>%
+  dplyr::summarise(Count = n())
+# How many when grouping by generalized states?
+functionalgrouptab_GS <- autocrosswalk %>%
+  dplyr::group_by(GeneralizedStateNumber, GeneralizedStateName, FGUnite) %>%
+  dplyr::summarise(Count = n())
+# Format for join with 2021
+functionalgrouptab_GS <- functionalgrouptab_GS %>%
+  dplyr::ungroup() %>%
+  dplyr::select(1, 3)
+# Repeat on species level
+# How many functional group equivalents are there?
+spgroups_site <- autocrosswalk %>%
+  dplyr::group_by(SiteName, GeneralizedStateNumber, VegUnite) %>%
+  dplyr::summarise(Count = n())
+spgroups_site <- dplyr::select(spgroups_site, -Count)
+# How many when grouping by generalized states?
+spgroups_GS <- autocrosswalk %>%
+  dplyr::group_by(GeneralizedStateNumber, GeneralizedStateName, VegUnite) %>%
+  dplyr::summarise(Count = n())
+spgroups_GS <- dplyr::ungroup(spgroups_GS)
+spgroups_GS <- dplyr::select(spgroups_GS, GeneralizedStateNumber, VegUnite)
+
+
+
+
+# Repeat, finding equivalents for 2021 dataset
+# Create FG assemblages by state
+# Repeat across states to capture all combinations
+fgassemblages <- attributetab2021 %>%
+  dplyr::group_by(State1, FGString) %>%
+  dplyr::summarise(Count = n()) %>%
+  dplyr::select(-Count) %>%
+  dplyr::filter(FGString != "NA,NA,NA")
+
+fgassemblages2 <- attributetab2021 %>%
+  dplyr::group_by(State2, FGString) %>%
+  dplyr::summarise(Count = n()) %>%
+  dplyr::select(-Count) %>%
+  dplyr::filter(FGString != "NA,NA,NA") %>%
+  dplyr::rename(State1 = State2)
+
+fgassemblages3 <- attributetab2021 %>%
+  dplyr::group_by(State3, FGString) %>%
+  dplyr::summarise(Count = n()) %>%
+  dplyr::select(-Count) %>%
+  dplyr::filter(FGString != "NA,NA,NA") %>%
+  dplyr::rename(State1 = State3)
+
+# Bind together, remove double NA, remove duplicates
+fgassemblages <- rbind(fgassemblages, fgassemblages2)
+fgassemblages <- rbind(fgassemblages, fgassemblages3)
+
+# fgassemblages <- fgassemblages[!grepl("NA,NA", fgassemblages$FGString), ]
+
+# Remove blanks
+fgassemblages$FGString <- trimws(fgassemblages$FGString)
+fgassemblages <- dplyr::filter(fgassemblages, FGString != "")
+fgassemblages <- dplyr::distinct(fgassemblages)
+# Remove intermediary dfs
+rm(fgassemblages2)
+rm(fgassemblages3)
+# Reformat for join
+fgassemblages <- dplyr::rename(fgassemblages, GeneralizedStateNumber = State1, FGUnite = FGString)
+
+
+# Create SP assemblages by state
+spassemblages <- attributetab2021 %>%
+  dplyr::group_by(esite, State1, DomVeg) %>%
+  dplyr::summarise(Count = n()) %>%
+  dplyr::select(-Count) %>%
+  dplyr::filter(DomVeg != "NA,NA,NA")
+
+spassemblages2 <- attributetab2021 %>%
+  dplyr::group_by(esite, State2, DomVeg) %>%
+  dplyr::summarise(Count = n()) %>%
+  dplyr::select(-Count) %>%
+  dplyr::filter(DomVeg != "NA,NA,NA") %>%
+  dplyr::rename(State1 = State2)
+
+spassemblages3 <- attributetab2021 %>%
+  dplyr::group_by(esite, State3, DomVeg) %>%
+  dplyr::summarise(Count = n()) %>%
+  dplyr::select(-Count) %>%
+  dplyr::filter(DomVeg != "NA,NA,NA") %>%
+  dplyr::rename(State1 = State3)
+
+# Bind together, remove double NA, remove duplicates
+spassemblages <- rbind(spassemblages, spassemblages2)
+spassemblages <- rbind(spassemblages, spassemblages3)
+
+# fgassemblages <- fgassemblages[!grepl("NA,NA", fgassemblages$FGString), ]
+
+# Remove blanks
+spassemblages$DomVeg <- trimws(spassemblages$DomVeg)
+spassemblages <- dplyr::filter(spassemblages, DomVeg != "")
+spassemblages <- dplyr::distinct(spassemblages)
+# Remove intermediary dfs
+rm(spassemblages2)
+rm(spassemblages3)
+# Remove weird NA combinations
+spassemblages <- dplyr::filter(spassemblages, DomVeg != "NA, ,NA")
+spassemblages <- dplyr::filter(spassemblages, DomVeg != "NA,,NA")
+spassemblages <- dplyr::filter(spassemblages, DomVeg != "NA,NA,")
+spassemblages <- dplyr::rename(spassemblages, SiteName = esite, 
+                               GeneralizedStateNumber = State1, 
+                               VegUnite = DomVeg)
+
+# Join fgs and sps
+spgroups_GS <- rbind(spgroups_GS, spassemblages)
+fggroups_GS <- rbind(functionalgrouptab_GS, fgassemblages)
+# Site specific species
+spgroups_site <- rbind(spgroups_site, spassemblages)
+
+# Save as csvs
+write.csv(spgroups_GS, "spgroups_GS.csv", row.names = FALSE)
+write.csv(fggroups_GS, "fggroups_GS.csv", row.names = FALSE)
+write.csv(spgroups_site, "spgroups_site.csv", row.names = FALSE)
+
