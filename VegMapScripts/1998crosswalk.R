@@ -8,18 +8,67 @@ library(tidyr)
 # Read in clean datasheets
 attributetab1998 <- read.csv("at1998_clean.csv")
 spgroups_site <- read.csv("spgroups_site.csv")
+sitelookup <- read.csv("sitetype_lookup.csv")
+
+# Could do something where the potential ecological sites are assigned to either
+# type 1 (grassland at potential) or type 2 (woody at potential), in cases
+# where map units are cohesively one or the other
+sapply(names(table), #(or to whichever are the relevant columns)
+       function(cc) table[lookUp, (cc) := #merge, replace
+                            #need to pass a _named_ vector to 'on', so use setNames
+                            i.class, on = setNames("pet", cc)])
+
+new <- sapply(names(attributetab1998),
+              function(cc) attributetab1998[sitelookup, (cc) :=
+                                              i.class, on = setNames("Site", cc)])
+
+new <- transform(attributetab1998, SiteType = sitelookup[Site], stringsAsFactors = FALSE)
+
+attributetab1998 <- dplyr::mutate(attributetab1998, Type1 = ifelse(ecosite1 == "Bottomland" |
+                                                                     ecosite1 == "Clayey" | ecosite1 == "Draw" |
+                                                                     ecosite1 == ""))
+
 
 # Full species match
-results1998 <- attributetab1998 %>%
+fullmatch1998 <- attributetab1998 %>%
   dplyr::left_join(spgroups_site) %>%
   dplyr::select(FID, OBJECTID1998 = OBJECTID, VegUnite, 
-                ecosite1, ecosite2, ecosite3, GeneralizedStateNumber, SiteName)
-# Remove those that didn't match
-results1998 <- dplyr::filter(results1998, !is.na(GeneralizedStateNumber) & GeneralizedStateNumber != 0)
+                ecosite1, ecosite2, ecosite3, GeneralizedStateNumber, SiteName) %>%
+  dplyr::filter(!is.na(GeneralizedStateNumber) & GeneralizedStateNumber != 0)
 
-# Full match
-results1998_fullmatch <- dplyr::filter(results1998, SiteName == ecosite1 |
+# How many unique polygons?
+unique(fullmatch1998$OBJECTID1998) # Only 43
+
+# Should we subset to site matching as well?
+# There are many that match (e.g.) to Clayey, which is not listed as a site for that
+# polygon, but bottomland or salt flat is 
+fullmatch1998_sitesubset <- dplyr::filter(fullmatch1998, SiteName == ecosite1 |
                                          SiteName == ecosite2 | SiteName == ecosite3)
+
+# And full species match, sites don't match
+fullmatch1998_sitesunmatched <- subset(fullmatch1998, 
+                                       !(fullmatch1998$OBJECTID1998 %in% 
+                                           fullmatch1998_sitesubset$OBJECTID1998))
+# There are still many duplicates - species assemblages don't match states 1:1
+
+# So now we have a dataframe where full species assemblage and sites match
+# Needs to be edited for one row per polygon, when multiple sites were matched
+
+# Also a dataframe where there are full species matches but sites don't match
+# Needs to be edited so there's one row per polygon, assigned to a site (?)
+
+
+# Now, pull out polygons that didn't have a full species match
+unmatched1998 <- subset(attributetab1998, !(attributetab1998$OBJECTID %in% 
+                                              fullmatch1998$OBJECTID1998))
+
+
+# Run full match on FGs? Or partial species match?
+
+
+
+
+
 
 # Write to csv
 write.csv(results1998_fullmatch, "results1998_fullmatch.csv", row.names = FALSE)
