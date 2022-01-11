@@ -4,6 +4,7 @@
 library(dplyr)
 library(stringr)
 library(tidyr)
+library(qdapTools)
 
 # Read in clean datasheets
 attributetab1998 <- read.csv("at1998_clean.csv")
@@ -13,31 +14,40 @@ sitelookup <- read.csv("sitetype_lookup.csv")
 # Could do something where the potential ecological sites are assigned to either
 # type 1 (grassland at potential) or type 2 (woody at potential), in cases
 # where map units are cohesively one or the other
-sapply(names(table), #(or to whichever are the relevant columns)
-       function(cc) table[lookUp, (cc) := #merge, replace
-                            #need to pass a _named_ vector to 'on', so use setNames
-                            i.class, on = setNames("pet", cc)])
+for(i in 1:nrow(attributetab1998)) {
+  for(j in 1:nrow(sitelookup)) {
+   attributetab1998$esite1type[i] <- gsub(sitelookup$Type[j],
+                                           sitelookup$Site[j],
+                                           attributetab1998$ecosite1[i])
+    
+  }
+}
 
-new <- sapply(names(attributetab1998),
-              function(cc) attributetab1998[sitelookup, (cc) :=
-                                              i.class, on = setNames("Site", cc)])
 
-new <- transform(attributetab1998, SiteType = sitelookup[Site], stringsAsFactors = FALSE)
 
-attributetab1998 <- dplyr::mutate(attributetab1998, Type1 = ifelse(ecosite1 == "Bottomland" |
-                                                                     ecosite1 == "Clayey" | ecosite1 == "Draw" |
-                                                                     ecosite1 == ""))
+
+
+
+attributetab1998$esite1type <- qdapTools::lookup(attributetab1998$ecosite1, sitelookup[, 1:2])
+attributetab1998$esite2type <- qdapTools::lookup(attributetab1998$ecosite2, sitelookup[, 1:2])
+attributetab1998$esite3type <- qdapTools::lookup(attributetab1998$ecosite3, sitelookup[, 1:2])
+
+
+attributetab1998 <- attributetab1998 %>%
+  dplyr::mutate(sitetype = ifelse(esite1type == esite2type & esite2type == esite3type, esite1type,
+                                  ifelse(is.na(esite2type) & is.na(esite3type), esite1type, NA)))
 
 
 # Full species match
 fullmatch1998 <- attributetab1998 %>%
   dplyr::left_join(spgroups_site) %>%
   dplyr::select(FID, OBJECTID1998 = OBJECTID, VegUnite, 
-                ecosite1, ecosite2, ecosite3, GeneralizedStateNumber, SiteName) %>%
+                ecosite1, ecosite2, ecosite3, GeneralizedStateNumber, SiteName,
+                esite1type, esite2type, esite3type, sitetype) %>%
   dplyr::filter(!is.na(GeneralizedStateNumber) & GeneralizedStateNumber != 0)
 
 # How many unique polygons?
-unique(fullmatch1998$OBJECTID1998) # Only 43
+unique(fullmatch1998$OBJECTID1998) # Only 56
 
 # Should we subset to site matching as well?
 # There are many that match (e.g.) to Clayey, which is not listed as a site for that
