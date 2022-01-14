@@ -11,6 +11,22 @@ attributetab1915 <- read.csv("at1915_clean.csv")
 attributetab2021 <- read.csv("at2021_clean.csv")
 
 
+# Read in Jeremy's manually matched file
+JSmatched1915 <- read.csv("JSmatched1915.csv")
+names(JSmatched1915)
+JSsubset <- dplyr::select(JSmatched1915, OBJECTID, VegUnite,
+                          ecosite1, ecosite2, ecosite3,
+                          StateNumber, StateName, GeneralizedStateNumber,
+                          GeneralizedStateName, Notes)
+
+
+x <- filter(spgroups_site, grepl("PSSC", VegUnite))
+
+
+
+
+
+
 
 # How many functional group equivalents are there?
 functionalgrouptab_site <- autocrosswalk %>%
