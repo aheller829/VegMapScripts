@@ -1,183 +1,39 @@
-"","FID","Shape","OBJECTID","FID_Jornad","ecosite1","ecosite2","ecosite3","SUM_Shape_","FID_JERVeg","VegUnite","DOM1","DOM2","DOM3","SUM_Shape1","Shape_Leng","Shape_Area","FGUnite","Dom1FG","Dom2FG","Dom3FG","esite1type","esite2type","esite3type","sitetype"
-"1",0,"Polygon",1,1," "," "," ",3529.60461,12,"DAFO,LATR2,COWA","DAFO","LATR2","COWA",189431.8893,193.826817,1819.853278,"shrub,shrub,shrub","shrub","shrub","shrub",NA,NA,NA,NA
-"2",1,"Polygon",2,2,"Bottomland","Limy","Salt Flats",35299777.56,5,"ATCA2,PRGL2,PLMU3","ATCA2","PRGL2","PLMU3",73764.27674,1127.438929,73764.27674,"shrub,shrub,PG","shrub","shrub","PG",1,1,1,1
-"3",2,"Polygon",3,2,"Bottomland","Limy","Salt Flats",35299777.56,6,"Bare, , ","Bare"," "," ",672734.5624,1309.602255,59236.97516,"Bare","Bare",NA,NA,1,1,1,1
-"4",3,"Polygon",4,2,"Bottomland","Limy","Salt Flats",35299777.56,22,"FLCE,LATR2,PLMU3","FLCE","LATR2","PLMU3",2217269.929,25081.9078,1223274.825,"shrub,shrub,PG","shrub","shrub","PG",1,1,1,1
-"5",4,"Polygon",5,2,"Bottomland","Limy","Salt Flats",35299777.56,23,"FLCE,LATR2,PRGL2","FLCE","LATR2","PRGL2",106827.5527,2357.702016,82508.08409,"shrub,shrub,shrub","shrub","shrub","shrub",1,1,1,1
-"6",5,"Polygon",6,2,"Bottomland","Limy","Salt Flats",35299777.56,27,"FLCE,PLMU3,PRGL2","FLCE","PLMU3","PRGL2",1053634.346,4801.521843,724499.7229,"shrub,PG,shrub","shrub","PG","shrub",1,1,1,1
-"7",6,"Polygon",7,2,"Bottomland","Limy","Salt Flats",35299777.56,43,"LATR2,FLCE,PLMU3","LATR2","FLCE","PLMU3",43342492.31,111407.184,15044719.03,"shrub,shrub,PG","shrub","shrub","PG",1,1,1,1
-"8",7,"Polygon",8,2,"Bottomland","Limy","Salt Flats",35299777.56,46,"LATR2,FLCE,SCBR2","LATR2","FLCE","SCBR2",977810.0217,7557.768061,365609.9572,"shrub,shrub,PG","shrub","shrub","PG",1,1,1,1
-"9",8,"Polygon",9,2,"Bottomland","Limy","Salt Flats",35299777.56,47,"LATR2,GUSA2,ERLE","LATR2","GUSA2","ERLE",1222034.019,2484.961372,48567.01599,"shrub,subshrub,Inv","shrub","subshrub","Inv",1,1,1,1
-"10",9,"Polygon",10,2,"Bottomland","Limy","Salt Flats",35299777.56,48,"LATR2,MUPO2,PRGL2","LATR2","MUPO2","PRGL2",1829154.863,4409.867642,55118.19264,"shrub,PG,shrub","shrub","PG","shrub",1,1,1,1
-"11",10,"Polygon",11,2,"Bottomland","Limy","Salt Flats",35299777.56,50,"LATR2,PLMU3,SCBR2","LATR2","PLMU3","SCBR2",629345.0185,6404.922769,622350.4269,"shrub,PG,PG","shrub","PG","PG",1,1,1,1
-"12",11,"Polygon",12,2,"Bottomland","Limy","Salt Flats",35299777.56,52,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",47405692.14,232959.5538,10031955.11,"shrub,shrub,shrub","shrub","shrub","shrub",1,1,1,1
-"13",12,"Polygon",13,2,"Bottomland","Limy","Salt Flats",35299777.56,54,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",25483520.6,13205.12311,1229251.158,"shrub,shrub,shrub","shrub","shrub","shrub",1,1,1,1
-"14",13,"Polygon",14,2,"Bottomland","Limy","Salt Flats",35299777.56,55,"LATR2,SCBR2, ","LATR2","SCBR2"," ",965816.2125,7270.631284,778511.0904,"shrub,PG","shrub","PG",NA,1,1,1,1
-"22",21,"Polygon",22,3,"Clayey","Bottomland","Loamy",13244532.45,3,"ARPU9,SPFL2, ","ARPU9","SPFL2"," ",583649.5255,450.110276,2708.510337,"PG,PG","PG","PG",NA,1,1,1,1
-"23",22,"Polygon",23,3,"Clayey","Bottomland","Loamy",13244532.45,6,"Bare, , ","Bare"," "," ",672734.5624,2987.831638,525060,"Bare","Bare",NA,NA,1,1,1,1
-"29",28,"Polygon",29,3,"Clayey","Bottomland","Loamy",13244532.45,35,"GUSA2,BOER4,YUEL","GUSA2","BOER4","YUEL",188418.1209,1322.703785,60268.58035,"subshrub,PG,succulent","subshrub","PG","succulent",1,1,1,1
-"40",39,"Polygon",40,3,"Clayey","Bottomland","Loamy",13244532.45,83,"PRGL2,PLMU3, ","PRGL2","PLMU3"," ",2662502.849,11558.35724,2259589.95,"shrub,PG","shrub","PG",NA,1,1,1,1
-"42",41,"Polygon",42,3,"Clayey","Bottomland","Loamy",13244532.45,87,"PRGL2,PLMU3,SPAI","PRGL2","PLMU3","SPAI",2179474.814,11355.72799,745387.8781,"shrub,PG,PG","shrub","PG","PG",1,1,1,1
-"43",42,"Polygon",43,3,"Clayey","Bottomland","Loamy",13244532.45,89,"PRGL2,SCBR2, ","PRGL2","SCBR2"," ",418134.7967,1943.401958,151694.599,"shrub,PG","shrub","PG",NA,1,1,1,1
-"44",43,"Polygon",44,3,"Clayey","Bottomland","Loamy",13244532.45,91,"PRGL2,SCBR2,PLMU3","PRGL2","SCBR2","PLMU3",5336197.438,1048.650648,20656.75381,"shrub,PG,PG","shrub","PG","PG",1,1,1,1
-"45",44,"Polygon",45,3,"Clayey","Bottomland","Loamy",13244532.45,100,"PRGL2,YUEL,SPFL2","PRGL2","YUEL","SPFL2",6825353.19,1038.605512,20999.02709,"shrub,succulent,PG","shrub","succulent","PG",1,1,1,1
-"46",45,"Polygon",46,3,"Clayey","Bottomland","Loamy",13244532.45,101,"PRGL2, , ","PRGL2"," "," ",57616084.18,4059.916344,228940.3313,"shrub","shrub",NA,NA,1,1,1,1
-"47",46,"Polygon",47,3,"Clayey","Bottomland","Loamy",13244532.45,113,"PRGL2,BOER4,GUSA2","PRGL2","BOER4","GUSA2",1846261.913,7318.495581,313114.0752,"shrub,PG,subshrub","shrub","PG","subshrub",1,1,1,1
-"48",47,"Polygon",48,3,"Clayey","Bottomland","Loamy",13244532.45,118,"PRGL2,GUSA2, ","PRGL2","GUSA2"," ",29724873.71,5857.986601,298466.5165,"shrub,subshrub","shrub","subshrub",NA,1,1,1,1
-"49",48,"Polygon",49,3,"Clayey","Bottomland","Loamy",13244532.45,119,"PRGL2,GUSA2,YUEL","PRGL2","GUSA2","YUEL",1955386.284,1218.911748,42143.14593,"shrub,subshrub,succulent","shrub","subshrub","succulent",1,1,1,1
-"50",49,"Polygon",50,3,"Clayey","Bottomland","Loamy",13244532.45,129,"PRGL2,YUEL,ARPU9","PRGL2","YUEL","ARPU9",410110.9343,2558.255982,334689.4665,"shrub,succulent,PG","shrub","succulent","PG",1,1,1,1
-"51",50,"Polygon",51,3,"Clayey","Bottomland","Loamy",13244532.45,137,"PSSC6,YUEL,SPFL2","PSSC6","YUEL","SPFL2",1601384.945,324.940122,1999.102819,"shrub,succulent,PG","shrub","succulent","PG",1,1,1,1
-"55",54,"Polygon",55,3,"Clayey","Bottomland","Loamy",13244532.45,158,"SPAI, , ","SPAI"," "," ",154524.0585,1519.193616,153334.2313,"PG","PG",NA,NA,1,1,1,1
-"56",55,"Polygon",56,4,"Deep sand"," "," ",2729747.304,54,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",25483520.6,264.103969,927.008917,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"60",59,"Polygon",60,5,"Deep sand","Sandy","Shallow sandy",89212440.7,1,"ARFI2,PRGL2,ARPU9","ARFI2","PRGL2","ARPU9",848488.8688,6514.815172,385875.6478,"shrub,shrub,PG","shrub","shrub","PG",2,1,1,NA
-"61",60,"Polygon",61,5,"Deep sand","Sandy","Shallow sandy",89212440.7,12,"DAFO,LATR2,COWA","DAFO","LATR2","COWA",189431.8893,498.776463,6883.777371,"shrub,shrub,shrub","shrub","shrub","shrub",2,1,1,NA
-"62",61,"Polygon",62,5,"Deep sand","Sandy","Shallow sandy",89212440.7,13,"DAFO,LATR2,PAIN2","DAFO","LATR2","PAIN2",813255.1138,7295.500206,293160.1467,"shrub,shrub,shrub","shrub","shrub","shrub",2,1,1,NA
-"63",62,"Polygon",63,5,"Deep sand","Sandy","Shallow sandy",89212440.7,14,"DAFO,PAIN2,LATR2","DAFO","PAIN2","LATR2",568781.1563,4831.774444,114193.8228,"shrub,shrub,shrub","shrub","shrub","shrub",2,1,1,NA
-"64",63,"Polygon",64,5,"Deep sand","Sandy","Shallow sandy",89212440.7,38,"LATR2, , ","LATR2"," "," ",814026.9469,11951.71135,750592.4735,"shrub","shrub",NA,NA,2,1,1,NA
-"65",64,"Polygon",65,5,"Deep sand","Sandy","Shallow sandy",89212440.7,43,"LATR2,FLCE,PLMU3","LATR2","FLCE","PLMU3",43342492.31,22197.18548,660876.1824,"shrub,shrub,PG","shrub","shrub","PG",2,1,1,NA
-"66",65,"Polygon",66,5,"Deep sand","Sandy","Shallow sandy",89212440.7,44,"LATR2,FLCE,PRGL2","LATR2","FLCE","PRGL2",4058201.27,21708.48167,2223131.503,"shrub,shrub,shrub","shrub","shrub","shrub",2,1,1,NA
-"67",66,"Polygon",67,5,"Deep sand","Sandy","Shallow sandy",89212440.7,46,"LATR2,FLCE,SCBR2","LATR2","FLCE","SCBR2",977810.0217,5266.901171,612200.0633,"shrub,shrub,PG","shrub","shrub","PG",2,1,1,NA
-"68",67,"Polygon",68,5,"Deep sand","Sandy","Shallow sandy",89212440.7,49,"LATR2,MUPO2,PRGL2","LATR2","MUPO2","PRGL2",188565.3255,2860.615082,188565.3255,"shrub,PG,shrub","shrub","PG","shrub",2,1,1,NA
-"69",68,"Polygon",69,5,"Deep sand","Sandy","Shallow sandy",89212440.7,52,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",47405692.14,12683.15451,1947747.058,"shrub,shrub,shrub","shrub","shrub","shrub",2,1,1,NA
-"70",69,"Polygon",70,5,"Deep sand","Sandy","Shallow sandy",89212440.7,53,"LATR2,PRGL2, ","LATR2","PRGL2"," ",9460687.824,32367.04669,5952961.532,"shrub,shrub","shrub","shrub",NA,2,1,1,NA
-"71",70,"Polygon",71,5,"Deep sand","Sandy","Shallow sandy",89212440.7,54,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",25483520.6,43776.13058,14601456.03,"shrub,shrub,shrub","shrub","shrub","shrub",2,1,1,NA
-"72",71,"Polygon",72,5,"Deep sand","Sandy","Shallow sandy",89212440.7,56,"LATR2,THAC,PAIN2","LATR2","THAC","PAIN2",1442818.27,6283.000618,54701.44591,"shrub,forb,shrub","shrub","forb","shrub",2,1,1,NA
-"85",84,"Polygon",85,6,"Deep sand","Shallow sandy"," ",27251884.96,36,"GUSA2,PRGL2,YUEL","GUSA2","PRGL2","YUEL",40364.32574,787.41562,39905.9693,"subshrub,shrub,succulent","subshrub","shrub","succulent",2,1,NA,NA
-"92",91,"Polygon",92,6,"Deep sand","Shallow sandy"," ",27251884.96,165,"YUEL,PRGL2, ","YUEL","PRGL2"," ",414716.4026,4133.139313,70369.80855,"succulent,shrub","succulent","shrub",NA,2,1,NA,NA
-"94",93,"Polygon",94,8,"Deep sand","Shallow sandy","Shallow sandy",490190.8801,36,"GUSA2,PRGL2,YUEL","GUSA2","PRGL2","YUEL",40364.32574,306.085307,458.356769,"subshrub,shrub,succulent","subshrub","shrub","succulent",2,1,1,NA
-"98",97,"Polygon",98,8,"Deep sand","Shallow sandy","Shallow sandy",490190.8801,165,"YUEL,PRGL2, ","YUEL","PRGL2"," ",414716.4026,4929.389762,286946.6731,"succulent,shrub","succulent","shrub",NA,2,1,1,NA
-"99",98,"Polygon",99,10,"Draw","No ecosite"," ",5763852.348,1,"ARFI2,PRGL2,ARPU9","ARFI2","PRGL2","ARPU9",848488.8688,1650.555481,44190.9707,"shrub,shrub,PG","shrub","shrub","PG",1,NA,NA,NA
-"100",99,"Polygon",100,10,"Draw","No ecosite"," ",5763852.348,14,"DAFO,PAIN2,LATR2","DAFO","PAIN2","LATR2",568781.1563,238.705104,1252.793263,"shrub,shrub,shrub","shrub","shrub","shrub",1,NA,NA,NA
-"101",100,"Polygon",101,10,"Draw","No ecosite"," ",5763852.348,38,"LATR2, , ","LATR2"," "," ",814026.9469,632.024659,8373.363512,"shrub","shrub",NA,NA,1,NA,NA,NA
-"102",101,"Polygon",102,10,"Draw","No ecosite"," ",5763852.348,43,"LATR2,FLCE,PLMU3","LATR2","FLCE","PLMU3",43342492.31,448.686702,7516.370058,"shrub,shrub,PG","shrub","shrub","PG",1,NA,NA,NA
-"103",102,"Polygon",103,10,"Draw","No ecosite"," ",5763852.348,44,"LATR2,FLCE,PRGL2","LATR2","FLCE","PRGL2",4058201.27,314.702739,4395.212262,"shrub,shrub,shrub","shrub","shrub","shrub",1,NA,NA,NA
-"104",103,"Polygon",104,10,"Draw","No ecosite"," ",5763852.348,48,"LATR2,MUPO2,PRGL2","LATR2","MUPO2","PRGL2",1829154.863,2493.316608,20758.46063,"shrub,PG,shrub","shrub","PG","shrub",1,NA,NA,NA
-"105",104,"Polygon",105,10,"Draw","No ecosite"," ",5763852.348,52,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",47405692.14,7764.325476,266937.5624,"shrub,shrub,shrub","shrub","shrub","shrub",1,NA,NA,NA
-"106",105,"Polygon",106,10,"Draw","No ecosite"," ",5763852.348,53,"LATR2,PRGL2, ","LATR2","PRGL2"," ",9460687.824,17968.10874,891419.0033,"shrub,shrub","shrub","shrub",NA,1,NA,NA,NA
-"107",106,"Polygon",107,10,"Draw","No ecosite"," ",5763852.348,54,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",25483520.6,1907.33667,42493.34576,"shrub,shrub,shrub","shrub","shrub","shrub",1,NA,NA,NA
-"108",107,"Polygon",108,10,"Draw","No ecosite"," ",5763852.348,56,"LATR2,THAC,PAIN2","LATR2","THAC","PAIN2",1442818.27,325.934843,897.638267,"shrub,forb,shrub","shrub","forb","shrub",1,NA,NA,NA
-"115",114,"Polygon",115,11,"Draw","Shallow sandy"," ",151870.5168,52,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",47405692.14,5489.134445,150207.805,"shrub,shrub,shrub","shrub","shrub","shrub",1,1,NA,NA
-"118",117,"Polygon",118,12,"Gravelly"," "," ",13255713.34,102,"PRGL2,ARFI2,ATCA2","PRGL2","ARFI2","ATCA2",1621466.198,1400.858766,8611.810302,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"119",118,"Polygon",119,12,"Gravelly"," "," ",13255713.34,103,"PRGL2,ARFI2,QUERCUS","PRGL2","ARFI2","QUERCUS",4103591.474,8121.445284,116492.4041,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"120",119,"Polygon",120,13,"Gravelly","Loamy"," ",25616949.89,22,"FLCE,LATR2,PLMU3","FLCE","LATR2","PLMU3",2217269.929,3856.705936,17460.47539,"shrub,shrub,PG","shrub","shrub","PG",2,1,NA,NA
-"121",120,"Polygon",121,13,"Gravelly","Loamy"," ",25616949.89,23,"FLCE,LATR2,PRGL2","FLCE","LATR2","PRGL2",106827.5527,2140.066443,24319.46763,"shrub,shrub,shrub","shrub","shrub","shrub",2,1,NA,NA
-"122",121,"Polygon",122,13,"Gravelly","Loamy"," ",25616949.89,27,"FLCE,PLMU3,PRGL2","FLCE","PLMU3","PRGL2",1053634.346,779.206181,11000.72103,"shrub,PG,shrub","shrub","PG","shrub",2,1,NA,NA
-"130",129,"Polygon",130,13,"Gravelly","Loamy"," ",25616949.89,67,"PLMU3,SCBR2,PRGL2","PLMU3","SCBR2","PRGL2",1165251.326,3127.246209,92300.38117,"PG,PG,shrub","PG","PG","shrub",2,1,NA,NA
-"135",134,"Polygon",135,16,"Gravelly","Shallow sandy"," ",10817908.26,21,"FLCE,LATR2,LYBE","FLCE","LATR2","LYBE",606360.9239,305.402898,4911.035926,"shrub,shrub,shrub","shrub","shrub","shrub",2,1,NA,NA
-"136",135,"Polygon",136,16,"Gravelly","Shallow sandy"," ",10817908.26,22,"FLCE,LATR2,PLMU3","FLCE","LATR2","PLMU3",2217269.929,2841.189248,49837.54962,"shrub,shrub,PG","shrub","shrub","PG",2,1,NA,NA
-"141",140,"Polygon",141,16,"Gravelly","Shallow sandy"," ",10817908.26,60,"PLMU3,MUPO2,LATR2","PLMU3","MUPO2","LATR2",427479.9829,2005.51579,227114.4775,"PG,PG,shrub","PG","PG","shrub",2,1,NA,NA
-"142",141,"Polygon",142,18,"Limestone hills","No ecosite"," ",125520706.8,1,"ARFI2,PRGL2,ARPU9","ARFI2","PRGL2","ARPU9",848488.8688,4494.769729,418422.2513,"shrub,shrub,PG","shrub","shrub","PG",2,NA,NA,NA
-"143",142,"Polygon",143,18,"Limestone hills","No ecosite"," ",125520706.8,12,"DAFO,LATR2,COWA","DAFO","LATR2","COWA",189431.8893,2000.492678,180728.261,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"144",143,"Polygon",144,18,"Limestone hills","No ecosite"," ",125520706.8,13,"DAFO,LATR2,PAIN2","DAFO","LATR2","PAIN2",813255.1138,4395.021766,520094.9674,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"145",144,"Polygon",145,18,"Limestone hills","No ecosite"," ",125520706.8,14,"DAFO,PAIN2,LATR2","DAFO","PAIN2","LATR2",568781.1563,3967.982981,453334.5552,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"146",145,"Polygon",146,18,"Limestone hills","No ecosite"," ",125520706.8,38,"LATR2, , ","LATR2"," "," ",814026.9469,211.732748,271.702815,"shrub","shrub",NA,NA,2,NA,NA,NA
-"147",146,"Polygon",147,18,"Limestone hills","No ecosite"," ",125520706.8,44,"LATR2,FLCE,PRGL2","LATR2","FLCE","PRGL2",4058201.27,403.564671,2069.074231,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"148",147,"Polygon",148,18,"Limestone hills","No ecosite"," ",125520706.8,52,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",47405692.14,2301.599862,121248.096,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"149",148,"Polygon",149,18,"Limestone hills","No ecosite"," ",125520706.8,54,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",25483520.6,2044.896453,16764.36834,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"150",149,"Polygon",150,18,"Limestone hills","No ecosite"," ",125520706.8,56,"LATR2,THAC,PAIN2","LATR2","THAC","PAIN2",1442818.27,4348.142386,267334.9481,"shrub,forb,shrub","shrub","forb","shrub",2,NA,NA,NA
-"151",150,"Polygon",151,18,"Limestone hills","No ecosite"," ",125520706.8,102,"PRGL2,ARFI2,ATCA2","PRGL2","ARFI2","ATCA2",1621466.198,6203.439781,332427.6076,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"152",151,"Polygon",152,18,"Limestone hills","No ecosite"," ",125520706.8,103,"PRGL2,ARFI2,QUERCUS","PRGL2","ARFI2","QUERCUS",4103591.474,13789.88703,355250.9301,"shrub,shrub,shrub","shrub","shrub","shrub",2,NA,NA,NA
-"153",152,"Polygon",153,18,"Limestone hills","No ecosite"," ",125520706.8,104,"PRGL2,ARFI2,SPFL2","PRGL2","ARFI2","SPFL2",508125.8644,880.478173,17880.45046,"shrub,shrub,PG","shrub","shrub","PG",2,NA,NA,NA
-"154",153,"Polygon",154,18,"Limestone hills","No ecosite"," ",125520706.8,109,"PRGL2,ATCA2,GUSA2","PRGL2","ATCA2","GUSA2",6681452.926,380.935968,2501.574452,"shrub,shrub,subshrub","shrub","shrub","subshrub",2,NA,NA,NA
-"155",154,"Polygon",155,18,"Limestone hills","No ecosite"," ",125520706.8,131,"PRGL2, , ","PRGL2"," "," ",455271.0698,79.544661,251.822249,"shrub","shrub",NA,NA,2,NA,NA,NA
-"156",155,"Polygon",156,18,"Limestone hills","No ecosite"," ",125520706.8,132,"PRGL2,ATCA2, ","PRGL2","ATCA2"," ",61344184.43,8697.175842,271735.6456,"shrub,shrub","shrub","shrub",NA,2,NA,NA,NA
-"158",157,"Polygon",158,19,"Loamy"," "," ",15362815.09,43,"LATR2,FLCE,PLMU3","LATR2","FLCE","PLMU3",43342492.31,47335.75442,1050929.871,"shrub,shrub,PG","shrub","shrub","PG",1,NA,NA,NA
-"159",158,"Polygon",159,19,"Loamy"," "," ",15362815.09,47,"LATR2,GUSA2,ERLE","LATR2","GUSA2","ERLE",1222034.019,5494.819196,1173467.019,"shrub,subshrub,Inv","shrub","subshrub","Inv",1,NA,NA,NA
-"160",159,"Polygon",160,19,"Loamy"," "," ",15362815.09,48,"LATR2,MUPO2,PRGL2","LATR2","MUPO2","PRGL2",1829154.863,2555.184444,197718.3201,"shrub,PG,shrub","shrub","PG","shrub",1,NA,NA,NA
-"161",160,"Polygon",161,19,"Loamy"," "," ",15362815.09,52,"LATR2,PRGL2,FLCE","LATR2","PRGL2","FLCE",47405692.14,139807.7749,12085205.68,"shrub,shrub,shrub","shrub","shrub","shrub",1,NA,NA,NA
-"162",161,"Polygon",162,19,"Loamy"," "," ",15362815.09,55,"LATR2,SCBR2, ","LATR2","SCBR2"," ",965816.2125,3280.492305,60116.43385,"shrub,PG","shrub","PG",NA,1,NA,NA,NA
-"174",173,"Polygon",174,24,"Sandy","Deep sand"," ",151764991,4,"ATCA2,FLCE,PRGL2","ATCA2","FLCE","PRGL2",104277.7595,2994.311424,104277.7595,"shrub,shrub,shrub","shrub","shrub","shrub",1,2,NA,NA
-"178",177,"Polygon",178,24,"Sandy","Deep sand"," ",151764991,15,"EPHEDRA,PRGL2,YUEL","EPHEDRA","PRGL2","YUEL",56496.87696,1025.196005,56496.87696,"succulent,shrub,succulent","succulent","shrub","succulent",1,2,NA,NA
-"179",178,"Polygon",179,24,"Sandy","Deep sand"," ",151764991,17,"EPHEDRA,PRGL2,YUEL","EPHEDRA","PRGL2","YUEL",116963.9621,1241.856715,94928.07806,"succulent,shrub,succulent","succulent","shrub","succulent",1,2,NA,NA
-"181",180,"Polygon",181,24,"Sandy","Deep sand"," ",151764991,28,"FLCE,PLMU3,SCBR2","FLCE","PLMU3","SCBR2",7147095.878,3343.029663,300772.0141,"shrub,PG,PG","shrub","PG","PG",1,2,NA,NA
-"182",181,"Polygon",182,24,"Sandy","Deep sand"," ",151764991,33,"FLCE,SCBR2,PLMU3","FLCE","SCBR2","PLMU3",17413694.84,3787.244356,133972.4367,"shrub,PG,PG","shrub","PG","PG",1,2,NA,NA
-"183",182,"Polygon",183,24,"Sandy","Deep sand"," ",151764991,34,"FLCE,SPAI,SCBR2","FLCE","SPAI","SCBR2",2576110.634,3649.963803,296618.4396,"shrub,PG,PG","shrub","PG","PG",1,2,NA,NA
-"184",183,"Polygon",184,24,"Sandy","Deep sand"," ",151764991,35,"GUSA2,BOER4,YUEL","GUSA2","BOER4","YUEL",188418.1209,1451.411924,128149.5404,"subshrub,PG,succulent","subshrub","PG","succulent",1,2,NA,NA
-"185",184,"Polygon",185,24,"Sandy","Deep sand"," ",151764991,37,"GUSA2,SPFL2,PRGL2","GUSA2","SPFL2","PRGL2",107411.9576,2041.457358,107411.9576,"subshrub,PG,shrub","subshrub","PG","shrub",1,2,NA,NA
-"189",188,"Polygon",189,24,"Sandy","Deep sand"," ",151764991,57,"PLMU3, , ","PLMU3"," "," ",397142.9198,1683.890685,51441.7736,"PG","PG",NA,NA,1,2,NA,NA
-"190",189,"Polygon",190,24,"Sandy","Deep sand"," ",151764991,58,"PLMU3,FLCE,SCBR2","PLMU3","FLCE","SCBR2",1163875.112,7015.442973,238970.6969,"PG,shrub,PG","PG","shrub","PG",1,2,NA,NA
-"191",190,"Polygon",191,24,"Sandy","Deep sand"," ",151764991,59,"PLMU3,MUPO2,FLCE","PLMU3","MUPO2","FLCE",83113.45844,1053.868324,37034.09319,"PG,PG,shrub","PG","PG","shrub",1,2,NA,NA
-"192",191,"Polygon",192,24,"Sandy","Deep sand"," ",151764991,61,"PLMU3,PRGL2, ","PLMU3","PRGL2"," ",189954.2659,3064.463456,189954.2659,"PG,shrub","PG","shrub",NA,1,2,NA,NA
-"193",192,"Polygon",193,24,"Sandy","Deep sand"," ",151764991,63,"PLMU3,SCBR2, ","PLMU3","SCBR2"," ",1297601.537,1693.797431,71881.19571,"PG,PG","PG","PG",NA,1,2,NA,NA
-"194",193,"Polygon",194,24,"Sandy","Deep sand"," ",151764991,64,"PLMU3,SCBR2,FLCE","PLMU3","SCBR2","FLCE",261641.6974,1987.096681,61231.30728,"PG,PG,shrub","PG","PG","shrub",1,2,NA,NA
-"195",194,"Polygon",195,24,"Sandy","Deep sand"," ",151764991,67,"PLMU3,SCBR2,PRGL2","PLMU3","SCBR2","PRGL2",1165251.326,1966.746387,97144.84871,"PG,PG,shrub","PG","PG","shrub",1,2,NA,NA
-"238",237,"Polygon",238,24,"Sandy","Deep sand"," ",151764991,134,"PSSC6,PRGL2,ARFI2","PSSC6","PRGL2","ARFI2",819842.4375,5067.829178,819842.4375,"shrub,shrub,shrub","shrub","shrub","shrub",1,2,NA,NA
-"239",238,"Polygon",239,24,"Sandy","Deep sand"," ",151764991,135,"PSSC6,PRGL2,GUSA2","PSSC6","PRGL2","GUSA2",467736.0943,3060.078117,467736.0943,"shrub,shrub,subshrub","shrub","shrub","subshrub",1,2,NA,NA
-"240",239,"Polygon",240,24,"Sandy","Deep sand"," ",151764991,136,"PSSC6,SPFL2,YUEL","PSSC6","SPFL2","YUEL",796861.1881,3305.409585,570706.5932,"shrub,PG,succulent","shrub","PG","succulent",1,2,NA,NA
-"241",240,"Polygon",241,24,"Sandy","Deep sand"," ",151764991,140,"SCBR2,BOER4,ARPU9","SCBR2","BOER4","ARPU9",335337.3538,900.312655,26335.10701,"PG,PG,PG","PG","PG","PG",1,2,NA,NA
-"242",241,"Polygon",242,24,"Sandy","Deep sand"," ",151764991,145,"SCBR2,KOSP, ","SCBR2","KOSP"," ",1174020.295,1727.422093,126061.1086,"PG,shrub","PG","shrub",NA,1,2,NA,NA
-"243",242,"Polygon",243,24,"Sandy","Deep sand"," ",151764991,147,"SCBR2,PLMU3, ","SCBR2","PLMU3"," ",2426297.229,3441.734078,321912.1353,"PG,PG","PG","PG",NA,1,2,NA,NA
-"244",243,"Polygon",244,24,"Sandy","Deep sand"," ",151764991,148,"SCBR2,PLMU3,FLCE","SCBR2","PLMU3","FLCE",1716426.24,777.668429,29938.22551,"PG,PG,shrub","PG","PG","shrub",1,2,NA,NA
-"245",244,"Polygon",245,24,"Sandy","Deep sand"," ",151764991,149,"SCBR2,PLMU3,OPUNT","SCBR2","PLMU3","OPUNT",3546573.362,2102.056341,46194.92576,"PG,PG,succulent","PG","PG","succulent",1,2,NA,NA
-"246",245,"Polygon",246,24,"Sandy","Deep sand"," ",151764991,150,"SCBR2,PLMU3,PRGL2","SCBR2","PLMU3","PRGL2",1038263.18,1465.729126,40116.19049,"PG,PG,shrub","PG","PG","shrub",1,2,NA,NA
-"247",246,"Polygon",247,24,"Sandy","Deep sand"," ",151764991,155,"SCBR2,SPAI,PLMU3","SCBR2","SPAI","PLMU3",464154.6361,1842.635816,154581.137,"PG,PG,PG","PG","PG","PG",1,2,NA,NA
-"248",247,"Polygon",248,24,"Sandy","Deep sand"," ",151764991,157,"SCBR2,SPFL2,FLCE","SCBR2","SPFL2","FLCE",704881.4085,3827.613299,704881.4085,"PG,PG,shrub","PG","PG","shrub",1,2,NA,NA
-"254",253,"Polygon",254,24,"Sandy","Deep sand"," ",151764991,164,"YUEL,PRGL2,GUSA2","YUEL","PRGL2","GUSA2",386546.6708,3246.300924,385065.5681,"succulent,shrub,subshrub","succulent","shrub","subshrub",1,2,NA,NA
-"255",254,"Polygon",255,24,"Sandy","Deep sand"," ",151764991,165,"YUEL,PRGL2, ","YUEL","PRGL2"," ",414716.4026,866.972033,24519.24871,"succulent,shrub","succulent","shrub",NA,1,2,NA,NA
-"259",258,"Polygon",259,25,"Sandy","Deep sand","Shallow sandy",36229137.91,26,"FLCE,PLMU3,PRGL2","FLCE","PLMU3","PRGL2",101920.8984,2094.41451,101920.8984,"shrub,PG,shrub","shrub","PG","shrub",1,2,1,NA
-"260",259,"Polygon",260,25,"Sandy","Deep sand","Shallow sandy",36229137.91,30,"FLCE,PRGL2,PLMU3","FLCE","PRGL2","PLMU3",82068.72888,1667.93307,82068.72888,"shrub,shrub,PG","shrub","shrub","PG",1,2,1,NA
-"261",260,"Polygon",261,25,"Sandy","Deep sand","Shallow sandy",36229137.91,58,"PLMU3,FLCE,SCBR2","PLMU3","FLCE","SCBR2",1163875.112,1536.40423,56423.96749,"PG,shrub,PG","PG","shrub","PG",1,2,1,NA
-"262",261,"Polygon",262,25,"Sandy","Deep sand","Shallow sandy",36229137.91,66,"PLMU3,SCBR2,OPUNT","PLMU3","SCBR2","OPUNT",1257991.714,970.319878,24011.76075,"PG,PG,succulent","PG","PG","succulent",1,2,1,NA
-"281",280,"Polygon",281,25,"Sandy","Deep sand","Shallow sandy",36229137.91,164,"YUEL,PRGL2,GUSA2","YUEL","PRGL2","GUSA2",386546.6708,202.616888,1481.102841,"succulent,shrub,subshrub","succulent","shrub","subshrub",1,2,1,NA
-"282",281,"Polygon",282,25,"Sandy","Deep sand","Shallow sandy",36229137.91,165,"YUEL,PRGL2, ","YUEL","PRGL2"," ",414716.4026,221.992977,1735.71474,"succulent,shrub","succulent","shrub",NA,1,2,1,NA
-"283",282,"Polygon",283,26,"Sandy","Loamy","Clayey",6504750.434,21,"FLCE,LATR2,LYBE","FLCE","LATR2","LYBE",606360.9239,3696.510029,601449.8879,"shrub,shrub,shrub","shrub","shrub","shrub",1,1,1,1
-"284",283,"Polygon",284,26,"Sandy","Loamy","Clayey",6504750.434,22,"FLCE,LATR2,PLMU3","FLCE","LATR2","PLMU3",2217269.929,4233.90066,494362.2049,"shrub,shrub,PG","shrub","shrub","PG",1,1,1,1
-"285",284,"Polygon",285,26,"Sandy","Loamy","Clayey",6504750.434,24,"FLCE,LYBE,PLMU3","FLCE","LYBE","PLMU3",285531.8971,2553.273965,285531.8971,"shrub,shrub,PG","shrub","shrub","PG",1,1,1,1
-"286",285,"Polygon",286,26,"Sandy","Loamy","Clayey",6504750.434,25,"FLCE,PLMU3, ","FLCE","PLMU3"," ",293183.9004,2773.41851,223299.5483,"shrub,PG","shrub","PG",NA,1,1,1,1
-"287",286,"Polygon",287,26,"Sandy","Loamy","Clayey",6504750.434,28,"FLCE,PLMU3,SCBR2","FLCE","PLMU3","SCBR2",7147095.878,8052.97898,1035433.858,"shrub,PG,PG","shrub","PG","PG",1,1,1,1
-"288",287,"Polygon",288,26,"Sandy","Loamy","Clayey",6504750.434,33,"FLCE,SCBR2,PLMU3","FLCE","SCBR2","PLMU3",17413694.84,1449.066283,59667.13328,"shrub,PG,PG","shrub","PG","PG",1,1,1,1
-"295",294,"Polygon",295,26,"Sandy","Loamy","Clayey",6504750.434,60,"PLMU3,MUPO2,LATR2","PLMU3","MUPO2","LATR2",427479.9829,1952.06679,200365.5106,"PG,PG,shrub","PG","PG","shrub",1,1,1,1
-"296",295,"Polygon",296,26,"Sandy","Loamy","Clayey",6504750.434,63,"PLMU3,SCBR2, ","PLMU3","SCBR2"," ",1297601.537,1612.244302,93443.87298,"PG,PG","PG","PG",NA,1,1,1,1
-"299",298,"Polygon",299,27,"Sandy","Loamy","Deep sand",154795964.8,6,"Bare, , ","Bare"," "," ",672734.5624,1680.79271,88437.58721,"Bare","Bare",NA,NA,1,1,2,NA
-"301",300,"Polygon",301,27,"Sandy","Loamy","Deep sand",154795964.8,16,"EPHEDRA,YUEL,PRGL2","EPHEDRA","YUEL","PRGL2",72313.04368,1023.027332,72313.04368,"succulent,succulent,shrub","succulent","succulent","shrub",1,1,2,NA
-"302",301,"Polygon",302,27,"Sandy","Loamy","Deep sand",154795964.8,17,"EPHEDRA,PRGL2,YUEL","EPHEDRA","PRGL2","YUEL",116963.9621,699.820603,22035.88232,"succulent,shrub,succulent","succulent","shrub","succulent",1,1,2,NA
-"303",302,"Polygon",303,27,"Sandy","Loamy","Deep sand",154795964.8,19,"FLCE,ATCA2, ","FLCE","ATCA2"," ",79659.00781,1200.953423,79659.00781,"shrub,shrub","shrub","shrub",NA,1,1,2,NA
-"304",303,"Polygon",304,27,"Sandy","Loamy","Deep sand",154795964.8,20,"FLCE,CELA,LYBE","FLCE","CELA","LYBE",9946.841838,404.874595,9946.841838,"shrub,shrub,shrub","shrub","shrub","shrub",1,1,2,NA
-"305",304,"Polygon",305,27,"Sandy","Loamy","Deep sand",154795964.8,22,"FLCE,LATR2,PLMU3","FLCE","LATR2","PLMU3",2217269.929,8120.613656,316309.8921,"shrub,shrub,PG","shrub","shrub","PG",1,1,2,NA
-"306",305,"Polygon",306,27,"Sandy","Loamy","Deep sand",154795964.8,27,"FLCE,PLMU3,PRGL2","FLCE","PLMU3","PRGL2",1053634.346,4436.508269,318133.9024,"shrub,PG,shrub","shrub","PG","shrub",1,1,2,NA
-"307",306,"Polygon",307,27,"Sandy","Loamy","Deep sand",154795964.8,28,"FLCE,PLMU3,SCBR2","FLCE","PLMU3","SCBR2",7147095.878,15684.26646,2635908.523,"shrub,PG,PG","shrub","PG","PG",1,1,2,NA
-"308",307,"Polygon",308,27,"Sandy","Loamy","Deep sand",154795964.8,29,"FLCE,PLMU3,SPAI","FLCE","PLMU3","SPAI",6405086.61,13573.13107,6393445.616,"shrub,PG,PG","shrub","PG","PG",1,1,2,NA
-"309",308,"Polygon",309,27,"Sandy","Loamy","Deep sand",154795964.8,31,"FLCE,PRGL2,SCBR2","FLCE","PRGL2","SCBR2",523709.4407,3113.571746,410952.8756,"shrub,shrub,PG","shrub","shrub","PG",1,1,2,NA
-"310",309,"Polygon",310,27,"Sandy","Loamy","Deep sand",154795964.8,32,"FLCE,SCBR2, ","FLCE","SCBR2"," ",97830.09883,1632.843461,78153.96739,"shrub,PG","shrub","PG",NA,1,1,2,NA
-"311",310,"Polygon",311,27,"Sandy","Loamy","Deep sand",154795964.8,33,"FLCE,SCBR2,PLMU3","FLCE","SCBR2","PLMU3",17413694.84,57637.60875,15856143.75,"shrub,PG,PG","shrub","PG","PG",1,1,2,NA
-"312",311,"Polygon",312,27,"Sandy","Loamy","Deep sand",154795964.8,34,"FLCE,SPAI,SCBR2","FLCE","SPAI","SCBR2",2576110.634,9052.864368,2240011.041,"shrub,PG,PG","shrub","PG","PG",1,1,2,NA
-"317",316,"Polygon",317,27,"Sandy","Loamy","Deep sand",154795964.8,57,"PLMU3, , ","PLMU3"," "," ",397142.9198,564.870466,22882.50083,"PG","PG",NA,NA,1,1,2,NA
-"318",317,"Polygon",318,27,"Sandy","Loamy","Deep sand",154795964.8,58,"PLMU3,FLCE,SCBR2","PLMU3","FLCE","SCBR2",1163875.112,8639.255213,868480.4476,"PG,shrub,PG","PG","shrub","PG",1,1,2,NA
-"319",318,"Polygon",319,27,"Sandy","Loamy","Deep sand",154795964.8,62,"PLMU3,PRGL2,SCBR2","PLMU3","PRGL2","SCBR2",403110.3252,2938.36442,96874.86969,"PG,shrub,PG","PG","shrub","PG",1,1,2,NA
-"320",319,"Polygon",320,27,"Sandy","Loamy","Deep sand",154795964.8,63,"PLMU3,SCBR2, ","PLMU3","SCBR2"," ",1297601.537,2068.692828,83255.88817,"PG,PG","PG","PG",NA,1,1,2,NA
-"322",321,"Polygon",322,27,"Sandy","Loamy","Deep sand",154795964.8,66,"PLMU3,SCBR2,OPUNT","PLMU3","SCBR2","OPUNT",1257991.714,6769.511241,1233979.954,"PG,PG,succulent","PG","PG","succulent",1,1,2,NA
-"323",322,"Polygon",323,27,"Sandy","Loamy","Deep sand",154795964.8,67,"PLMU3,SCBR2,PRGL2","PLMU3","SCBR2","PRGL2",1165251.326,728.347141,15846.59376,"PG,PG,shrub","PG","PG","shrub",1,1,2,NA
-"324",323,"Polygon",324,27,"Sandy","Loamy","Deep sand",154795964.8,68,"PLMU3,SCBR2,RHMI3","PLMU3","SCBR2","RHMI3",41597.59015,1007.904482,41597.59015,"PG,PG,shrub","PG","PG","shrub",1,1,2,NA
-"325",324,"Polygon",325,27,"Sandy","Loamy","Deep sand",154795964.8,70,"PLMU3,SPAI,PRGL2","PLMU3","SPAI","PRGL2",138385.6004,2164.187699,138385.6004,"PG,PG,shrub","PG","PG","shrub",1,1,2,NA
-"326",325,"Polygon",326,27,"Sandy","Loamy","Deep sand",154795964.8,71,"PLMU3,SPAI,SCBR2","PLMU3","SPAI","SCBR2",1583932.87,9295.762869,1583932.87,"PG,PG,PG","PG","PG","PG",1,1,2,NA
-"364",363,"Polygon",364,27,"Sandy","Loamy","Deep sand",154795964.8,136,"PSSC6,SPFL2,YUEL","PSSC6","SPFL2","YUEL",796861.1881,3787.032837,226154.5948,"shrub,PG,succulent","shrub","PG","succulent",1,1,2,NA
-"365",364,"Polygon",365,27,"Sandy","Loamy","Deep sand",154795964.8,137,"PSSC6,YUEL,SPFL2","PSSC6","YUEL","SPFL2",1601384.945,6217.182482,1599385.842,"shrub,succulent,PG","shrub","succulent","PG",1,1,2,NA
-"366",365,"Polygon",366,27,"Sandy","Loamy","Deep sand",154795964.8,138,"SCBR2, , ","SCBR2"," "," ",1911456.447,17886.81298,1873927.551,"PG","PG",NA,NA,1,1,2,NA
-"367",366,"Polygon",367,27,"Sandy","Loamy","Deep sand",154795964.8,139,"SCBR2,BOER4, ","SCBR2","BOER4"," ",484912.749,2945.040494,484912.749,"PG,PG","PG","PG",NA,1,1,2,NA
-"368",367,"Polygon",368,27,"Sandy","Loamy","Deep sand",154795964.8,140,"SCBR2,BOER4,ARPU9","SCBR2","BOER4","ARPU9",335337.3538,2375.551586,309002.2468,"PG,PG,PG","PG","PG","PG",1,1,2,NA
-"369",368,"Polygon",369,27,"Sandy","Loamy","Deep sand",154795964.8,141,"SCBR2,BOER4,PLMU3","SCBR2","BOER4","PLMU3",1224557.212,6954.16711,1224557.212,"PG,PG,PG","PG","PG","PG",1,1,2,NA
-"370",369,"Polygon",370,27,"Sandy","Loamy","Deep sand",154795964.8,142,"SCBR2,FLCE, ","SCBR2","FLCE"," ",154354.5627,1937.099268,154354.5627,"PG,shrub","PG","shrub",NA,1,1,2,NA
-"371",370,"Polygon",371,27,"Sandy","Loamy","Deep sand",154795964.8,143,"SCBR2,FLCE,PLMU3","SCBR2","FLCE","PLMU3",212469.5219,817.505948,24453.32727,"PG,shrub,PG","PG","shrub","PG",1,1,2,NA
-"372",371,"Polygon",372,27,"Sandy","Loamy","Deep sand",154795964.8,144,"SCBR2,FLCE,SPAI","SCBR2","FLCE","SPAI",921956.4758,5155.578499,921956.4758,"PG,shrub,PG","PG","shrub","PG",1,1,2,NA
-"373",372,"Polygon",373,27,"Sandy","Loamy","Deep sand",154795964.8,145,"SCBR2,KOSP, ","SCBR2","KOSP"," ",1174020.295,8295.233665,1045768.612,"PG,shrub","PG","shrub",NA,1,1,2,NA
-"374",373,"Polygon",374,27,"Sandy","Loamy","Deep sand",154795964.8,146,"SCBR2,KOSP,PRGL2","SCBR2","KOSP","PRGL2",751580.3347,4268.046587,463855.301,"PG,shrub,shrub","PG","shrub","shrub",1,1,2,NA
-"375",374,"Polygon",375,27,"Sandy","Loamy","Deep sand",154795964.8,147,"SCBR2,PLMU3, ","SCBR2","PLMU3"," ",2426297.229,8818.373669,993672.0593,"PG,PG","PG","PG",NA,1,1,2,NA
-"376",375,"Polygon",376,27,"Sandy","Loamy","Deep sand",154795964.8,148,"SCBR2,PLMU3,FLCE","SCBR2","PLMU3","FLCE",1716426.24,8740.360026,1562448.659,"PG,PG,shrub","PG","PG","shrub",1,1,2,NA
-"377",376,"Polygon",377,27,"Sandy","Loamy","Deep sand",154795964.8,149,"SCBR2,PLMU3,OPUNT","SCBR2","PLMU3","OPUNT",3546573.362,26178.01172,3500378.436,"PG,PG,succulent","PG","PG","succulent",1,1,2,NA
-"378",377,"Polygon",378,27,"Sandy","Loamy","Deep sand",154795964.8,150,"SCBR2,PLMU3,PRGL2","SCBR2","PLMU3","PRGL2",1038263.18,7254.610818,998146.9905,"PG,PG,shrub","PG","PG","shrub",1,1,2,NA
-"379",378,"Polygon",379,27,"Sandy","Loamy","Deep sand",154795964.8,151,"SCBR2,PRGL2, ","SCBR2","PRGL2"," ",37726.43016,768.294064,37726.43016,"PG,shrub","PG","shrub",NA,1,1,2,NA
-"380",379,"Polygon",380,27,"Sandy","Loamy","Deep sand",154795964.8,152,"SCBR2,PRGL2,EPHEDRA","SCBR2","PRGL2","EPHEDRA",269978.5779,5492.193259,269978.5779,"PG,shrub,succulent","PG","shrub","succulent",1,1,2,NA
-"381",380,"Polygon",381,27,"Sandy","Loamy","Deep sand",154795964.8,153,"SCBR2,PRGL2,PLMU3","SCBR2","PRGL2","PLMU3",108854.5017,1393.922209,77446.43421,"PG,shrub,PG","PG","shrub","PG",1,1,2,NA
-"382",381,"Polygon",382,27,"Sandy","Loamy","Deep sand",154795964.8,154,"SCBR2,SPAI, ","SCBR2","SPAI"," ",185194.661,1640.84425,185194.661,"PG,PG","PG","PG",NA,1,1,2,NA
-"383",382,"Polygon",383,27,"Sandy","Loamy","Deep sand",154795964.8,155,"SCBR2,SPAI,PLMU3","SCBR2","SPAI","PLMU3",464154.6361,3723.949169,235104.0862,"PG,PG,PG","PG","PG","PG",1,1,2,NA
-"384",383,"Polygon",384,27,"Sandy","Loamy","Deep sand",154795964.8,156,"SCBR2,SPAI,PRGL2","SCBR2","SPAI","PRGL2",301580.3026,3311.907522,301580.3026,"PG,PG,shrub","PG","PG","shrub",1,1,2,NA
-"385",384,"Polygon",385,27,"Sandy","Loamy","Deep sand",154795964.8,158,"SPAI, , ","SPAI"," "," ",154524.0585,243.344409,1189.826813,"PG","PG",NA,NA,1,1,2,NA
-"394",393,"Polygon",394,28,"Sandy","Shallow sandy"," ",15174053.53,28,"FLCE,PLMU3,SCBR2","FLCE","PLMU3","SCBR2",7147095.878,4988.708585,323147.4046,"shrub,PG,PG","shrub","PG","PG",1,1,NA,NA
-"395",394,"Polygon",395,28,"Sandy","Shallow sandy"," ",15174053.53,31,"FLCE,PRGL2,SCBR2","FLCE","PRGL2","SCBR2",523709.4407,1855.73549,112756.5652,"shrub,shrub,PG","shrub","shrub","PG",1,1,NA,NA
-"396",395,"Polygon",396,28,"Sandy","Shallow sandy"," ",15174053.53,33,"FLCE,SCBR2,PLMU3","FLCE","SCBR2","PLMU3",17413694.84,381.551347,3788.428941,"shrub,PG,PG","shrub","PG","PG",1,1,NA,NA
-"397",396,"Polygon",397,28,"Sandy","Shallow sandy"," ",15174053.53,34,"FLCE,SPAI,SCBR2","FLCE","SPAI","SCBR2",2576110.634,1210.760789,39481.15603,"shrub,PG,PG","shrub","PG","PG",1,1,NA,NA
-"408",407,"Polygon",408,28,"Sandy","Shallow sandy"," ",15174053.53,143,"SCBR2,FLCE,PLMU3","SCBR2","FLCE","PLMU3",212469.5219,2587.217026,188016.1944,"PG,shrub,PG","PG","shrub","PG",1,1,NA,NA
-"409",408,"Polygon",409,28,"Sandy","Shallow sandy"," ",15174053.53,147,"SCBR2,PLMU3, ","SCBR2","PLMU3"," ",2426297.229,9416.20942,1110713.036,"PG,PG","PG","PG",NA,1,1,NA,NA
-"410",409,"Polygon",410,28,"Sandy","Shallow sandy"," ",15174053.53,148,"SCBR2,PLMU3,FLCE","SCBR2","PLMU3","FLCE",1716426.24,2171.1939,121167.6854,"PG,PG,shrub","PG","PG","shrub",1,1,NA,NA
-"411",410,"Polygon",411,28,"Sandy","Shallow sandy"," ",15174053.53,155,"SCBR2,SPAI,PLMU3","SCBR2","SPAI","PLMU3",464154.6361,2432.932965,74469.41283,"PG,PG,PG","PG","PG","PG",1,1,NA,NA
-"415",414,"Polygon",415,28,"Sandy","Shallow sandy"," ",15174053.53,165,"YUEL,PRGL2, ","YUEL","PRGL2"," ",414716.4026,912.953287,31144.95451,"succulent,shrub","succulent","shrub",NA,1,1,NA,NA
+"","FID","OBJECTID","ecosite1","ecosite2","ecosite3","VegUnite","esite1type","esite2type","esite3type"
+"1",0,1," "," "," ","DAFO,LATR2,COWA",NA,NA,NA
+"2",1,2,"Bottomland","Limy","Salt Flats","ATCA2,PRGL2,PLMU3",1,1,1
+"3",2,3,"Bottomland","Limy","Salt Flats","Bare, , ",1,1,1
+"23",22,23,"Clayey","Bottomland","Loamy","Bare, , ",1,1,1
+"29",28,29,"Clayey","Bottomland","Loamy","GUSA2,BOER4,YUEL",1,1,1
+"51",50,51,"Clayey","Bottomland","Loamy","PSSC6,YUEL,SPFL2",1,1,1
+"60",59,60,"Deep sand","Sandy","Shallow sandy","ARFI2,PRGL2,ARPU9",2,1,1
+"61",60,61,"Deep sand","Sandy","Shallow sandy","DAFO,LATR2,COWA",2,1,1
+"62",61,62,"Deep sand","Sandy","Shallow sandy","DAFO,LATR2,PAIN2",2,1,1
+"63",62,63,"Deep sand","Sandy","Shallow sandy","DAFO,PAIN2,LATR2",2,1,1
+"85",84,85,"Deep sand","Shallow sandy"," ","GUSA2,PRGL2,YUEL",2,1,NA
+"92",91,92,"Deep sand","Shallow sandy"," ","YUEL,PRGL2, ",2,1,NA
+"94",93,94,"Deep sand","Shallow sandy","Shallow sandy","GUSA2,PRGL2,YUEL",2,1,1
+"98",97,98,"Deep sand","Shallow sandy","Shallow sandy","YUEL,PRGL2, ",2,1,1
+"99",98,99,"Draw","No ecosite"," ","ARFI2,PRGL2,ARPU9",1,NA,NA
+"100",99,100,"Draw","No ecosite"," ","DAFO,PAIN2,LATR2",1,NA,NA
+"142",141,142,"Limestone hills","No ecosite"," ","ARFI2,PRGL2,ARPU9",2,NA,NA
+"143",142,143,"Limestone hills","No ecosite"," ","DAFO,LATR2,COWA",2,NA,NA
+"144",143,144,"Limestone hills","No ecosite"," ","DAFO,LATR2,PAIN2",2,NA,NA
+"145",144,145,"Limestone hills","No ecosite"," ","DAFO,PAIN2,LATR2",2,NA,NA
+"174",173,174,"Sandy","Deep sand"," ","ATCA2,FLCE,PRGL2",1,2,NA
+"178",177,178,"Sandy","Deep sand"," ","EPHEDRA,PRGL2,YUEL",1,2,NA
+"179",178,179,"Sandy","Deep sand"," ","EPHEDRA,PRGL2,YUEL",1,2,NA
+"184",183,184,"Sandy","Deep sand"," ","GUSA2,BOER4,YUEL",1,2,NA
+"185",184,185,"Sandy","Deep sand"," ","GUSA2,SPFL2,PRGL2",1,2,NA
+"238",237,238,"Sandy","Deep sand"," ","PSSC6,PRGL2,ARFI2",1,2,NA
+"239",238,239,"Sandy","Deep sand"," ","PSSC6,PRGL2,GUSA2",1,2,NA
+"240",239,240,"Sandy","Deep sand"," ","PSSC6,SPFL2,YUEL",1,2,NA
+"254",253,254,"Sandy","Deep sand"," ","YUEL,PRGL2,GUSA2",1,2,NA
+"255",254,255,"Sandy","Deep sand"," ","YUEL,PRGL2, ",1,2,NA
+"281",280,281,"Sandy","Deep sand","Shallow sandy","YUEL,PRGL2,GUSA2",1,2,1
+"282",281,282,"Sandy","Deep sand","Shallow sandy","YUEL,PRGL2, ",1,2,1
+"299",298,299,"Sandy","Loamy","Deep sand","Bare, , ",1,1,2
+"301",300,301,"Sandy","Loamy","Deep sand","EPHEDRA,YUEL,PRGL2",1,1,2
+"302",301,302,"Sandy","Loamy","Deep sand","EPHEDRA,PRGL2,YUEL",1,1,2
+"364",363,364,"Sandy","Loamy","Deep sand","PSSC6,SPFL2,YUEL",1,1,2
+"365",364,365,"Sandy","Loamy","Deep sand","PSSC6,YUEL,SPFL2",1,1,2
+"415",414,415,"Sandy","Shallow sandy"," ","YUEL,PRGL2, ",1,1,NA

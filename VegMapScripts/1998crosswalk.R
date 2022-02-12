@@ -12,24 +12,11 @@ spgroups_site <- read.csv("spgroups_site.csv")
 sitelookup <- read.csv("sitetype_lookup.csv")
 
 spgroups_site$GeneralizedStateNumber <- as.integer(spgroups_site$GeneralizedStateNumber)
+spgroups_site <- dplyr::filter(spgroups_site, GeneralizedStateNumber > 0)
 
 # Could do something where the potential ecological sites are assigned to either
 # type 1 (grassland at potential) or type 2 (woody at potential), in cases
 # where map units are cohesively one or the other
-for(i in 1:nrow(attributetab1998)) {
-  for(j in 1:nrow(sitelookup)) {
-   attributetab1998$esite1type[i] <- gsub(sitelookup$Type[j],
-                                           sitelookup$Site[j],
-                                           attributetab1998$ecosite1[i])
-    
-  }
-}
-
-
-
-
-
-
 attributetab1998$esite1type <- qdapTools::lookup(attributetab1998$ecosite1, sitelookup[, 1:2])
 attributetab1998$esite2type <- qdapTools::lookup(attributetab1998$ecosite2, sitelookup[, 1:2])
 attributetab1998$esite3type <- qdapTools::lookup(attributetab1998$ecosite3, sitelookup[, 1:2])
@@ -53,12 +40,6 @@ unique(fullmatch1998$OBJECTID1998) # Only 56
 fullmatch1998_sitesubset <- dplyr::filter(fullmatch1998, SiteName == ecosite1 |
                                          SiteName == ecosite2 | SiteName == ecosite3)
 
-# And full species match, sites don't match
-fullmatch1998_sitesunmatched <- subset(fullmatch1998, 
-                                       !(fullmatch1998$OBJECTID1998 %in% 
-                                           fullmatch1998_sitesubset$OBJECTID1998))
-# There are still many duplicates - species assemblages don't match states 1:1
-
 # So now we have a dataframe where full species assemblage and sites match
 # Needs to be edited for one row per polygon, when multiple sites were matched
 
@@ -79,13 +60,6 @@ unmatched1998 <- subset(attributetab1998, !(attributetab1998$OBJECTID %in%
 
 
 # Run full match on FGs? Or partial species match?
-
-
-
-
-# Write to csv
-write.csv(fullmatch1998_sitematch_collapsed, "results1998_fullmatch.csv", row.names = FALSE)
-
 
 
 # Join on specific species
@@ -182,11 +156,10 @@ fullSPmatch1998 <- dplyr::select(SPmatch1998, OBJECTID1998, ecosite1, ecosite2,
 
 
 names(fullSPmatch1998)
-
-fullSPmatch1998$GeneralizedStateNum <- as.integer(fullSPmatch1998$GeneralizedStateNum)
-
+str(fullSPmatch1998)
+fullSPmatch1998$GeneralizedStateNum <- as.numeric(fullSPmatch1998$GeneralizedStateNum)
 # Keep site matches
-fullSPmatch1998_sitematch <- dplyr::filter(fullSPmatch1998, ecosite1 == SiteName & GeneralizedStateNum != 0
+fullSPmatch1998_sitematch <- dplyr::filter(fullSPmatch1998, ecosite1 == SiteName & GeneralizedStateNum > 0
                                            & matches > 0)
 
 
@@ -195,25 +168,24 @@ fullSPmatch1998_sitematch_collapsed <- fullSPmatch1998_sitematch %>%
   dplyr::select(OBJECTID1998, VegUnite, ecosite1, GeneralizedStateNum) %>%
   distinct() %>%
   group_by(OBJECTID1998) %>%
-  slice(which.min(GeneralizedStateNum))
+  slice(which.min(GeneralizedStateNum)) %>%
+  ungroup()
 
 
-# Bind matched tables and see if there's anyting left
+# Bind matched tables and see if there's anything left
 names(fullSPmatch1998_sitematch_collapsed)
-names(fullresults1998_sitematch_collapsed)
-fullSPmatch1998_sitematch_collapsed <- dplyr::ungroup(fullSPmatch1998_sitematch_collapsed)
-                                                     
+names(fullmatch1998_sitematch_collapsed)
 fullSPmatch1998_sitematch_collapsed <- dplyr::select(fullSPmatch1998_sitematch_collapsed,
                                                      OBJECTID1998, VegUnite, ecosite1, GeneralizedStateNumber = GeneralizedStateNum)
 
 
 
-fullresults1998_sitematch_collapsed <- dplyr::ungroup(fullresults1998_sitematch_collapsed)
+fullmatch1998_sitematch_collapsed <- dplyr::ungroup(fullmatch1998_sitematch_collapsed)
                                                      
-fullresults1998_sitematch_collapsed <- dplyr::select(fullresults1998_sitematch_collapsed,
+fullmatch1998_sitematch_collapsed <- dplyr::select(fullmatch1998_sitematch_collapsed,
                                                      OBJECTID1998, VegUnite, ecosite1, GeneralizedStateNumber)
 
-all1998 <- rbind(fullresults1998_sitematch_collapsed, fullSPmatch1998_sitematch_collapsed)
+all1998 <- rbind(fullmatch1998_sitematch_collapsed, fullSPmatch1998_sitematch_collapsed)
 
 unmatched <- subset(attributetab1998, !(attributetab1998$OBJECTID %in% all1998$OBJECTID1998))
 
@@ -233,5 +205,43 @@ unmatchedjoin$SiteNameType <- qdapTools::lookup(unmatchedjoin$SiteName, sitelook
 sitetypematch <- unmatchedjoin %>%
   dplyr::filter(esite1type == SiteNameType | esite2type == SiteNameType | esite3type == SiteNameType)
 
+sitetypematch <- sitetypematch %>%
+dplyr::select(OBJECTID1998 = OBJECTID, VegUnite, ecosite1, GeneralizedStateNumber) %>%
+  distinct() %>%
+  group_by(OBJECTID1998) %>%
+  slice(which.min(GeneralizedStateNumber)) %>%
+  ungroup()
+
+all1998 <- rbind(all1998, sitetypematch)
+
+
+unmatched <- subset(attributetab1998, !(attributetab1998$OBJECTID %in% all1998$OBJECTID1998))
+names(unmatched)
+unmatched <- dplyr::select(unmatched, FID, OBJECTID, ecosite1, ecosite2, ecosite3,
+                           VegUnite, esite1type, esite2type, esite3type)
+
+
+
+
 
 write.csv(unmatched, "unmatched1998.csv")
+
+ahedits_1998 <- read.csv("unmatched1998_ahedits.csv")
+
+ahedits_1998 <- dplyr::select(ahedits_1998, OBJECTID1998 = OBJECTID, VegUnite, ecosite1, GeneralizedStateNumber)
+
+all1998 <- rbind(all1998, ahedits_1998)
+
+
+all1998 <- rename(all1998, OBJECTID = OBJECTID1998)
+
+write.csv(all1998, "all1998.csv", row.names = FALSE)
+
+all1998 <- dplyr::select(all1998, OBJECTID, GeneralizedStateNumber)
+
+attributetab1998_matched <- dplyr::left_join(attributetab1998, all1998)
+names(attributetab1998_matched)
+attributetab1998_matched <- dplyr::select(attributetab1998_matched, -VegUnite, -FGUnite,
+                                          -Dom1FG, -Dom2FG, -Dom3FG, -esite1type, -esite2type, -esite3type)
+
+write.csv(attributetab1998_matched, "attributetab1998_matched.csv", row.names = FALSE)
