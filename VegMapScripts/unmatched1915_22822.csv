@@ -1,0 +1,65 @@
+OBJECTID,FID_JERVeg,VegUnite,ecosite1,ecosite2,ecosite3,esite1type,esite2type,esite3type,GeneralizedStateNumber
+3,2,"ARIST,BOER4,PRGL2",Sandy,Limy,Salt Flats,1,1,1,2
+5,3,"ARIST,BOER4,SPORO",Sandy,Limy,Salt Flats,1,1,1,2
+8,4,"ARIST,BOER4,YUEL",Sandy,Bottomland,Loamy,1,1,1,2
+9,5,"ARIST,GUSA2,BOER4",Sandy,Bottomland,Loamy,1,1,1,6
+35,21,"FLCE,LATR2,ATCA2",Sandy,No ecosite, ,1,NA,NA,6
+38,22,"FLCE,LATR2,BOER4",Gravelly, , ,2,NA,NA,3
+46,24,"FLCE,LATR2,PRGL2",Draw,No ecosite, ,1,NA,NA,6
+47,24,"FLCE,LATR2,PRGL2",Gravelly,Shallow sandy, ,2,1,NA,5
+50,24,"FLCE,LATR2,PRGL2",Sandy,Shallow sandy, ,1,1,NA,6
+54,26,"FLCE,LATR2,SPORO",Gravelly,No ecosite, ,2,NA,NA,5
+56,27,"FLCE,PRGL2,SCBR2",Bottomland,No ecosite, ,1,NA,NA,4
+60,28,"FLCE,SCBR2,BOER4",Gravelly, , ,2,NA,NA,3
+61,28,"FLCE,SCBR2,BOER4",Sandy, , ,1,NA,NA,3
+62,29,"FLCE,SCBR2,PLMU3",Bottomland, , ,1,NA,NA,3
+63,29,"FLCE,SCBR2,PLMU3",Sandy, , ,1,NA,NA,3
+64,30,"FLCE,SCBR2,SPAI",Sandy, , ,1,NA,NA,3
+66,32,"GUSA2,BOER4,PRGL2",Sandy, , ,1,NA,NA,4
+74,36,"GUSA2,PRGL2,ARIST",Sandy,Deep sand, ,1,2,NA,4
+78,37,"GUSA2,PRGL2,BOER4",Sandy,Deep sand, ,1,2,NA,4
+83,40,"GUSA2,PRGL2,SPORO",Sandy,Deep sand,Shallow sandy,1,2,1,4
+85,42,"HIMU,SCBR2,",Clayey,Deep sand,Shallow sandy,1,2,1,2
+86,42,"HIMU,SCBR2,",Sandy,Deep sand,Shallow sandy,1,2,1,2
+90,46,"LATR2,FLCE,ACBR",Deep sand,Loamy,Deep sand,2,1,2,4
+91,47,"LATR2,FLCE,BOER4",Bottomland,Loamy,Deep sand,1,1,2,4
+93,47,"LATR2,FLCE,BOER4",Loamy,Loamy,Deep sand,1,1,2,4
+94,47,"LATR2,FLCE,BOER4",Sandy,Loamy,Deep sand,1,1,2,4
+95,48,"LATR2,FLCE,DAPU7",Sandy,Loamy,Deep sand,1,1,2,6
+96,49,"LATR2,FLCE,GUSA2",Bottomland,Loamy,Deep sand,1,1,2,6
+97,49,"LATR2,FLCE,GUSA2",Deep sand,Loamy,Deep sand,2,1,2,6
+99,49,"LATR2,FLCE,GUSA2",Loamy,Loamy,Deep sand,1,1,2,6
+100,49,"LATR2,FLCE,GUSA2",Sandy,Loamy,Deep sand,1,1,2,6
+101,50,"LATR2,FLCE,PRGL2",Bottomland,Loamy,Deep sand,1,1,2,6
+103,50,"LATR2,FLCE,PRGL2",Draw,Shallow sandy, ,1,1,NA,6
+105,50,"LATR2,FLCE,PRGL2",Loamy,Shallow sandy, ,1,1,NA,6
+106,50,"LATR2,FLCE,PRGL2",Sandy,Shallow sandy, ,1,1,NA,6
+114,53,"LATR2,PRGL2,BOER4",Sandy,NA,NA,1,NA,NA,4
+116,54,"PLMU3,FLCE,LATR2",Gravelly,NA,NA,2,NA,NA,3
+120,55,"PLMU3,SCBR2,",Sandy,NA,NA,1,NA,NA,1
+122,56,"PLMU3,SCBR2,MUAR",Sandy,NA,NA,1,NA,NA,1
+123,57,"PLMU3,SCBR2,MUAR",Sandy,NA,NA,1,NA,NA,1
+124,58,"PLMU3,SCBR2,PRGL2",Sandy,NA,NA,1,NA,NA,1
+125,59,"PLMU3,SCBR2,SPAI",Sandy,NA,NA,1,NA,NA,1
+174,81,"SCBR2,ARIST,BOER4",Sandy,NA,NA,1,NA,NA,2
+175,82,"SCBR2,BOER4,ARIST",Sandy,NA,NA,1,NA,NA,2
+176,83,"SCBR2,BOER4,FLCE",Sandy,NA,NA,1,NA,NA,2
+178,84,"SCBR2,BOER4,MUAR",Sandy,NA,NA,1,NA,NA,2
+179,85,"SCBR2,BOER4,SPORO",Sandy,NA,NA,1,NA,NA,2
+180,86,"SCBR2,PLMU3,",Bottomland,NA,NA,1,NA,NA,2
+182,86,"SCBR2,PLMU3,",Gravelly,NA,NA,2,NA,NA,2
+184,86,"SCBR2,PLMU3,",Sandy,NA,NA,1,NA,NA,2
+185,87,"SCBR2,PLMU3,ARIST",Sandy,NA,NA,1,NA,NA,2
+187,88,"SCBR2,PLMU3,BOER4",Sandy,NA,NA,1,NA,NA,2
+190,90,"SCBR2,PLMU3,FLCE",Sandy,NA,NA,1,NA,NA,2
+194,92,"SCBR2,PLMU3,MUAR",Sandy,NA,NA,1,NA,NA,2
+195,93,"SCBR2,PLMU3,SPAI",Bottomland,NA,NA,1,NA,NA,2
+196,93,"SCBR2,PLMU3,SPAI",Gravelly,NA,NA,2,NA,NA,2
+198,93,"SCBR2,PLMU3,SPAI",Sandy,NA,NA,1,NA,NA,2
+200,95,"SCBR2,SPAI,PLMU3",Bottomland,NA,NA,1,NA,NA,2
+201,95,"SCBR2,SPAI,PLMU3",Gravelly,NA,NA,2,NA,NA,2
+203,95,"SCBR2,SPAI,PLMU3",Sandy,NA,NA,1,NA,NA,2
+204,96,"SCBR2,SPORO,BOER4",Sandy,NA,NA,1,NA,NA,2
+205,97,"SPORssp,FLCE,PLMU3",Bottomland,NA,NA,1,NA,NA,2
+206,97,"SPORssp,FLCE,PLMU3",Gravelly,NA,NA,2,NA,NA,2
+207,97,"SPORssp,FLCE,PLMU3",Sandy,NA,NA,1,NA,NA,2

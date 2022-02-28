@@ -1,0 +1,96 @@
+OBJECTID,FID_JERVeg,VegUnite,ecosite1,ecosite2,ecosite3,StateNumber,StateName,GeneralizedStateNumber,FinalEcosite,GeneralizedStateName
+36,22,"FLCE,LATR2,BOER4",Bottomland,Shallow sandy, ,2,Shrub-invadedGrassland,4,,ShrubInvadedGrassland
+115,54,"PLMU3,FLCE,LATR2",Bottomland,NA,NA,2,Shrub-invadedGrassland,4,Clayey,ShrubInvadedGrassland
+152,70,"PRGL2,GUSA2,BOER4",Bottomland,NA,NA,2,Shrub-invadedGrassland,4,Bottomland,ShrubInvadedGrassland
+26,16,"BOER4,PRGL2,YUEL",Clayey,Shallow sandy, ,4,MesquiteInvaded,4,Shallow sandy,ShrubInvadedGrassland
+33,20,"EPHspp,PLMU3,GUSA2",Clayey,No ecosite, ,3,MixedShrub-Grassland,4,Clayey,ShrubInvadedGrassland
+79,38,"GUSA2,PRGL2,PSSC6",Clayey,Deep sand, ,4,Tarbush/CreosotebushShrubland,6,,Shrubland
+87,43,"HOFF spp.,Bare,",Clayey,Loamy,Clayey,5,Non-Vegetated,7,Clayey,Bare
+143,67,"PRGL2,GUSA2,",Clayey,NA,NA,4,Tarbush/CreosotebushShrubland,6,Clayey,Shrubland
+1,1,"ARFI2,GUSA2,",Deep sand, , ,2,BroomDalea-SandsageState,5,Deep sand,ShrubDominated
+4,3,"ARIST,BOER4,SPORO",Deep sand,Limy,Salt Flats,1,Dropseed-dominatedState,3,Deep sand,ShrubSavanna
+7,4,"ARIST,BOER4,YUEL",Deep sand,Limy,Salt Flats,1,Dropseed-dominatedState,3,Deep sand,ShrubSavanna
+27,16,"BOER4,PRGL2,YUEL",Deep sand,Shallow sandy,Deep sand,1,Dropseed-dominatedState,3,Deep sand,ShrubSavanna
+45,24,"FLCE,LATR2,PRGL2",Deep sand,No ecosite, ,3,MesquiteDuneState,6,,Shrubland
+51,25,"FLCE,LATR2,SCBR2",Deep sand,Shallow sandy, ,1,Dropseed-dominatedState,3,,ShrubSavanna
+57,27,"FLCE,PRGL2,SCBR2",Deep sand,No ecosite, ,1,Dropseed-dominatedState,3,,ShrubSavanna
+71,35,"GUSA2,PRGL2,",Deep sand,Deep sand, ,3,MesquiteDuneState,6,Deep sand,Shrubland
+73,36,"GUSA2,PRGL2,ARIST",Deep sand,Deep sand, ,1,Dropseed-dominatedState,3,Deep sand,ShrubSavanna
+76,37,"GUSA2,PRGL2,BOER4",Deep sand,Deep sand, ,1,Dropseed-dominatedState,3,Deep sand,ShrubSavanna
+80,38,"GUSA2,PRGL2,PSSC6",Deep sand,Deep sand, ,3,MesquiteDuneState,6,Deep sand,Shrubland
+102,50,"LATR2,FLCE,PRGL2",Deep sand,Shallow sandy, ,3,MesquiteDuneState,6,,Shrubland
+107,51,"LATR2,FLCE,SCBR2",Deep sand,Deep sand, ,1,Dropseed-dominatedState,3,,ShrubSavanna
+127,61,"PRGL2,ARFI2,GUSA2",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+131,62,"PRGL2,ARFI2,MUAR",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+132,63,"PRGL2,ATCA2,ARFI2",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+135,64,"PRGL2,ATCA2,GUSA2",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+139,65,"PRGL2,ATCA2,YUEL",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+144,67,"PRGL2,GUSA2,",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+146,68,"PRGL2,GUSA2,ARFI2",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+150,69,"PRGL2,GUSA2,ATCA2",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+153,70,"PRGL2,GUSA2,BOER4",Deep sand,NA,NA,1,Dropseed-dominatedState,3,Deep sand,ShrubSavanna
+155,72,"PRGL2,GUSA2,LATR2",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+160,73,"PRGL2,GUSA2,MUPO2",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+162,74,"PRGL2,GUSA2,SPORO",Deep sand,NA,NA,1,Dropseed-dominatedState,3,Deep sand,ShrubSavanna
+165,76,"PRGL2,LATR2,GUSA2",Deep sand,NA,NA,3,MesquiteDuneState,6,Deep sand,Shrubland
+168,77,"PRGL2,SPORO,BOER4",Deep sand,NA,NA,1,Dropseed-dominatedState,3,Deep sand,ShrubSavanna
+37,22,"FLCE,LATR2,BOER4",Draw, , ,2,Mesquite-tobosaWoodland,4,,ShrubInvadedGrassland
+53,26,"FLCE,LATR2,SPORO",Draw,Shallow sandy, ,2,Mesquite-tobosaWoodland,4,,ShrubInvadedGrassland
+108,51,"LATR2,FLCE,SCBR2",Draw,Deep sand, ,2,Mesquite-tobosaWoodland,4,,ShrubInvadedGrassland
+128,61,"PRGL2,ARFI2,GUSA2",Draw,NA,NA,4,MesquiteWoodland,6,Draw,Shrubland
+136,64,"PRGL2,ATCA2,GUSA2",Draw,NA,NA,4,MesquiteWoodland,6,Draw,Shrubland
+147,68,"PRGL2,GUSA2,ARFI2",Draw,NA,NA,4,MesquiteWoodland,6,Draw,Shrubland
+156,72,"PRGL2,GUSA2,LATR2",Draw,NA,NA,4,MesquiteWoodland,6,Draw,Shrubland
+166,76,"PRGL2,LATR2,GUSA2",Draw,NA,NA,4,MesquiteWoodland,6,Draw,Shrubland
+148,68,"PRGL2,GUSA2,ARFI2",Gravelly,NA,NA,3,Shrubland ,6,,Shrubland
+157,72,"PRGL2,GUSA2,LATR2",Gravelly,NA,NA,3,Shrubland ,6,,Shrubland
+39,22,"FLCE,LATR2,BOER4",Limestone hills, , ,2,Shrub-succulent,6,,Shrubland
+48,24,"FLCE,LATR2,PRGL2",Limestone hills,Shallow sandy, ,2,Shrub-succulent,6,,Shrubland
+77,37,"GUSA2,PRGL2,BOER4",Limestone hills,Deep sand, ,3,MesquiteDuneState,6,Deep sand,Shrubland
+110,51,"LATR2,FLCE,SCBR2",Limestone hills,Sandy, ,2,Shrub-succulent,6,,Shrubland
+129,61,"PRGL2,ARFI2,GUSA2",Limestone hills,NA,NA,2,Shrub-succulent,6,,Shrubland
+149,68,"PRGL2,GUSA2,ARFI2",Limestone hills,NA,NA,2,Shrub-succulent,6,,Shrubland
+158,72,"PRGL2,GUSA2,LATR2",Limestone hills,NA,NA,2,Shrub-succulent,6,,Shrubland
+24,13,"BOER4,EPHspp,LATR2",Rock land,Shallow sandy, ,1,Grassland/succulent,3,Rock land,ShrubSavanna
+113,53,"LATR2,PRGL2,BOER4",Rock land,NA,NA,2,Shrub-succulent,6,Rock land,Shrubland
+2,1,"ARFI2,GUSA2,",Sandy,Limy,Salt Flats,4,Shrubland,6,,Shrubland
+22,12,"BOER4,ARIST,YUEL",Sandy,Shallow sandy, ,1,BlackGramaGrassland,1,Sandy,Grassland
+30,18,"BOER4,YUEL,ARIST",Sandy,Shallow sandy,Shallow sandy,1,BlackGramaGrassland,1,Sandy,Grassland
+34,20,"EPHspp,PLMU3,GUSA2",Sandy,No ecosite, ,2,MesquiteInvaded,4,,ShrubInvadedGrassland
+52,25,"FLCE,LATR2,SCBR2",Sandy,Shallow sandy, ,3,Bunchgrass/Mesquite,4,,ShrubInvadedGrassland
+55,26,"FLCE,LATR2,SPORO",Sandy,No ecosite, ,3,Bunchgrass/Mesquite,4,,ShrubInvadedGrassland
+58,27,"FLCE,PRGL2,SCBR2",Sandy, , ,3,Bunchgrass/Mesquite,4,,ShrubInvadedGrassland
+65,31,"GUSA2,BOER4,ARIST",Sandy, , ,2,MesquiteInvaded,4,Sandy,ShrubInvadedGrassland
+68,33,"GUSA2,PLMU3,ARIST",Sandy, , ,2,MesquiteInvaded,4,Sandy,ShrubInvadedGrassland
+69,34,"GUSA2,PLMU3,SCBR2",Sandy, , ,2,MesquiteInvaded,4,Sandy,ShrubInvadedGrassland
+72,35,"GUSA2,PRGL2,",Sandy,Deep sand, ,4,Shrubland,6,Sandy,Shrubland
+81,38,"GUSA2,PRGL2,PSSC6",Sandy,Deep sand,Shallow sandy,4,Shrubland,6,Sandy,Shrubland
+82,39,"GUSA2,PRGL2,SCBR2",Sandy,Deep sand,Shallow sandy,3,Bunchgrass/Mesquite,4,Sandy,ShrubInvadedGrassland
+84,41,"GUSA2,YUEL,",Sandy,Deep sand,Shallow sandy,4,Shrubland,6,Sandy,Shrubland
+88,43,"HOFF spp.,Bare,",Sandy,Loamy,Clayey,,Bare,7,Clayey,Bare
+111,52,"LATR2,GUSA2,ARFI2",Sandy,Sandy, ,4,Shrubland,6,Sandy,Shrubland
+118,54,"PLMU3,FLCE,LATR2",Sandy,NA,NA,3,Bunchgrass/Mesquite,4,Sandy,ShrubInvadedGrassland
+126,60,"PRGL2,ARFI2,EPHspp",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+130,61,"PRGL2,ARFI2,GUSA2",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+137,64,"PRGL2,ATCA2,GUSA2",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+140,65,"PRGL2,ATCA2,YUEL",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+145,67,"PRGL2,GUSA2,",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+151,69,"PRGL2,GUSA2,ATCA2",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+154,71,"PRGL2,GUSA2,EPHspp",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+159,72,"PRGL2,GUSA2,LATR2",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+161,73,"PRGL2,GUSA2,MUPO2",Sandy,NA,NA,3,Bunchgrass/Mesquite,4,Sandy,ShrubInvadedGrassland
+167,76,"PRGL2,LATR2,GUSA2",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+170,78,"PRGL2,ATCA2,YUEL",Sandy,NA,NA,4,Shrubland,6,Sandy,Shrubland
+171,79,"PSSC6,ARFI2,YUEL",Sandy,NA,NA,5,ShrubDominated,6,Deep sand,Shrubland
+172,80,"PSSC6,YUEL,GUSA2",Sandy,NA,NA,5,ShrubDominated,6,Deep sand,Shrubland
+188,89,"SCBR2,PLMU3,EPHspp",Sandy,NA,NA,3,Bunchgrass/Mesquite,4,,ShrubInvadedGrassland
+192,91,"SCBR2,PLMU3,GUSA2",Sandy,NA,NA,3,Bunchgrass/Mesquite,4,,ShrubInvadedGrassland
+199,94,"SCBR2,SPAI,GUSA2",Sandy,NA,NA,3,Bunchgrass/Mesquite,4,,ShrubInvadedGrassland
+6,3,"ARIST,BOER4,SPORO",Shallow sandy,Limy,Salt Flats,2,BlackGramaLimitedGrassland,2,Shallow sandy,AlteredGrassland
+31,18,"BOER4,YUEL,ARIST",Shallow sandy,No ecosite, ,1,BlackGramaGrassland,1,Shallow sandy,Grassland
+67,32,"GUSA2,BOER4,PRGL2",Shallow sandy, , ,4,MesquiteInvaded,4,Shallow sandy,ShrubInvadedGrassland
+70,34,"GUSA2,PLMU3,SCBR2",Shallow sandy,Deep sand, ,3,BunchgrassGrassland,2,Shallow sandy,AlteredGrassland
+75,36,"GUSA2,PRGL2,ARIST",Shallow sandy,Deep sand, ,4,MesquiteInvaded,4,Shallow sandy,ShrubInvadedGrassland
+138,64,"PRGL2,ATCA2,GUSA2",Shallow sandy,NA,NA,5,Shrubland,6,Shallow sandy,Shrubland
+142,66,"PRGL2,BOER4,GUSA2",Shallow sandy,NA,NA,4,MesquiteInvaded,4,Shallow sandy,ShrubInvadedGrassland
+164,75,"PRGL2,LATR2,FLCE",Shallow sandy,NA,NA,5,Shrubland,6,Shallow sandy,Shrubland
