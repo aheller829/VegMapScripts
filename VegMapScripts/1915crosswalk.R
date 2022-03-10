@@ -4,166 +4,131 @@
 library(dplyr)
 library(stringr)
 library(tidyr)
+library(qdapTools)
 
 # Read in clean datasheets
-autocrosswalk <- read.csv("autocrosswalk_clean.csv")
 attributetab1915 <- read.csv("at1915_clean.csv")
-attributetab2021 <- read.csv("at2021_clean.csv")
+spgroups_site <- read.csv("spgroups_site_edited.csv")
+sitelookup <- read.csv("sitetype_lookup.csv")
 
+spgroups_site$GeneralizedStateNumber <- as.integer(spgroups_site$GeneralizedStateNumber)
+spgroups_site <- dplyr::filter(spgroups_site, GeneralizedStateNumber > 0)
 
-# Read in Jeremy's manually matched file
-JSmatched1915 <- read.csv("JSmatched1915.csv")
-names(JSmatched1915)
-JSsubset <- dplyr::select(JSmatched1915, OBJECTID, VegUnite,
-                          ecosite1, ecosite2, ecosite3,
-                          StateNumber, StateName, GeneralizedStateNumber,
-                          GeneralizedStateName, Notes)
+# How many per site?
+table(spgroups_site$SiteName)
 
+# Could do something where the potential ecological sites are assigned to either
+# type 1 (grassland at potential) or type 2 (woody at potential), in cases
+# where map units are cohesively one or the other
+attributetab1915$esite1type <- qdapTools::lookup(attributetab1915$ecosite1, sitelookup[, 1:2])
+attributetab1915$esite2type <- qdapTools::lookup(attributetab1915$ecosite2, sitelookup[, 1:2])
+attributetab1915$esite3type <- qdapTools::lookup(attributetab1915$ecosite3, sitelookup[, 1:2])
 
-x <- filter(spgroups_site, grepl("PSSC", VegUnite))
+# Full species match
+fullmatch1915 <- attributetab1915 %>%
+  dplyr::left_join(spgroups_site) %>%
+  dplyr::select(FID, OBJECTID, VegUnite, 
+                ecosite1, ecosite2, ecosite3, GeneralizedStateNumber, SiteName,
+                esite1type, esite2type, esite3type) %>%
+  dplyr::filter(!is.na(GeneralizedStateNumber) & GeneralizedStateNumber != 0)
 
+# How many unique polygons?
+unique(fullmatch1915$OBJECTID) # Only 29
 
+# Should we subset to site matching as well?
+# There are many that match (e.g.) to Clayey, which is not listed as a site for that
+# polygon, but bottomland or salt flat is 
+fullmatch1915_sitesubset <- dplyr::filter(fullmatch1915, SiteName == ecosite1 |
+                                            SiteName == ecosite2 | SiteName == ecosite3)
 
+# So now we have a dataframe where full species assemblage and sites match
+# Needs to be edited for one row per polygon, when multiple sites were matched
 
-
-
-
-# How many functional group equivalents are there?
-functionalgrouptab_site <- autocrosswalk %>%
-  dplyr::group_by(Site, SiteName, StateName, FGUnite) %>%
-  dplyr::summarise(Count = n())
-# How many when grouping by generalized states?
-functionalgrouptab_GS <- autocrosswalk %>%
-  dplyr::group_by(GeneralizedStateNumber, GeneralizedStateName, FGUnite) %>%
-  dplyr::summarise(Count = n())
-
-
-
-# Create FG assemblages by state
-# Repeat across states to capture all combinations
-fgassemblages <- attributetab2021 %>%
-  dplyr::group_by(State1, FGString) %>%
-  dplyr::summarise(Count = n()) %>%
-  dplyr::select(-Count) 
-
-%>%
-  dplyr::filter(FGString != "NA,NA,NA")
-
-fgassemblages2 <- attributetab2021 %>%
-  dplyr::group_by(State2, FGString) %>%
-  dplyr::summarise(Count = n()) %>%
-  dplyr::select(-Count) 
-
-%>%
-  dplyr::filter(FGString != "NA,NA,NA") %>%
-  dplyr::rename(State1 = State2)
-
-fgassemblages3 <- attributetab2021 %>%
-  dplyr::group_by(State3, FGString) %>%
-  dplyr::summarise(Count = n()) %>%
-  dplyr::select(-Count) %>%
-  dplyr::filter(FGString != "NA,NA,NA") %>%
-  dplyr::rename(State1 = State3)
-
-
-x <- dplyr::filter(attributetab2021, State1 == 3 | State2 == 3 | State3 == 3)
-
-
-# Bind together, remove double NA, remove duplicates
-fgassemblages <- rbind(fgassemblages, fgassemblages2)
-fgassemblages <- rbind(fgassemblages, fgassemblages3)
-
-# fgassemblages <- fgassemblages[!grepl("NA,NA", fgassemblages$FGString), ]
-
-# Remove blanks
-fgassemblages$FGString <- trimws(fgassemblages$FGString)
-fgassemblages <- dplyr::filter(fgassemblages, FGString != "")
-
-fgassemblages <- dplyr::distinct(fgassemblages)
-# Remove intermediary dfs
-rm(fgassemblages2)
-rm(fgassemblages3)
+# Also a dataframe where there are full species matches but sites don't match
+# Needs to be edited so there's one row per polygon, assigned to a site (?)
+names(fullmatch1915_sitesubset)
+fullmatch1915_sitematch_collapsed <- fullmatch1915_sitesubset %>%
+  dplyr::select(FID, OBJECTID, VegUnite, ecosite1, ecosite2, ecosite3, GeneralizedStateNumber) %>%
+  distinct() %>%
+  group_by(FID) %>%
+  slice(which.min(GeneralizedStateNumber))
 
 
 
+# Now, pull out polygons that didn't have a full species match
+unmatched1915 <- subset(attributetab1915, !(attributetab1915$OBJECTID %in% 
+                                              fullmatch1915_sitematch_collapsed$OBJECTID))
 
-# Try leftjoin between functionalgrouptab_GS and dataframe
-results1915 <- attributetab1915 %>%
-  dplyr::left_join(functionalgrouptab_GS) %>%
-  dplyr::select(FID, OBJECTID1915 = OBJECTID, VegUnite1915 = VegUnite, 
-                FGUnite1915 = FGUnite, ecosite1, ecosite2, ecosite3,
-                FG_GSNum = GeneralizedStateNumber, 
-                FG_GSName = GeneralizedStateName)
-names(results1915)
-# Second join on species? Or match on species?
+
+# Run full match on FGs? Or partial species match?
+
+
+# Join on specific species
+# First split species in master sp assemblage list
+spgroups_site <- tidyr::separate(spgroups_site, VegUnite, c("Veg1", "Veg2", "Veg3"),
+                                 sep = ",", remove = FALSE)
+
 # Species join, dom1
-match_list <- apply(X = autocrosswalk,
-                     vegmap = results1915,
-                     MARGIN = 1,
-                     FUN = function(X, vegmap){
-                       current_row <- X
-                       current_veg1 <- current_row[["DomSp1"]]
-                       
-                       veg_matches <- sapply(X = vegmap$VegUnite1915,
-                                             current_veg1 = current_veg1,
-                                             
-                                             FUN = function(X, current_veg1) {
-                                               
-                                               vegs <- trimws(unlist(stringr::str_split(X, pattern = ",")))
-                                               
-                                               
-                                               any(vegs %in% current_veg1)
-                                             })
-                       data.frame(Site = current_row[["Site"]],
-                                  SiteName = current_row[["SiteName"]],
-                                  StateName = current_row[["StateName"]],
-                                  StateVegUnite = current_row[["FGUnite"]],
-                                  VegUnite = current_row[["VegUnite"]],
-                                  GeneralizedStateName = current_row[["GeneralizedStateName"]],
-                                  GeneralizedStateNum = current_row[["GeneralizedStateNumber"]],
-                                  FG1915 = vegmap$FGUnite1915,
-                                  SP1915 = vegmap$VegUnite1915,
-                                  ecosite1 = vegmap$ecosite1,
-                                  ecosite2 = vegmap$ecosite2,
-                                  ecosite3 = vegmap$ecosite3,
-                                  FG_GSName = vegmap$FG_GSName,
-                                  FG_GSNum = vegmap$FG_GSNum,
-                                  OBJECTID1915 = vegmap$OBJECTID,
-                                  matches1 = as.integer(veg_matches),
-                                  stringsAsFactors = FALSE)
-                     })
+match_list <- apply(X = spgroups_site,
+                    vegmap = unmatched1915,
+                    MARGIN = 1,
+                    FUN = function(X, vegmap){
+                      current_row <- X
+                      current_veg1 <- current_row[["Veg1"]]
+                      
+                      veg_matches <- sapply(X = vegmap$ZST_DOM,
+                                            current_veg1 = current_veg1,
+                                            
+                                            FUN = function(X, current_veg1) {
+                                              
+                                              vegs <- X
+                                              # vegs <- trimws(unlist(stringr::str_split(X, pattern = ",")))
+                                              
+                                              
+                                              any(X %in% current_veg1)
+                                            })
+                      data.frame(SiteName = current_row[["SiteName"]],
+                                 ACVegUnite = current_row[["VegUnite"]],
+                                 GeneralizedStateNum = current_row[["GeneralizedStateNumber"]],
+                                 VegUnite = vegmap$VegUnite,
+                                 ecosite1 = vegmap$ecosite1,
+                                 ecosite2 = vegmap$ecosite2,
+                                 ecosite3 = vegmap$ecosite3,
+                                 OBJECTID = vegmap$OBJECTID,
+                                 matches = as.integer(veg_matches),
+                                 stringsAsFactors = FALSE)
+                    })
 
 
 results <- do.call(rbind,
-                    match_list)
+                   match_list)
 
 
 # Species join, dom2
-match_list2 <- apply(X = autocrosswalk,
-                     vegmap = results1915,
+match_list2 <- apply(X = spgroups_site,
+                     vegmap = unmatched1915,
                      MARGIN = 1,
                      FUN = function(X, vegmap){
                        current_row <- X
-                       current_veg1 <- current_row[["DomSp2"]]
+                       current_veg1 <- current_row[["Veg2"]]
                        
-                       veg_matches <- sapply(X = vegmap$VegUnite1915,
+                       veg_matches <- sapply(X = vegmap$ZND_DOM,
                                              current_veg1 = current_veg1,
                                              
                                              FUN = function(X, current_veg1) {
                                                
-                                  
-                                               vegs <- trimws(unlist(stringr::str_split(X, pattern = ",")))
+                                               
+                                               vegs <- X
                                                
                                                
                                                
                                                any(vegs %in% current_veg1)
                                              })
-                       data.frame(Site = current_row[["Site"]],
-                                  SiteName = current_row[["SiteName"]],
-                                  StateName = current_row[["StateName"]],
-                                  OBJECTID1915 = vegmap$OBJECTID1915,
-                                  FG_GSName = vegmap$FG_GSName,
-                                  FG_GSNum = vegmap$FG_GSNum,
+                       data.frame(SiteName = current_row[["SiteName"]],
+                                  ACVegUnite = current_row[["VegUnite"]],
+                                  GeneralizedStateNum = current_row[["GeneralizedStateNumber"]],
+                                  VegUnite = vegmap$VegUnite,
+                                  OBJECTID = vegmap$OBJECTID,
                                   matches2 = as.integer(veg_matches),
                                   stringsAsFactors = FALSE)
                      })
@@ -171,76 +136,95 @@ match_list2 <- apply(X = autocrosswalk,
 
 results2 <- do.call(rbind,
                     match_list2)
-
-
-# Species join, dom3
-match_list3 <- apply(X = autocrosswalk,
-                     vegmap = results1915,
-                     MARGIN = 1,
-                     FUN = function(X, vegmap){
-                       current_row <- X
-                       current_veg1 <- current_row[["DomSp3"]]
-                       
-                       veg_matches <- sapply(X = vegmap$VegUnite1915,
-                                             current_veg1 = current_veg1,
-                                             
-                                             FUN = function(X, current_veg1) {
-                                               
-                                               
-                                               vegs <- trimws(unlist(stringr::str_split(X, pattern = ",")))
-                                               
-                                               
-                                               
-                                               any(vegs %in% current_veg1)
-                                             })
-                       data.frame(Site = current_row[["Site"]],
-                                  SiteName = current_row[["SiteName"]],
-                                  StateName = current_row[["StateName"]],
-                                  OBJECTID1915 = vegmap$OBJECTID1915,
-                                  FG_GSName = vegmap$FG_GSName,
-                                  FG_GSNum = vegmap$FG_GSNum,
-                                  matches3 = as.integer(veg_matches),
-                                  stringsAsFactors = FALSE)
-                     })
-
-
-results3 <- do.call(rbind,
-                    match_list3)
-
-
-
 # Join results tables
 SPmatch1915 <- results %>%
-  dplyr::left_join(results2) %>%
-  dplyr::left_join(results3)
+  dplyr::left_join(results2) 
 # Count matches
-SPmatch1915 <- dplyr::mutate(SPmatch1915, SPTally = matches1 + matches2 + matches3)
+SPmatch1915 <- dplyr::mutate(SPmatch1915, SPTally = matches + matches2)
+SPmatch1915 <- dplyr::filter(SPmatch1915, SPTally > 0)
 SPmatch1915 <- dplyr::distinct(SPmatch1915)
-# Join matches based on species with FG assemblage match
+
 # Reorder variables
 names(SPmatch1915)
-fullresults1915 <- dplyr::select(SPmatch1915, OBJECTID1915, ecosite1, ecosite2,
-                                 ecosite3, SP1915, FG1915,
-                                 FG_GSName, FG_GSNum,
-                                 SPTally, GeneralizedStateNum,
-                             GeneralizedStateName, VegUnite, SiteName, Site)
+fullSPmatch1915 <- dplyr::select(SPmatch1915, OBJECTID, ecosite1, ecosite2,
+                                 ecosite3,
+                                 SPTally, matches, GeneralizedStateNum,
+                                 VegUnite, SiteName, ACVegUnite)
 
-# Keep generalized state matches
-fullresults1915 <- dplyr::filter(fullresults1915, FG_GSNum == GeneralizedStateNum | SPTally > 1)
+
+
+
+
+
+names(fullSPmatch1915)
+str(fullSPmatch1915)
+fullSPmatch1915$GeneralizedStateNum <- as.numeric(fullSPmatch1915$GeneralizedStateNum)
 # Keep site matches
-fullresults1915_sitematch <- dplyr::filter(fullresults1915, ecosite1 == SiteName |
-                                             ecosite2 == SiteName | ecosite3 == SiteName)
+fullSPmatch1915_sitematch <- dplyr::filter(fullSPmatch1915, ecosite1 == SiteName
+                                           & matches > 0 | ecosite2 == SiteName & matches > 0 |
+                                             ecosite3 ==SiteName & matches > 0)
 
-fullresults1915_sitematch <- dplyr::distinct(fullresults1915_sitematch)
 
 
-# How many polygons are present in 1915 attribute table?
-unique(attributetab1915$OBJECTID) # 207
-unique(fullresults1915_sitematch$OBJECTID1915)
-# Subset to polygons not matched
-unmatched1915 <- subset(attributetab1915, !(attributetab1915$OBJECTID %in% fullresults1915_sitematch$OBJECTID1915))
+fullSPmatch1915_sitematch_collapsed <- fullSPmatch1915_sitematch %>%
+  dplyr::select(OBJECTID, VegUnite, ecosite1, ecosite2, ecosite3, GeneralizedStateNum) %>%
+  distinct() %>%
+  group_by(OBJECTID) %>%
+  slice(which.min(GeneralizedStateNum)) %>%
+  ungroup()
 
-# write to csv
-write.csv(fullresults1915_sitematch, "results1915_sitematched.csv", row.names = FALSE)
-write.csv(unmatched1915, "unmatched1915.csv", row.names = FALSE)
+
+# Bind matched tables and see if there's anything left
+names(fullSPmatch1915_sitematch_collapsed)
+names(fullmatch1915_sitematch_collapsed)
+fullSPmatch1915_sitematch_collapsed <- dplyr::select(fullSPmatch1915_sitematch_collapsed,
+                                                     OBJECTID, VegUnite, ecosite1, ecosite2, ecosite3, GeneralizedStateNumber = GeneralizedStateNum)
+
+
+
+fullmatch1915_sitematch_collapsed <- dplyr::ungroup(fullmatch1915_sitematch_collapsed)
+
+
+all1915 <- rbind(fullmatch1915_sitematch_collapsed, fullSPmatch1915_sitematch_collapsed)
+
+# Bring in Jeremy's matches
+unmatchedJS <- read.csv("unmatched1915_JS.csv")
+# Get rid of any automatched that Jeremy matched
+x <- subset(all1915, all1915$OBJECTID %in% unmatchedJS$OBJECTID)
+# All have the same assigned states
+all1915_x <- subset(all1915, !(all1915$OBJECTID %in% unmatchedJS$OBJECTID))
+names(all1915)
+names(unmatchedJS)
+unmatchedJS <- select(unmatchedJS, OBJECTID, VegUnite, ecosite1, ecosite2, ecosite3, GeneralizedStateNumber)
+all1915 <- rbind(all1915, unmatchedJS)
+
+
+
+
+# Has been matched by hand
+unmatched <- read.csv("unmatched1915_22822.csv")
+
+unmatched <- dplyr::select(unmatched, OBJECTID, VegUnite, ecosite1, ecosite2, ecosite3,
+                           GeneralizedStateNumber)
+fullymatched1915 <- rbind(all1915, unmatched)
+
+
+fullymatched1915 <- fullymatched1915 %>%
+  dplyr::select(OBJECTID, VegUnite, GeneralizedStateNumber, ecosite1, ecosite2, ecosite3) %>%
+  distinct() %>%
+  group_by(OBJECTID) %>%
+  slice(which.min(GeneralizedStateNumber)) %>%
+  ungroup()
+
+
+identifiers <- dplyr::select(attributetab1915, 1:4, 9, 10, 12:14)
+names(attributetab1915)
+
+fullymatched1915 <- left_join(fullymatched1915, identifiers, by = "OBJECTID")
+
+write.csv(fullymatched1915, "fullymatched1915.csv", row.names = FALSE)
+
+
+
+x <- filter(spgroups_site, SiteName == "Sandy" & Veg1 == "ARFI2")
 

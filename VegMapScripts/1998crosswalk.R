@@ -11,6 +11,13 @@ attributetab1998 <- read.csv("at1998_clean.csv")
 spgroups_site <- read.csv("spgroups_site.csv")
 sitelookup <- read.csv("sitetype_lookup.csv")
 
+# For now, read in manual match and join
+mm1998 <- read.csv("at1998_clean_manuallymatched.csv")
+
+attributetab1998 <- left_join(attributetab1998, mm1998)
+write.csv(attributetab1998, "at1998_manuallymatched_spatial.csv", row.names = FALSE)
+
+
 spgroups_site$GeneralizedStateNumber <- as.integer(spgroups_site$GeneralizedStateNumber)
 spgroups_site <- dplyr::filter(spgroups_site, GeneralizedStateNumber > 0)
 

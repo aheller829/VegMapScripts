@@ -1,278 +1,59 @@
-SiteName,GeneralizedStateNumber,VegUnite
-Bottomland,1,"SPAI,SPWR2,PAOB"
-Bottomland,1,"PLMU3,PRGL2,NA"
-Bottomland,2,"PLMU3,SCBR2,SPAI"
-Bottomland,2,"PLMU3,NA,NA"
-Bottomland,2,"PLMU3,PRGL2,NA"
-Bottomland,4,"PRGL2,PLMU3,SCBR2"
-Bottomland,4,"PLMU3,PRGL2,NA"
-Bottomland,4,"PLMU3,FLCE,PRGL2"
-Bottomland,4,"PRGL2,BOER4,PF"
-Bottomland,6,"PRGL2 ,PLMU3,SCBR2"
-Bottomland,7,
-Bottomland,7,Bare
-Bottomland,7,NA
-Clayey,1,PLMU3
-Clayey,1,"PLMU3,CYIMI,NA"
-Clayey,1,"PLMU3,PRGL2,NA"
-Clayey,1,"PLMU3,FLCE,LATR2"
-Clayey,1,"PLMU3,FLCE,SCBR2"
-Clayey,2,"SCBR2,PLMU3"
-Clayey,2,"SCBR2,FLCE,PLMU3"
-Clayey,2,"SCBR2,PLMU3,FLCE"
-Clayey,2,"SCBR2,PLMU3,PRGL2"
-Clayey,2,"SCBR2,PRGL2,EPHEDRA"
-Clayey,2,"SCBR2,FLCE,NA"
-Clayey,2,"SCBR2,FLCE,PRGL2"
-Clayey,2,"SCBR2,PLMU3,LYBE"
-Clayey,2,"SCBR2,PLMU3,NA"
-Clayey,4,"PLMU3,SCBR2,PRGL2"
-Clayey,4,"FLCE,LYBE,SCBR2"
-Clayey,4,"LATR2,MUPO2,PLMU3"
-Clayey,4,"PLMU3,FLCE,ATCA2"
-Clayey,4,"PLMU3,FLCE,LATR2"
-Clayey,4,"PLMU3,FLCE,SCBR2"
-Clayey,4,"SCBR2,FLCE,PRGL2"
-Clayey,4,"SCBR2,FLCE,PLMU3"
-Clayey,4,"SCBR2,PRGL2,EPHEDRA"
-Clayey,4,"PLMU3,CYIMI,NA"
-Clayey,4,"PLMU3,FLCE,PRGL2"
-Clayey,4,"PLMU3,PRGL2,NA"
-Clayey,4,"SCBR2,FLCE,NA"
-Clayey,6,"FLCE,LATR2,PRGL2"
-Clayey,6,"FLCE,LYBE,SCBR2"
-Clayey,6,"LATR2,MUPO2,PLMU3"
-Clayey,7,
-Clayey,7,Bare
-Clayey,7,NA
-Deep Sand,3,"SPAI,SPWR2,BOER4"
-Deep Sand,5,"PSSC2,ARFI2,SPORO"
-Deep sand,5,"PRGL2,PSSC6,MUPO2"
-Deep sand,5,"SPFL2,PRGL2,YUEL"
-Deep Sand,6,"PRGL2,RHMI3"
-Deep sand,6,"SPFL2,PRGL2,YUEL"
-Deep sand,6,"PRGL2,PSSC6,MUPO2"
-Deep Sand,7,
-Deep Sand,7,Bare
-Deep Sand,7,NA
-Drainage,6,"PRGL2,ATCA2,SPORO"
-Draw,1,"PLMU3,SPAI,BOGR2"
-Draw,2,annuals
-Draw,2,SCBR2
-Draw,4,"PRGL2,PLMU3"
-Draw,4,"PLMU3,FLCE,MUAR"
-Draw,4,"PRGL2,SPORO,NA"
-Draw,6,"PRGL2,SCBR2"
-Draw,6,"PLMU3,FLCE,MUAR"
-Draw,7,NA
-Draw,7,bare
-Draw,7,
-Gravelly,3,"BOER4,LATR2,MUPO2"
-Gravelly,5,"LATR2,FLCE,BOER4"
-Gravelly,5,"LATR2,BOER4,PAIN2"
-Gravelly,5,"AG,LATR2,PRGL2"
-Gravelly,5,"LATR2,,NA"
-Gravelly,5,"LATR2,FLCE,MUPO2"
-Gravelly,5,"LATR2,FLCE,NA"
-Gravelly,6,LATR2
-Gravelly,6,"LATR2,MUPO2"
-Gravelly,6,"AG,LATR2,PRGL2"
-Gravelly,6,"LATR2,,NA"
-Gravelly,6,"LATR2,FLCE,MUPO2"
-Gravelly,6,"LATR2,FLCE,NA"
-Gravelly,6,"LATR2,BOER4,PAIN2"
-Gravelly,7,NA
-Gravelly,7,bare
-Gravelly,7,
-Gyp upland,1,"SPORO,EPHEDRA,NA"
-Gyp upland,2,"SPORO,EPHEDRA,NA"
-Gyp upland,2,"SPORO,EPHEDRA,PRGL2"
-Gyp upland,4,"SPORO,EPHEDRA,NA"
-Gyp upland,4,"SPORO,EPHEDRA,PRGL2"
-Limestone Hills,3,"BOER4,MUPO2,BOCU"
-Limestone hills,5,"NA,NA,OPUNT"
-Limestone Hills,6,"succulent,GUSA2,DAPU7"
-Limestone hills,6,"NA,NA,OPUNT"
-Loamy,1,"BOER4,PLMU3,ARIST"
-Loamy,1,"PLMU3,CYIMI,PRGL2"
-Loamy,1,"PLMU3,NA,NA"
-Loamy,1,"PLMU3,PRGL2,NA"
-Loamy,1,"PLMU3,EPHEDRA,NA"
-Loamy,1,"PLMU3,FLCE,ATCA2"
-Loamy,2,"SCBR2,PLMU3,ARIST"
-Loamy,2,"SCBR2,FLCE,KOSP"
-Loamy,2,"SCBR2,NA,NA"
-Loamy,2,"SCBR2,PLMU3,NA"
-Loamy,2,"SCBR2,PRGL2,NA"
-Loamy,4,"PRGL2,FLCE,LATR2"
-Loamy,4,"FLCE,MUPO2,SCBR2"
-Loamy,4,"NA,NA,PRGL2"
-Loamy,4,"PLMU3,FLCE,ATCA2"
-Loamy,4,"PLMU3,MUAR,FLCE"
-Loamy,4,"PLMU3,PRGL2,NA"
-Loamy,4,"SPORO,FLCE,PLMU3"
-Loamy,4,"SCBR2,FLCE,KOSP"
-Loamy,4,"SCBR2,PRGL2,NA"
-Loamy,4,"FLCE,LATR2,NA"
-Loamy,4,"PLMU3,CYIMI,PRGL2"
-Loamy,4,"SCBR2,NA,NA"
-Loamy,6,"PRGL2,FLCE,LATR2"
-Loamy,6,"NA,FLCE,NA"
-Loamy,6,"FLCE,LATR2,NA"
-Loamy,6,"PLMU3,PRGL2,NA"
-Loamy,6,"PLMU3,SCBR2,FLCE"
-Loamy,7,NA
-Loamy,7,Bare
-Loamy,7,
-Playette,2,"AG,ARPU9,PRGL2"
-Playette,2,"MUPO2,SPFL2,PRGL2"
-Playette,2,"PRGL2,ATCA2,SPFL2"
-Playette,2,"FLCE,LATR2,NA"
-Playette,2,"PRGL2,MUPO2,EPHEDRA"
-Playette,4,"MUPO2,SPFL2,PRGL2"
-Playette,4,"PRGL2,ATCA2,SPFL2"
-Playette,4,"AG,ARPU9,PRGL2"
-Playette,4,"FLCE,LATR2,NA"
-Playette,4,"PRGL2,MUPO2,EPHEDRA"
-Playette,6,"FLCE,LATR2,NA"
-Playette,6,"PRGL2,MUPO2,EPHEDRA"
-Playette,6,"AG,ARPU9,PRGL2"
-Playette,6,"MUPO2,SPFL2,PRGL2"
-Playette,6,"PRGL2,ATCA2,SPFL2"
-Sandhills,3,"ANHA,SPGI,SPCO4"
-Sandhills,6,"QUHA3,ARFI2"
-Sandy,1,"BOER4,SPORO,MUPO2"
-Sandy,1,"BOER4,PRGL2,SPCO4"
-Sandy,1,"BOER4,PRGL2,SPFL2"
-Sandy,1,"BOER4,PRGL2,SPORO"
-Sandy,1,"BOER4,PRGL2,YUEL"
-Sandy,1,"BOER4,SPFL2,PRGL2"
-Sandy,1,"BOER4,SPFL2,YUEL"
-Sandy,1,"BOER4,GUSA2,SPFL2"
-Sandy,1,"BOER4,PRGL2,EPHEDRA"
-Sandy,1,"BOER4,PRGL2,NA"
-Sandy,1,"BOER4,SPFL2,SPCO4"
-Sandy,2,"ARPU9,EPHEDRA,PRGL2"
-Sandy,2,"SPFL2,,NA"
-Sandy,2,"SPFL2,ARPU9,NA"
-Sandy,2,"SPFL2,CYIMI,"
-Sandy,2,"SPFL2,GUSA2,PRGL2"
-Sandy,2,"SPFL2,PRGL2,SELE6"
-Sandy,2,"SPFL2,PRGL2,YUEL"
-Sandy,2,"MUPO2,PRGL2,DAPU7"
-Sandy,2,"SPFL2,ATCA2,PRGL2"
-Sandy,2,"SPFL2,PRGL2,BOER4"
-Sandy,2,"SPFL2,PRGL2,MUPO2"
-Sandy,2,"MUPO2,SPFL2,PRGL2"
-Sandy,4,"BOER4,PRGL2"
-Sandy,4,"PRGL2,SPORO,ARIST"
-Sandy,4,"SPORO,ARIST,PRGL2"
-Sandy,4,"BOER4,PRGL2,EPHEDRA"
-Sandy,4,"BOER4,PRGL2,SPFL2"
-Sandy,4,"BOER4,PRGL2,SPORO"
-Sandy,4,"BOER4,SPFL2,SPCO4"
-Sandy,4,"MUPO2,PRGL2,DAPU7"
-Sandy,4,"MUPO2,SPFL2,PRGL2"
-Sandy,4,"PRGL2,ARPU9,NA"
-Sandy,4,"PRGL2,ATCA2,SPFL2"
-Sandy,4,"PRGL2,GUSA2,SPORO"
-Sandy,4,"PRGL2,GUSA2,YUEL"
-Sandy,4,"PRGL2,MUPO2,GUSA2"
-Sandy,4,"PRGL2,MUPO2,LATR2"
-Sandy,4,"PRGL2,MUPO2,SPFL2"
-Sandy,4,"PRGL2,MUPO2,YUEL"
-Sandy,4,"PRGL2,NA,NA"
-Sandy,4,"PRGL2,SPFL2,ATCA2"
-Sandy,4,"PRGL2,SPFL2,DAPU7"
-Sandy,4,"PRGL2,SPFL2,MUPO2"
-Sandy,4,"PRGL2,SPFL2,NA"
-Sandy,4,"PRGL2,SPFL2,PF"
-Sandy,4,"PRGL2,SPFL2,SELE6"
-Sandy,4,"PRGL2,SPFL2,YUEL"
-Sandy,4,"SPFL2,ATCA2,PRGL2"
-Sandy,4,"SPFL2,PRGL2,BOER4"
-Sandy,4,"SPFL2,PRGL2,MUPO2"
-Sandy,4,"SPFL2,PRGL2,YUEL"
-Sandy,4,"AG,SPFL2,PRGL2"
-Sandy,4,"ARPU9,EPHEDRA,PRGL2"
-Sandy,4,"BOER4,PRGL2,NA"
-Sandy,4,"ERLE,MUPO2,YUEL"
-Sandy,4,"PRGL2,GUSA2,ATCA2"
-Sandy,4,"PRGL2,GUSA2,BOER4"
-Sandy,4,"PRGL2,GUSA2,SPFL2"
-Sandy,4,"PRGL2,MUPO2,NA"
-Sandy,4,"PRGL2,SPFL2,"
-Sandy,4,"PRGL2,SPORO,NA"
-Sandy,4,"SPFL2,,NA"
-Sandy,4,"SPFL2,ARPU9,NA"
-Sandy,4,"SPFL2,CYIMI,"
-Sandy,4,"SPFL2,GUSA2,PRGL2"
-Sandy,4,"SPFL2,PRGL2,SELE6"
-Sandy,4,"BOER4,GUSA2,SPFL2"
-Sandy,4,"BOER4,PRGL2,SPCO4"
-Sandy,4,"BOER4,PRGL2,YUEL"
-Sandy,4,"BOER4,SPFL2,PRGL2"
-Sandy,4,"BOER4,SPFL2,YUEL"
-Sandy,4,"PRGL2,GUSA2,NA"
-Sandy,6,PRGL2
-Sandy,6,"PRGL2,ATCA2,SPFL2"
-Sandy,6,"PRGL2,GUSA2,ATCA2"
-Sandy,6,"PRGL2,GUSA2,NA"
-Sandy,6,"PRGL2,GUSA2,SPFL2"
-Sandy,6,"PRGL2,MUPO2,NA"
-Sandy,6,"PRGL2,NA,NA"
-Sandy,6,"PRGL2,SPFL2,MUPO2"
-Sandy,6,"PRGL2,SPFL2,SELE6"
-Sandy,6,"PRGL2,SPORO,NA"
-Sandy,6,"PRGL2,GUSA2,SPORO"
-Sandy,6,"PRGL2,GUSA2,YUEL"
-Sandy,6,"PRGL2,MUPO2,LATR2"
-Sandy,6,"PRGL2,SPFL2,ATCA2"
-Sandy,6,"PRGL2,SPFL2,YUEL"
-Sandy,6,"SPFL2,PRGL2,MUPO2"
-Sandy,6,"ERLE,MUPO2,YUEL"
-Sandy,6,"PRGL2,ARPU9,NA"
-Sandy,6,"PRGL2,MUPO2,SPFL2"
-Sandy,6,"PRGL2,MUPO2,YUEL"
-Sandy,6,"SPFL2,ARPU9,NA"
-Sandy,6,"SPFL2,ATCA2,PRGL2"
-Sandy,6,"SPFL2,GUSA2,PRGL2"
-Sandy,6,"SPFL2,PRGL2,BOER4"
-Sandy,6,"SPFL2,PRGL2,SELE6"
-Sandy,6,"SPFL2,PRGL2,YUEL"
-Sandy,9,ERLE
-Sandy,9,"ERLE,MUPO2,YUEL"
-Shallow Sandy,1,BOER4
-Shallow sandy,1,"BOER4,ARPU9,YUEL"
-Shallow sandy,1,"BOER4,NA,NA"
-Shallow sandy,1,"BOER4,PRGL2,PG"
-Shallow sandy,1,"BOER4,PRGL2,GUSA2"
-Shallow sandy,1,"BOER4,PRGL2,NA"
-Shallow sandy,1,"BOER4,PRGL2,SPFL2"
-Shallow Sandy,2,"ARIST,SPORO,BOER4"
-Shallow Sandy,2,"ARIST,SPORO,GUSA2"
-Shallow sandy,2,"SPFL2,GUSA2,PRGL2"
-Shallow sandy,2,"SPFL2,PRGL2,ATCA2"
-Shallow sandy,2,"SPFL2,PRGL2,NA"
-Shallow sandy,2,"SPFL2,PRGL2,YUEL"
-Shallow Sandy,4,"BOER4,PRGL2"
-Shallow sandy,4,"BOER4,PRGL2,GUSA2"
-Shallow sandy,4,"BOER4,PRGL2,SPFL2"
-Shallow sandy,4,"PG,PRGL2,NA"
-Shallow sandy,4,"PRGL2,BOER4,DAPU7"
-Shallow sandy,4,"PRGL2,MUPO2,DAPU7"
-Shallow sandy,4,"PRGL2,SPFL2,PF"
-Shallow sandy,4,"SPFL2,PRGL2,ATCA2"
-Shallow sandy,4,"SPFL2,PRGL2,NA"
-Shallow sandy,4,"SPFL2,PRGL2,YUEL"
-Shallow sandy,4,"BOER4,PRGL2,NA"
-Shallow sandy,4,"SPFL2,GUSA2,PRGL2"
-Shallow sandy,4,"BOER4,PRGL2,PG"
-Shallow Sandy,6,"PRGL2,MUPO2,ARIST"
-Shallow sandy,6,"BOER4,PRGL2,SPFL2"
-Shallow sandy,6,"PRGL2,MUPO2,DAPU7"
-Shallow sandy,6,"PRGL2,SPFL2,PF"
-Shallow sandy,6,"SPFL2,GUSA2,PRGL2"
-Shallow sandy,6,"SPFL2,PRGL2,ATCA2"
-Shallow sandy,6,"SPFL2,PRGL2,NA"
-Shallow sandy,6,"SPFL2,PRGL2,YUEL"
+Site,Species,FG,GSC
+Bottomland,SPAI,"PG,PG",1
+Bottomland,SPWR2,"PG,PG",1
+Bottomland,PLMU3,"PG,PG",2
+Bottomland,SCBR2,"PG,PG",2
+Bottomland,PRGL2,"SH,PG",4
+Bottomland,FLCE,"SH,PG",4
+Bottomland,PRGL2,SH,6
+Bottomland,FLCE,SH,6
+Bottomland,bare,NA,7
+Clayey,PLMU3,"PG,PG",1
+Clayey,SCBR2,"PG,PG",2
+Clayey,PRGL2,SH,4
+Clayey,FLCE,SH,4
+Clayey,LATR2,SH,4
+Clayey,PRGL2,SH,6
+Clayey,FLCE,SH,6
+Clayey,LATR2,SH,6
+Clayey,bare,NA,7
+Deep Sand,SPAI,"PG,PG",3
+Deep Sand,SPWR2,"PG,PG",3
+Deep Sand,PSSC2,SH,5
+Deep Sand,ARFI2,SH,5
+Deep Sand,PRGL2,SH,6
+Deep Sand,RHMI3,SH,6
+Draw,PLMU3,"PG,PG",1
+Draw,SPAI,"PG,PG",1
+Draw,BOGR2,"PG,PG",1
+Draw,BOCU,"PG,PG",1
+Draw,PRGL2,"SH,PG",4
+Draw,SCBR2,"PG,PG",2
+Draw,PRGL2,SH,6
+Gravelly,BOER4,"PG,SH",3
+Gravelly,LATR2,"SH,PG",3
+Gravelly,LATR2,SH,5
+Gravelly,FLCE,SH,5
+Gravelly,LATR2,SH,6
+Gravelly,FLCE,SH,6
+Gravelly,bare,NA,7
+Limestone Hills,BOER4,"PG,SH",3
+Limestone Hills,MUPO2,"PG,SH",3
+Limestone Hills,succulent,SH,6
+Loamy,BOER4,"PG,PG",1
+Loamy,PLMU3,"PG,PG",1
+Loamy,ARIST,"PG,PG",1
+Loamy,SCBR2,"PG,PG",2
+Loamy,PRGL2,SH,4
+Loamy,FLCE,SH,4
+Loamy,PRGL2,SH,6
+Loamy,FLCE,SH,6
+Sandhills,ANHA,PG,3
+Sandhills,SPORO,PG,3
+Sandhills,QUHA3,SH,6
+Sandhills,ARFI2,SH,6
+Sandy,BOER4,PG,1
+Sandy,PRGL2,SH,4
+Sandy,BOER4,"PG,SH",4
+Sandy,PRGL2,SH,6
+Sandy,ERLE,PG,9
