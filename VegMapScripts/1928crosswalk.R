@@ -12,6 +12,21 @@ attributetab1928 <- read.csv("at1928_clean.csv")
 
 spgroups_site <- read.csv("spgroups_site.csv")
 
+attributetab1928$esite1type <- qdapTools::lookup(attributetab1928$ecosite1, sitelookup[, 1:2])
+attributetab1928$esite2type <- qdapTools::lookup(attributetab1928$ecosite2, sitelookup[, 1:2])
+attributetab1928$esite3type <- qdapTools::lookup(attributetab1928$ecosite3, sitelookup[, 1:2])
+
+
+write.csv(attributetab1928, "at1928_sitetype.csv", row.names = FALSE)
+# Read manually matched table in and join with spatial dat
+at1928mm <- read.csv("at1928_sitetype.csv")
+
+attributetab1928 <- dplyr::left_join(attributetab1928, at1928mm)
+
+write.csv(attributetab1928, "at1928_spatial.csv")
+
+
+
 
 # Split spgroups into single species
 spgroups_site <- tidyr::separate(spgroups_site, VegUnite, into = c("Sp1", "Sp2", 

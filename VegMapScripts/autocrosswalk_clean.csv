@@ -1,44 +1,44 @@
-"Source","Site","SiteName","StateNumber","StateName","GeneralizedStateNumber","GeneralizedStateName","VegUnite","DomSp1","DomSp2","DomSp3","Subdom1","Subdom2","Notes","ID","FGUnite","Dom1FG","Dom2FG","Dom3FG"
-"Key/EDIT","R042XB010NM","Gravelly",1,"ShrubSavanna",3,"ShrubSavanna","BOER4,LATR2,MUPO2","BOER4","LATR2","MUPO2",NA,NA,"",1,"PG,shrub,PG","PG","shrub","PG"
-"Key/EDIT","R042XB010NM","Gravelly",2,"ShrubDominated",5,"ShrubDominated","LATR2,FLCE,BOER4","LATR2","FLCE","BOER4","MUPO2","PLMU3","",2,"shrub,shrub,PG","shrub","shrub","PG"
-"Key/EDIT","R042XB010NM","Gravelly",3,"Shrubland ",6,"Shrubland","LATR2,MUPO2","LATR2","MUPO2",NA,NA,NA,"",3,"shrub,PG","shrub","PG",NA
-"Key/EDIT","R042XB010NM","Gravelly",4,"SparseSavanna ",2,"AlteredSavanna","BOBA3,ARIST,SPORO","BOBA3","ARIST","SPORO","LATR2",NA,"Sparse savanna state not described in ESD",4,"PG,PG,PG","PG","PG","PG"
-"Key/EDIT","R042XB010NM","Gravelly",5,"BarrenShrubland ",6,"Shrubland","LATR2","LATR2",NA,NA,NA,NA,"Bare state not described in ESD",5,"shrub","shrub",NA,NA
-"Key/EDIT","R042XB010NM","Gravelly",6,"Bare",7,"Bare","",NA,NA,NA,NA,"","",6,"",NA,NA,NA
-"Key/EDIT","R042XB012NM","Sandy",1,"BlackGramaGrassland",1,"Grassland","BOER4,SPORO,MUPO2","BOER4","SPORO","MUPO2",NA,NA,"",7,"PG,PG,PG","PG","PG","PG"
-"Key/EDIT","R042XB012NM","Sandy",2,"MesquiteInvaded",4,"ShrubInvadedGrassland","BOER4,PRGL2","BOER4","PRGL2",NA,NA,NA,"",8,"PG,shrub","PG","shrub",NA
-"Key/EDIT","R042XB012NM","Sandy",3,"Bunchgrass/Mesquite",4,"ShrubInvadedGrassland","SPORO,ARIST,PRGL2","SPORO","ARIST","PRGL2",NA,NA,"",9,"PG,PG,shrub","PG","PG","shrub"
-"Key/EDIT","R042XB012NM","Sandy",4,"Shrubland",6,"Shrubland","PRGL2","PRGL2",NA,NA,NA,NA,"",10,"shrub","shrub",NA,NA
-"Key/EDIT","R042XB012NM","Sandy",5,"ExoticPerennialGrassland",9,"ExoticDominated","ERLE","ERLE",NA,NA,NA,NA,"",11,"Inv","Inv",NA,NA
-"EDIT","R042XB012NM","Sandy",6,"GrassyShrubland",4,"ShrubInvadedGrassland","PRGL2,SPORO,ARIST","PRGL2","SPORO","ARIST",NA,NA,"Not in state key",12,"shrub,PG,PG","shrub","PG","PG"
-"Key/EDIT","R042XB023NM","Clayey",1,"TobosaGrassland",1,"Grassland","PLMU3","PLMU3",NA,NA,NA,NA,"",13,"PG","PG",NA,NA
-"Key/EDIT","R042XB023NM","Clayey",2,"BurrograssGrassland",2,"AlteredGrassland","SCBR2,PLMU3","SCBR2","PLMU3",NA,NA,NA,"",14,"PG,PG","PG","PG",NA
-"Key/EDIT","R042XB023NM","Clayey",3,"MixedShrub-Grassland",4,"ShrubInvadedGrassland","PLMU3,SCBR2,PRGL2","PLMU3","SCBR2","PRGL2","FLCE",NA,"",15,"PG,PG,shrub","PG","PG","shrub"
-"Key/EDIT","R042XB023NM","Clayey",4,"Tarbush/CreosotebushShrubland",6,"Shrubland","FLCE,LATR2,PRGL2","FLCE","LATR2","PRGL2",NA,NA,"",16,"shrub,shrub,shrub","shrub","shrub","shrub"
-"Key/EDIT","R042XB023NM","Clayey",5,"Non-Vegetated",7,"Bare","",NA,NA,NA,NA,NA,"",17,"",NA,NA,NA
-"Repeated from Sandy","R042XB012NM","Shallow Sandy",1,"BlackGramaGrassland",1,"Grassland","BOER4","BOER4",NA,NA,NA,NA,"",18,"PG","PG",NA,NA
-"Repeated from Sandy","R042XB012NM","Shallow Sandy",4,"MesquiteInvaded",4,"ShrubInvadedGrassland","BOER4,PRGL2","BOER4","PRGL2",NA,NA,NA,"",19,"PG,shrub","PG","shrub",NA
-"Repeated from Sandy","R042XB012NM","Shallow Sandy",5,"Shrubland",6,"Shrubland","PRGL2,MUPO2,ARIST","PRGL2","MUPO2","ARIST",NA,NA,"",20,"shrub,PG,PG","shrub","PG","PG"
-"EDIT","R042XB012NM","Shallow Sandy",2,"BlackGramaLimitedGrassland",2,"AlteredGrassland","ARIST,SPORO,BOER4","ARIST","SPORO","BOER4","DAPU7",NA,"",21,"PG,PG,PG","PG","PG","PG"
-"EDIT","R042XB012NM","Shallow Sandy",3,"BunchgrassGrassland",2,"AlteredGrassland","ARIST,SPORO,GUSA2","ARIST","SPORO","GUSA2","DAPU7",NA,"",22,"PG,PG,subshrub","PG","PG","subshrub"
-"EDIT","R042XB018NM","Bottomland",1,"BottomlandGrassland",1,"Grassland","SPAI,SPWR2,PAOB","SPAI","SPWR2","PAOB","BOCU","PLMU3","",23,"PG,PG","PG","PG",NA
-"EDIT","R042XB018NM","Bottomland",3,"TobosaBurrograssGrassland",2,"AlteredGrassland","PLMU3,SCBR2,SPAI","PLMU3","SCBR2","SPAI","SPWR2",NA,"",24,"PG,PG,PG","PG","PG","PG"
-"EDIT","R042XB018NM","Bottomland",2,"Shrub-invadedGrassland",4,"ShrubInvadedGrassland","PRGL2,PLMU3,SCBR2","PRGL2","PLMU3","SCBR2","SPAI","SPWR2","",25,"shrub,PG,PG","shrub","PG","PG"
-"EDIT","R042XB018NM","Bottomland",4,"MesquiteWoodland",6,"Shrubland","PRGL2 ,PLMU3,SCBR2","PRGL2 ","PLMU3","SCBR2","FLCE","SPORO","",26,"PG,PG",NA,"PG","PG"
-"EDIT","R042XB018NM","Bottomland",5,"Annuals",2,"AlteredGrassland","annuals,SPWR2,PLMU3","annuals","SPWR2","PLMU3","SCBR2",NA,"",27,"annuals,PG,PG","annuals","PG","PG"
-"EDIT","R042XB011NM","Deep Sand",1,"Dropseed-dominatedState",3,"ShrubSavanna","SPAI,SPWR2,BOER4","SPAI","SPWR2","BOER4","MUPO2","ARFI2","",28,"PG,PG,PG","PG","PG","PG"
-"EDIT","R042XB011NM","Deep Sand",2,"BroomDalea-SandsageState",5,"ShrubDominated","PSSC2,ARFI2,SPORO","PSSC2","ARFI2","SPORO",NA,NA,"",29,"shrub,PG",NA,"shrub","PG"
-"EDIT","R042XB011NM","Deep Sand",3,"MesquiteDuneState",6,"Shrubland","PRGL2,RHMI3","PRGL2","RHMI3",NA,NA,NA,"",30,"shrub,shrub","shrub","shrub",NA
-"EDIT","R042XB016NM","Draw",1,"Tobosa-dominatedGrassland",1,"Grassland","PLMU3,SPAI,BOGR2","PLMU3","SPAI","BOGR2","BOCU","BOBA3","",31,"PG,PG,PG","PG","PG","PG"
-"EDIT","R042XB016NM","Draw",2,"Mesquite-tobosaWoodland",4,"ShrubInvadedGrassland","PRGL2,PLMU3","PRGL2","PLMU3",NA,NA,NA,"",32,"shrub,PG","shrub","PG",NA
-"EDIT","R042XB016NM","Draw",3,"BurrograssGrassland",2,"AlteredGrassland","SCBR2","SCBR2",NA,NA,NA,NA,"",33,"PG","PG",NA,NA
-"EDIT","R042XB016NM","Draw",4,"MesquiteWoodland",6,"Shrubland","PRGL2,SCBR2","PRGL2","SCBR2",NA,NA,NA,"",34,"shrub,PG","shrub","PG",NA
-"EDIT","R042XB016NM","Draw",5,"AnnualDominated",2,"AlteredGrassland","annuals","annuals",NA,NA,NA,NA,"",35,"annuals","annuals",NA,NA
-"EDIT","R042XB021NM","Limestone Hills",1,"Grassland/succulent",3,"ShrubSavanna","BOER4,MUPO2,BOCU","BOER4","MUPO2","BOCU","BOGR2","succulent","",36,"PG,PG,PG","PG","PG","PG"
-"EDIT","R042XB021NM","Limestone Hills",2,"Shrub-succulent",6,"Shrubland","succulent,GUSA2,DAPU7","succulent","GUSA2","DAPU7",NA,NA,"",37,"subshrub,PG",NA,"subshrub","PG"
-"EDIT","R042XB014NM","Loamy",1,"BlackGrama-TobosaGrassland",1,"Grassland","BOER4,PLMU3,ARIST","BOER4","PLMU3","ARIST",NA,NA,"",38,"PG,PG,PG","PG","PG","PG"
-"EDIT","R042XB014NM","Loamy",2,"Burrograss-Tobosa-ThreeawnGrassland",2,"AlteredGrassland","SCBR2,PLMU3,ARIST","SCBR2","PLMU3","ARIST","DAPU7",NA,"",39,"PG,PG,PG","PG","PG","PG"
-"EDIT","R042XB014NM","Loamy",3,"Shrub-invadedGrassland",4,"ShrubInvadedGrassland","PRGL2,FLCE,LATR2","PRGL2","FLCE","LATR2","PLMU3","ARIST","",40,"shrub,shrub,shrub","shrub","shrub","shrub"
-"EDIT","R042XB014NM","Loamy",4,"Shrub-Dominated",6,"Shrubland","PRGL2,FLCE,LATR2","PRGL2","FLCE","LATR2",NA,NA,"",41,"shrub,shrub,shrub","shrub","shrub","shrub"
-"EDIT","R042XC022NM","Sandhills",1,"Grass/ShrubMix",3,"ShrubSavanna","ANHA,SPGI,SPCO4","ANHA","SPGI","SPCO4","QUHA3","YUGL","",42,"PG,PG,PG","PG","PG","PG"
-"EDIT","R042XC022NM","Sandhills",2,"SandShinneryOakDominated",6,"Shrubland","QUHA3,ARFI2","QUHA3","ARFI2",NA,NA,NA,"",43,"shrub,shrub","shrub","shrub",NA
+Source,Site,SiteName,StateNumber,StateName,GeneralizedStateNumber,GeneralizedStateName,VegUnite,DomSp1,DomSp2,DomSp3,Subdom1,Subdom2,Notes,ID,FGUnite,Dom1FG,Dom2FG,Dom3FG
+Key/EDIT,R042XB010NM,Gravelly,1,ShrubSavanna,3,ShrubSavanna,"BOER4,LATR2,MUPO2",BOER4,LATR2,MUPO2,NA,NA,,1,"PG,shrub,PG",PG,shrub,PG
+Key/EDIT,R042XB010NM,Gravelly,2,ShrubDominated,5,ShrubDominated,"LATR2,FLCE,BOER4",LATR2,FLCE,BOER4,MUPO2,PLMU3,,2,"shrub,shrub,PG",shrub,shrub,PG
+Key/EDIT,R042XB010NM,Gravelly,3,Shrubland ,6,Shrubland,"LATR2,MUPO2",LATR2,MUPO2,NA,NA,NA,,3,"shrub,PG",shrub,PG,NA
+Key/EDIT,R042XB010NM,Gravelly,4,SparseSavanna ,2,AlteredSavanna,"BOBA3,ARIST,SPORO",BOBA3,ARIST,SPORO,LATR2,NA,Sparse savanna state not described in ESD,4,"PG,PG,PG",PG,PG,PG
+Key/EDIT,R042XB010NM,Gravelly,5,BarrenShrubland ,6,Shrubland,LATR2,LATR2,NA,NA,NA,NA,Bare state not described in ESD,5,shrub,shrub,NA,NA
+Key/EDIT,R042XB010NM,Gravelly,6,Bare,7,Bare,,NA,NA,NA,NA,,,6,,NA,NA,NA
+Key/EDIT,R042XB012NM,Sandy,1,BlackGramaGrassland,1,Grassland,"BOER4,SPORO,MUPO2",BOER4,SPORO,MUPO2,NA,NA,,7,"PG,PG,PG",PG,PG,PG
+Key/EDIT,R042XB012NM,Sandy,2,MesquiteInvaded,4,ShrubInvadedGrassland,"BOER4,PRGL2",BOER4,PRGL2,NA,NA,NA,,8,"PG,shrub",PG,shrub,NA
+Key/EDIT,R042XB012NM,Sandy,3,Bunchgrass/Mesquite,4,ShrubInvadedGrassland,"SPORO,ARIST,PRGL2",SPORO,ARIST,PRGL2,NA,NA,,9,"PG,PG,shrub",PG,PG,shrub
+Key/EDIT,R042XB012NM,Sandy,4,Shrubland,6,Shrubland,PRGL2,PRGL2,NA,NA,NA,NA,,10,shrub,shrub,NA,NA
+Key/EDIT,R042XB012NM,Sandy,5,ExoticPerennialGrassland,9,ExoticDominated,ERLE,ERLE,NA,NA,NA,NA,,11,Inv,Inv,NA,NA
+EDIT,R042XB012NM,Sandy,6,GrassyShrubland,4,ShrubInvadedGrassland,"PRGL2,SPORO,ARIST",PRGL2,SPORO,ARIST,NA,NA,Not in state key,12,"shrub,PG,PG",shrub,PG,PG
+Key/EDIT,R042XB023NM,Clayey,1,TobosaGrassland,1,Grassland,PLMU3,PLMU3,NA,NA,NA,NA,,13,PG,PG,NA,NA
+Key/EDIT,R042XB023NM,Clayey,2,BurrograssGrassland,2,AlteredGrassland,"SCBR2,PLMU3",SCBR2,PLMU3,NA,NA,NA,,14,"PG,PG",PG,PG,NA
+Key/EDIT,R042XB023NM,Clayey,3,MixedShrub-Grassland,4,ShrubInvadedGrassland,"PLMU3,SCBR2,PRGL2",PLMU3,SCBR2,PRGL2,FLCE,NA,,15,"PG,PG,shrub",PG,PG,shrub
+Key/EDIT,R042XB023NM,Clayey,4,Tarbush/CreosotebushShrubland,6,Shrubland,"FLCE,LATR2,PRGL2",FLCE,LATR2,PRGL2,NA,NA,,16,"shrub,shrub,shrub",shrub,shrub,shrub
+Key/EDIT,R042XB023NM,Clayey,5,Non-Vegetated,7,Bare,,NA,NA,NA,NA,NA,,17,,NA,NA,NA
+Repeated from Sandy,R042XB012NM,Shallow Sandy,1,BlackGramaGrassland,1,Grassland,BOER4,BOER4,NA,NA,NA,NA,,18,PG,PG,NA,NA
+Repeated from Sandy,R042XB012NM,Shallow Sandy,4,MesquiteInvaded,4,ShrubInvadedGrassland,"BOER4,PRGL2",BOER4,PRGL2,NA,NA,NA,,19,"PG,shrub",PG,shrub,NA
+Repeated from Sandy,R042XB012NM,Shallow Sandy,5,Shrubland,6,Shrubland,"PRGL2,MUPO2,ARIST",PRGL2,MUPO2,ARIST,NA,NA,,20,"shrub,PG,PG",shrub,PG,PG
+EDIT,R042XB012NM,Shallow Sandy,2,BlackGramaLimitedGrassland,2,AlteredGrassland,"ARIST,SPORO,BOER4",ARIST,SPORO,BOER4,DAPU7,NA,,21,"PG,PG,PG",PG,PG,PG
+EDIT,R042XB012NM,Shallow Sandy,3,BunchgrassGrassland,2,AlteredGrassland,"ARIST,SPORO,GUSA2",ARIST,SPORO,GUSA2,DAPU7,NA,,22,"PG,PG,subshrub",PG,PG,subshrub
+EDIT,R042XB018NM,Bottomland,1,BottomlandGrassland,1,Grassland,"SPAI,SPWR2,PAOB",SPAI,SPWR2,PAOB,BOCU,PLMU3,,23,"PG,PG",PG,PG,NA
+EDIT,R042XB018NM,Bottomland,3,TobosaBurrograssGrassland,2,AlteredGrassland,"PLMU3,SCBR2,SPAI",PLMU3,SCBR2,SPAI,SPWR2,NA,,24,"PG,PG,PG",PG,PG,PG
+EDIT,R042XB018NM,Bottomland,2,Shrub-invadedGrassland,4,ShrubInvadedGrassland,"PRGL2,PLMU3,SCBR2",PRGL2,PLMU3,SCBR2,SPAI,SPWR2,,25,"shrub,PG,PG",shrub,PG,PG
+EDIT,R042XB018NM,Bottomland,4,MesquiteWoodland,6,Shrubland,"PRGL2 ,PLMU3,SCBR2",PRGL2 ,PLMU3,SCBR2,FLCE,SPORO,,26,"PG,PG",NA,PG,PG
+EDIT,R042XB018NM,Bottomland,5,Annuals,2,AlteredGrassland,"annuals,SPWR2,PLMU3",annuals,SPWR2,PLMU3,SCBR2,NA,,27,"annuals,PG,PG",annuals,PG,PG
+EDIT,R042XB011NM,Deep Sand,1,Dropseed-dominatedState,3,ShrubSavanna,"SPAI,SPWR2,BOER4",SPAI,SPWR2,BOER4,MUPO2,ARFI2,,28,"PG,PG,PG",PG,PG,PG
+EDIT,R042XB011NM,Deep Sand,2,BroomDalea-SandsageState,5,ShrubDominated,"PSSC2,ARFI2,SPORO",PSSC2,ARFI2,SPORO,NA,NA,,29,"shrub,PG",NA,shrub,PG
+EDIT,R042XB011NM,Deep Sand,3,MesquiteDuneState,6,Shrubland,"PRGL2,RHMI3",PRGL2,RHMI3,NA,NA,NA,,30,"shrub,shrub",shrub,shrub,NA
+EDIT,R042XB016NM,Draw,1,Tobosa-dominatedGrassland,1,Grassland,"PLMU3,SPAI,BOGR2",PLMU3,SPAI,BOGR2,BOCU,BOBA3,,31,"PG,PG,PG",PG,PG,PG
+EDIT,R042XB016NM,Draw,2,Mesquite-tobosaWoodland,4,ShrubInvadedGrassland,"PRGL2,PLMU3",PRGL2,PLMU3,NA,NA,NA,,32,"shrub,PG",shrub,PG,NA
+EDIT,R042XB016NM,Draw,3,BurrograssGrassland,2,AlteredGrassland,SCBR2,SCBR2,NA,NA,NA,NA,,33,PG,PG,NA,NA
+EDIT,R042XB016NM,Draw,4,MesquiteWoodland,6,Shrubland,"PRGL2,SCBR2",PRGL2,SCBR2,NA,NA,NA,,34,"shrub,PG",shrub,PG,NA
+EDIT,R042XB016NM,Draw,5,AnnualDominated,2,AlteredGrassland,annuals,annuals,NA,NA,NA,NA,,35,annuals,annuals,NA,NA
+EDIT,R042XB021NM,Limestone Hills,1,Grassland/succulent,3,ShrubSavanna,"BOER4,MUPO2,BOCU",BOER4,MUPO2,BOCU,BOGR2,succulent,,36,"PG,PG,PG",PG,PG,PG
+EDIT,R042XB021NM,Limestone Hills,2,Shrub-succulent,6,Shrubland,"succulent,GUSA2,DAPU7",succulent,GUSA2,DAPU7,NA,NA,,37,"subshrub,PG",NA,subshrub,PG
+EDIT,R042XB014NM,Loamy,1,BlackGrama-TobosaGrassland,1,Grassland,"BOER4,PLMU3,ARIST",BOER4,PLMU3,ARIST,NA,NA,,38,"PG,PG,PG",PG,PG,PG
+EDIT,R042XB014NM,Loamy,2,Burrograss-Tobosa-ThreeawnGrassland,2,AlteredGrassland,"SCBR2,PLMU3,ARIST",SCBR2,PLMU3,ARIST,DAPU7,NA,,39,"PG,PG,PG",PG,PG,PG
+EDIT,R042XB014NM,Loamy,3,Shrub-invadedGrassland,4,ShrubInvadedGrassland,"PRGL2,FLCE,LATR2",PRGL2,FLCE,LATR2,PLMU3,ARIST,,40,"shrub,shrub,shrub",shrub,shrub,shrub
+EDIT,R042XB014NM,Loamy,4,Shrub-Dominated,6,Shrubland,"PRGL2,FLCE,LATR2",PRGL2,FLCE,LATR2,NA,NA,,41,"shrub,shrub,shrub",shrub,shrub,shrub
+EDIT,R042XC022NM,Sandhills,1,Grass/ShrubMix,3,ShrubSavanna,"ANHA,SPGI,SPCO4",ANHA,SPGI,SPCO4,QUHA3,YUGL,,42,"PG,PG,PG",PG,PG,PG
+EDIT,R042XC022NM,Sandhills,2,SandShinneryOakDominated,6,Shrubland,"QUHA3,ARFI2",QUHA3,ARFI2,NA,NA,NA,,43,"shrub,shrub",shrub,shrub,NA

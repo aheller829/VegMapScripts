@@ -24,6 +24,29 @@ attributetab1915$esite1type <- qdapTools::lookup(attributetab1915$ecosite1, site
 attributetab1915$esite2type <- qdapTools::lookup(attributetab1915$ecosite2, sitelookup[, 1:2])
 attributetab1915$esite3type <- qdapTools::lookup(attributetab1915$ecosite3, sitelookup[, 1:2])
 
+write.csv(attributetab1915, "at1915_sitetype.csv")
+
+# Recreate visual workflow
+# Separate site 1 type
+names(attributetab1915)
+sitetype1 <- attributetab1915 %>%
+  dplyr::filter(esite1type == 1) %>%
+  mutate(GSC = ifelse(Dom1FG == PG & Dom2FG == PG & Dom3FG == PG, 1,))
+
+
+
+# Match manually matched sheet with spatial data
+at1915mm <- read.csv("at1915_sitetype_manuallymatched.csv")
+
+attributetab1915 <- dplyr::left_join(attributetab1915, at1915mm)
+
+attributetab1915 <- dplyr::rename(attributetab1915, GeneralizedState = GSC)
+
+write.csv(attributetab1915, "at1915_spatial.csv", row.names = FALSE)
+
+
+
+
 
 # Full species match
 fullmatch1915 <- attributetab1915 %>%
