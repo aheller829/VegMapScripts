@@ -27,5 +27,14 @@ SiteType,FG,GSC
 1,"SH, PG, subshrub",4
 1,"SH, PG, succulent",4
 1,"SH, PG, NA",4
-2,"subshrub, PG, PG",4
-2,"subshrub, PG, PG",
+1,"subshrub, PG, PG",4
+1,"subshrub, PG, SH",4
+1,"subshrub, PG, subshrub",4
+1,"subshrub, PG, succulent",4
+1,"subshrub, PG, NA",4
+1,"succulent, PG, PG",4
+1,"succulent, PG, SH",4
+1,"succulent, PG, subshrub",4
+1,"succulent, PG, succulent",4
+1,"succulent, PG, NA",4
+1,,

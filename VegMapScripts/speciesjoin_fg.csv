@@ -23,8 +23,8 @@ HIMU,Pleuraphis mutica,tobosa,PG
 KOSP,Koeberlinia spinosa,crown of thorns,shrub
 LATR2,Larrea tridetata,creosote,shrub
 LYBE,Lycium berlandieri,wolfberry,shrub
-MUAR,Muhlenbergia arenacea,ear muhly,PG
-MUPO2,Muhlenbergia porteri,bush muhly,PG
+MUAR,Muhlenbergia,ear muhly,PG
+MUPO2,Muhlenbergia,bush muhly,PG
 NOMI,Nolina microcarpa,sacahuista,succulent
 OPUNT,Opuntia,prickly pear,succulent
 PAIN2,Parthenium incancum,mariola,shrub
@@ -38,14 +38,14 @@ RHMI3,Rhus microphylla,littleleaf sumac,shrub
 SCBR2,Scleropogon brevifolius,burrograss,PG
 SCBR2,Scleropogon brevifolius,burrograss,PG
 SELE6,Setaria leucopila,streambed bristlegrass,PG
-SPAI,Sporobolus airoides,alkali sacaton,PG
-SPCO4,Sporobolus contractus,spike dropseed,PG
-SPFL2,Sporobolus flexuosus,mesa dropseed,PG
-SPGI,Sporobolus giganteus,giant dropseed,PG
+SPAI,Sporobolus,alkali sacaton,PG
+SPCO4,Sporobolus,spike dropseed,PG
+SPFL2,Sporobolus,mesa dropseed,PG
+SPGI,Sporobolus,giant dropseed,PG
 SPORO,Sporobolus,sporobolus,PG
 Sporobolus spp.,Sporobolus,sporobolus,PG
 SPORspp,Sporobolus,sporobolus,PG
-SPWR2,Sporobolus wrightii,giant sacaton,PG
+SPWR2,Sporobolus,giant sacaton,PG
 YUCCA,Yucca,yucca,succulent
 YUEL,Yucca,yucca,succulent
 YUGL,Yucca,yucca,succulent

@@ -5,17 +5,55 @@ library(dplyr)
 library(stringr)
 library(tidyr)
 library(qdapTools)
+library(data.table)
 
 # Read in clean datasheets
 attributetab1915 <- read.csv("at1915_clean.csv")
+attributetab1928 <- read.csv("at1928_clean.csv")
+attributetab1998 <- read.csv("at1928_clean.csv")
+attributetab2021 <- read.csv("at2021_clean.csv")
+
+
 spgroups_site <- read.csv("spgroups_site_edited.csv")
 sitelookup <- read.csv("sitetype_lookup.csv")
 
-spgroups_site$GeneralizedStateNumber <- as.integer(spgroups_site$GeneralizedStateNumber)
-spgroups_site <- dplyr::filter(spgroups_site, GeneralizedStateNumber > 0)
+spgroups_site$GSC <- as.integer(spgroups_site$GSC)
+spgroups_site <- dplyr::filter(spgroups_site, GSC > 0)
 
 # How many per site?
-table(spgroups_site$SiteName)
+table(spgroups_site$Site)
+
+# Find combination of all functional groups to make lookup table
+fg1915 <- as.data.frame(attributetab1915$FGUnite)
+fg1928 <- as.data.frame(attributetab1928$Dom1FG.x)
+fg1998 <- as.data.frame(attributetab1998$FGUnite)
+attributetab2021 <- read.csv("at2021_clean.csv")
+fg2021 <- as.data.frame(attributetab2021$FGString)
+fg1915 <- dplyr::rename(fg1915, "FGUnite" = 1)
+fg1928 <- dplyr::rename(fg1928, "FGUnite" = 1)
+fg1998 <- dplyr::rename(fg1998, "FGUnite" = 1)
+fg2021 <- dplyr::rename(fg2021, "FGUnite" = 1)
+
+fgcombs <- rbind(fg1915, fg1928)
+fgcombs <- rbind(fgcombs, fg1998)
+fgcombs <- rbind(fgcombs, fg2021)
+fgcombs <- distinct(fgcombs)
+
+# Save for manual edits
+write.csv(fgcombs, "fgcombs.csv")
+
+
+# Change PG species codes to genus level codes
+unique(attributetab1915$ZST_DOM)
+unique(attributetab1915$ZND_DOM)
+unique(attributetab1915$ZRD_DOM)
+
+attributetab1915 <- attributetab1915 %>%
+  dplyr::mutate_all(funs(stringr::str_replace(., "SPORssp", "SPORO"))) %>%
+  dplyr::mutate_all(funs(stringr::str_replace(., "MUAR", "MUHLE"))) %>%
+  dplyr::mutate_all(funs(stringr::str_replace(., "SPAI", "SPORO"))) %>%
+  dplyr::mutate_all(funs(stringr::str_replace(., "MUPO2", "MUHLE")))
+
 
 # Could do something where the potential ecological sites are assigned to either
 # type 1 (grassland at potential) or type 2 (woody at potential), in cases
@@ -26,12 +64,18 @@ attributetab1915$esite3type <- qdapTools::lookup(attributetab1915$ecosite3, site
 
 write.csv(attributetab1915, "at1915_sitetype.csv")
 
+
+
+
+
+
 # Recreate visual workflow
 # Separate site 1 type
 names(attributetab1915)
 sitetype1 <- attributetab1915 %>%
   dplyr::filter(esite1type == 1) %>%
   mutate(GSC = ifelse(Dom1FG == PG & Dom2FG == PG & Dom3FG == PG, 1,))
+
 
 
 
