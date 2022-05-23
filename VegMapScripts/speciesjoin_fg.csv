@@ -1,40 +1,40 @@
 Code,Species,CommonName,FG
 ANHA,Andropogon hallii,sand bluestem,PG
-ARFI2,Artemisia filifolia,sand sage,shrub
+ARFI2,Artemisia filifolia,sand sage,SH
 ARIST,Aristida,aristida grasses,PG
 Aristida spp.,Aristida,aristida grasses,PG
 ARPU9,Aristida,aristida grasses,PG
-ATCA2,Atriplex canescens,saltbush,shrub
-ATCA2,Atriplex canescens,saltbush,shrub
+ATCA2,Atriplex canescens,saltbush,SH
+ATCA2,Atriplex canescens,saltbush,SH
 BOBA3,Bothriochloa barbinodis,cane bluestem,PG
 BOCU,Bouteloua curtipendula,sideoats grama,PG
 BOER4,Bouteloua eriopoda,black grama,PG
 BOGR2,Bouteloua gracilis,blue grama,PG
-CYIMI,Cylindropuntia imbricata,tree cholla,succulent
+CYIMI,Cylindropuntia imbricata,tree cholla,SC
 DAPU7,Dasychloa pulchella ,fluffgrass/low woollygrass,PG
 ENDE,Enneapogon desvauxii,nineawn pappusgrass,PG
-EPHEDRA,Ephedra,ephedra,succulent
-EPHspp,Ephedra,ephedra,succulent
-ERLE,Eragrostis lehmanniana,Lehmann lovegrass,Inv
-FLCE,Flourensia cernua,tarbush,shrub
-FOSP2,Fouquieria splendens,ocotillo,succulent
-GUSA2,Gutierrezia sarothrae,broom snakeweed,subshrub
+EPHEDRA,Ephedra,ephedra,SC
+EPHspp,Ephedra,ephedra,SC
+ERLE,Eragrostis lehmanniana,Lehmann lovegrass,INV
+FLCE,Flourensia cernua,tarbush,SH
+FOSP2,Fouquieria splendens,ocotillo,SH
+GUSA2,Gutierrezia sarothrae,broom snakeweed,SBSH
 HIMU,Pleuraphis mutica,tobosa,PG
-KOSP,Koeberlinia spinosa,crown of thorns,shrub
-LATR2,Larrea tridetata,creosote,shrub
-LYBE,Lycium berlandieri,wolfberry,shrub
+KOSP,Koeberlinia spinosa,crown of thorns,SH
+LATR2,Larrea tridetata,creosote,SH
+LYBE,Lycium berlandieri,wolfberry,SH
 MUAR,Muhlenbergia,ear muhly,PG
 MUPO2,Muhlenbergia,bush muhly,PG
-NOMI,Nolina microcarpa,sacahuista,succulent
-OPUNT,Opuntia,prickly pear,succulent
-PAIN2,Parthenium incancum,mariola,shrub
+NOMI,Nolina microcarpa,sacahuista,SC
+OPUNT,Opuntia,prickly pear,SC
+PAIN2,Parthenium incancum,mariola,SH
 PLMU3,Pleuraphis mutica,tobosa,PG
-PRGL2,Prosopis glandulosa,mesquite,shrub
-PRGL2,Prosopis glandulosa,mesquite,shrub
-PRGL2,Prosopis glandulosa,mesquite,shrub
-PSSC6,Psorothamnus scoparius,broom dalea,shrub
-QUHA3,Quercus havardii,Havard oak,shrub
-RHMI3,Rhus microphylla,littleleaf sumac,shrub
+PRGL2,Prosopis glandulosa,mesquite,SH
+PRGL2,Prosopis glandulosa,mesquite,SH
+PRGL2,Prosopis glandulosa,mesquite,SH
+PSSC6,Psorothamnus scoparius,broom dalea,SH
+QUHA3,Quercus havardii,Havard oak,SH
+RHMI3,Rhus microphylla,littleleaf sumac,SH
 SCBR2,Scleropogon brevifolius,burrograss,PG
 SCBR2,Scleropogon brevifolius,burrograss,PG
 SELE6,Setaria leucopila,streambed bristlegrass,PG
@@ -46,23 +46,23 @@ SPORO,Sporobolus,sporobolus,PG
 Sporobolus spp.,Sporobolus,sporobolus,PG
 SPORspp,Sporobolus,sporobolus,PG
 SPWR2,Sporobolus,giant sacaton,PG
-YUCCA,Yucca,yucca,succulent
-YUEL,Yucca,yucca,succulent
-YUGL,Yucca,yucca,succulent
-Other shrubs,NA,NA,shrub
+YUCCA,Yucca,yucca,SC
+YUEL,Yucca,yucca,SC
+YUGL,Yucca,yucca,SC
+Other shrubs,NA,NA,SH
 Other grasses,NA,NA,PG
-Bare,NA,NA,Bare
-QUERCUS,Quercus,Quercus,shrub
-shrub,NA,NA,shrub
+Bare,NA,NA,bare
+QUERCUS,Quercus,Quercus,SH
+shrub,NA,NA,SH
 PG,NA,NA,PG
 AG,NA,NA,AG
 annuals,NA,NA,annuals
 PF,NA,NA,PF
-COWA,Condalia wornockii,Warnock's snakewood,shrub
-THAC,Thymophylla acerosa,pricklyleaf dogweed,forb
-DAFO,Dalea formosa,featherplume,shrub
-HOFF spp.,Hoffmannseggia,rushpea,forb
+COWA,Condalia wornockii,Warnock's snakewood,SH
+THAC,Thymophylla acerosa,pricklyleaf dogweed,FB
+DAFO,Dalea formosa,featherplume,SH
+HOFF spp.,Hoffmannseggia,rushpea,FB
 LACO13,Laennecia coulteri,Coulter's horseweed,annuals
-MIACB,Mimosa aculeaticarpa,catclaw mimosa,shrub
-CELA,Celtis laevigata,sugarberry,shrub
-ACBR,Acer brachypterum,canyon maple,tree
+MIACB,Mimosa aculeaticarpa,catclaw mimosa,SH
+CELA,Celtis laevigata,sugarberry,SH
+ACBR,Acer brachypterum,canyon maple,TR
